@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#B30000"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Controls="clr-namespace:SelfService.Formatting"
+             x:Class="SelfService.Views.Login">
+    <ContentPage.Content>
+        <Grid Margin="40, 40, 40, 10" RowSpacing="30" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="37*"/>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Image Margin="25" Source="Logo" Grid.Row="0"/>
+            <Grid Grid.Row="1" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45" />
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="48"/>
+                    <RowDefinition Height="38" />
+                </Grid.RowDefinitions>
+                <Frame StyleClass="EntryFrame" Grid.Row="0" CornerRadius="25">
+                    <Grid ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="7*"/>
+                            <ColumnDefinition Width="93*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image HorizontalOptions="Start" Source="loginIcon" Grid.Column="0"/>
+                        <Controls:CustomEntry Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                    </Grid>
+                </Frame>
+                <Frame StyleClass="EntryFrame" Grid.Row="1" CornerRadius="25">
+                    <Grid ColumnSpacing="18">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="88*"/>
+                            <ColumnDefinition Width="6*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image HorizontalOptions="Start" Source="passwordIcon" Grid.Column="0"/>
+                        <Controls:CustomEntry x:Name="PasswordEntry" Placeholder="Senha" IsPassword="True" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                        <ImageButton x:Name="ImagePasswordHideShow" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="2" BackgroundColor="Transparent" Clicked="ShowAndHidePassword"/>
+                    </Grid>
+                </Frame>
+                <Label Text="Esqueci a Senha" TextColor="White" FontSize="13" Grid.Row="2" HorizontalOptions="EndAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="DoForgetPassword" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Button Margin="0, 5, 0, 5" Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderColor="White" BorderWidth=".5" BackgroundColor="Transparent" TextColor="White" Grid.Row="3" Clicked="EnterMenu"/>
+                <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="4" Clicked="NewUser"/>
+            </Grid>
+            <Label Grid.Row="2" FontSize="12" FontAttributes="Bold" Text="Versão 1.0" TextColor="White" VerticalOptions="FillAndExpand" VerticalTextAlignment="End" HorizontalTextAlignment="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

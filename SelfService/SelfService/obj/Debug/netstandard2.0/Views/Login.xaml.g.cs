@@ -17,6 +17,9 @@ namespace SelfService.Views {
     public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry LoginInput;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::SelfService.Formatting.CustomEntry PasswordEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -25,6 +28,7 @@ namespace SelfService.Views {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Login));
+            LoginInput = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "LoginInput");
             PasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "PasswordEntry");
             ImagePasswordHideShow = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "ImagePasswordHideShow");
         }

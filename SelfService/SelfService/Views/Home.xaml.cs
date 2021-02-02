@@ -13,5 +13,17 @@ namespace SelfService.Views {
         public Home() {
             InitializeComponent();
         }
+
+        private void Lista01_ItemTapped(object sender, ItemTappedEventArgs e) {
+
+        }
+
+        private void Lista01_Refreshing(object sender, EventArgs e) {
+
+        }
+
+        private void MenuItem_Clicked(object sender, EventArgs e) {
+
+        }
     }
 }

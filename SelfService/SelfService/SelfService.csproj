@@ -17,11 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="Views\ForgotPassword.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

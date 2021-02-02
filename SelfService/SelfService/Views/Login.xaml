@@ -28,7 +28,7 @@
                             <ColumnDefinition Width="93*"/>
                         </Grid.ColumnDefinitions>
                         <Image HorizontalOptions="Start" Source="loginIcon" Grid.Column="0"/>
-                        <Controls:CustomEntry Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                        <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
                     </Grid>
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="1" CornerRadius="25">

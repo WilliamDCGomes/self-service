@@ -5,9 +5,19 @@ using Xamarin.Forms.Xaml;
 
 namespace SelfService {
     public partial class App : Application {
+        public static String DbName;
+        public static String DbPath;
+
         public App() {
             InitializeComponent();
 
+            MainPage = new NavigationPage(new Login());
+        }
+
+        public App(string dbPath, string dbName) {
+            InitializeComponent();
+            App.DbName = dbName;
+            App.DbPath = dbPath;
             MainPage = new NavigationPage(new Login());
         }
 

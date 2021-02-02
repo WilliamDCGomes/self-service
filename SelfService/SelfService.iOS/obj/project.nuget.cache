@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BvIuuxIyRxOgIuMsrn4fM90YGQMZH3wBCYzB5WLFzkuz4TjxVDw2wMINy37O7oVXyjphAUi5KSxdSQDCTKksaw==",
+  "dgSpecHash": "11/L9JpDBAvD76nmtxdanD6f89XNHDKwnSR2mI+iuptWMliZCwAuGis1qOArZH9nxB6Wk03kAeGseYys8rLW+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,9 @@
     "C:\\Users\\willi\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.11\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.6.0-rc1\\xamarin.essentials.1.6.0-rc1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\zxing.net.mobile\\3.0.0-beta5\\zxing.net.mobile.3.0.0-beta5.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\zxing.net.mobile.forms\\3.0.0-beta5\\zxing.net.mobile.forms.3.0.0-beta5.nupkg.sha512"
   ],
   "logs": []
 }

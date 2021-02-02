@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AbKnx1YsNrjNyAMP+NnFN5KQ3do+1Utyms704PfYgT/uX0Vdx3RuQfUAv9I5xZjHXHKHAlID4yNCoJnVi30Dsw==",
+  "dgSpecHash": "hufZg9hXmvBEX5YqvnFQLAsCvzlBgIXbh8QBMpJRqv7kTpzfKZa07+hEuY9LAOgL/7Yltf/m9+Z6ikKDKq0Jvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.UWP\\SelfService.UWP.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,9 @@
     "C:\\Users\\willi\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3.uwp10\\1.1.11\\sqlitepclraw.provider.e_sqlite3.uwp10.1.1.11.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.6.0-rc1\\xamarin.essentials.1.6.0-rc1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\zxing.net.mobile\\3.0.0-beta5\\zxing.net.mobile.3.0.0-beta5.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\zxing.net.mobile.forms\\3.0.0-beta5\\zxing.net.mobile.forms.3.0.0-beta5.nupkg.sha512"
   ],
   "logs": []
 }

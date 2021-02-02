@@ -25,5 +25,17 @@ namespace SelfService.Views {
                 resultImage.Source =  ImageSource.FromStream(() => stream);
             }
         }
+
+        /*
+         * Tira foto, mas não salva nos arquivos
+         * 
+         * private async void GetPictureFromCamera(object sender, EventArgs e) {
+            var result = await MediaPicker.CapturePhotoAsync();
+            if (result != null) {
+                var stream = await result.OpenReadAsync();
+                resultImagePicture.Source = ImageSource.FromStream(() => stream);
+                buttonTakePicture.Text = ImageSource.FromStream(() => stream).ToString();
+            }
+        }*/
     }
 }

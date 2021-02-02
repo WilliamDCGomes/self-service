@@ -54,7 +54,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Nome *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputName" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
@@ -64,7 +64,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Sobrenome *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputLastName" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
@@ -74,7 +74,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Email *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry Keyboard="Email" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputEmailAdress" Keyboard="Email" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
@@ -89,10 +89,10 @@
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
                                     <Frame StyleClass="EntryFrame" BorderColor="LightGray" Grid.Column="0" >
-                                        <Controls:CustomEntry Keyboard="Telephone" Placeholder="DDD" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                        <Controls:CustomEntry x:Name="InputPhoneDDD" Keyboard="Telephone" Placeholder="DDD" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                     </Frame>
                                     <Frame StyleClass="EntryFrame" BorderColor="LightGray" Grid.Column="1">
-                                        <Controls:CustomEntry Keyboard="Telephone" Placeholder="Telefone" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                        <Controls:CustomEntry x:Name="InputPhoneNumber" Keyboard="Telephone" Placeholder="Telefone" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                     </Frame>
                                 </Grid>
                             </Grid>
@@ -120,7 +120,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="CEP *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputCEP" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
@@ -130,7 +130,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Rua *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputStreet" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
@@ -140,7 +140,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Bairro *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry  HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputNeighborhood" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
@@ -150,7 +150,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Número da Casa *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry Keyboard="Numeric" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputHouseNumber" Keyboard="Numeric" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                         </Grid>
@@ -176,7 +176,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Login *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputLogin" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
@@ -191,7 +191,7 @@
                                             <ColumnDefinition Width="94*"/>
                                             <ColumnDefinition Width="6*"/>
                                         </Grid.ColumnDefinitions>
-                                        <Controls:CustomEntry x:Name="PasswordEntry" IsPassword="True" Grid.Column="0" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                        <Controls:CustomEntry x:Name="InputPassword" IsPassword="True" Grid.Column="0" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
                                         <ImageButton x:Name="ImagePasswordHideShow" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="1" BackgroundColor="Transparent" Clicked="ShowAndHidePassword"/>
                                     </Grid>
                                 </Frame>
@@ -214,7 +214,7 @@
                                 </Frame>
                             </Grid>
                         </Grid>
-                        <Button Grid.Row="3" Text="CRIAR CONTA" TextColor="White" BackgroundColor="#B30000" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                        <Button Grid.Row="3" Text="CRIAR CONTA" TextColor="White" BackgroundColor="#B30000" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="CreateAccount"/>
                     </Grid>
                 </ScrollView>
             </Grid>

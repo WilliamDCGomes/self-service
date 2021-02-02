@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SelfService.Models;
+using SelfService.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +20,8 @@ namespace SelfService.Views {
         }
 
         private void ShowAndHidePassword(object sender, EventArgs e) {
-            PasswordEntry.IsPassword = !PasswordEntry.IsPassword;
-            if (PasswordEntry.IsPassword) {
+            InputPassword.IsPassword = !InputPassword.IsPassword;
+            if (InputPassword.IsPassword) {
                 ImagePasswordHideShow.Source = "PasswordTrue";
             } else {
                 ImagePasswordHideShow.Source = "PasswordFalse";
@@ -35,5 +37,45 @@ namespace SelfService.Views {
             }
         }
 
+        public async void InsertUser() {
+            ModelUser user = new ModelUser();
+            user.Name = InputName.Text;
+            user.LastName = InputLastName.Text;
+            user.EmailAdress = InputEmailAdress.Text;
+            user.Phone = InputPhoneDDD.Text + InputPhoneNumber.Text;
+            user.Cep = InputCEP.Text;
+            user.Street = InputStreet.Text;
+            user.Neighborhood = InputNeighborhood.Text;
+            user.HouseNumber = InputHouseNumber.Text;
+            user.Login = InputLogin.Text;
+            user.Password = InputPassword.Text;
+            if (InputLogin.Text.Equals("Admin")) {
+                user.IsAdmin = true;
+            }
+            ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+            bool Worked = dbUser.Insert(user);
+            if (Worked) {
+                await DisplayAlert("SUCESSO", "CADASTRO REALIZADO COM SUCESSO", "OK");
+                await Navigation.PopAsync();
+            }
+        }
+
+        private void CreateAccount(object sender, EventArgs e) {
+            if (DataValidation()) {
+                InsertUser();
+            } 
+        }
+        private bool DataValidation() {
+            if(InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
+                return true;
+            } 
+            else if (!(InputPassword.Text == RepetPasswordEntry.Text)) {
+                DisplayAlert("AVISO", "AS SENHAS NÃO COINCIDEM", "OK");
+            }            
+            else {
+                DisplayAlert("AVISO", "PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS PARA SE CADASTRAR", "OK");
+            }
+            return false;
+        }
     }
 }

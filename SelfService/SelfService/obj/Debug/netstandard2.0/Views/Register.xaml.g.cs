@@ -17,7 +17,37 @@ namespace SelfService.Views {
     public partial class Register : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::SelfService.Formatting.CustomEntry PasswordEntry;
+        private global::SelfService.Formatting.CustomEntry InputName;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputLastName;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputEmailAdress;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputPhoneDDD;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputPhoneNumber;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputCEP;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputStreet;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputNeighborhood;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputHouseNumber;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputLogin;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry InputPassword;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ImageButton ImagePasswordHideShow;
@@ -31,7 +61,17 @@ namespace SelfService.Views {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Register));
-            PasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "PasswordEntry");
+            InputName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputName");
+            InputLastName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputLastName");
+            InputEmailAdress = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputEmailAdress");
+            InputPhoneDDD = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputPhoneDDD");
+            InputPhoneNumber = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputPhoneNumber");
+            InputCEP = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputCEP");
+            InputStreet = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputStreet");
+            InputNeighborhood = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputNeighborhood");
+            InputHouseNumber = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputHouseNumber");
+            InputLogin = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputLogin");
+            InputPassword = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputPassword");
             ImagePasswordHideShow = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "ImagePasswordHideShow");
             RepetPasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "RepetPasswordEntry");
             ImagePasswordHideShow2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "ImagePasswordHideShow2");

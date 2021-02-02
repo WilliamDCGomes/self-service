@@ -4,9 +4,8 @@
              x:Class="SelfService.Views.RegisterPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="button" Text="GetPicture" Clicked="GetPicture" />
+            <Image x:Name="resultImage" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -593,3 +593,5 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xhdpi\account.png
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxhdpi\account.png
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxxhdpi\account.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\IntermediateActivity.java
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorIntermediateActivity.java

@@ -32,7 +32,8 @@ namespace SelfService.Views {
         }
 
         private void EnterMenu(object sender, EventArgs e) {
-            App.Current.MainPage = new NavigationPage(new Home());
+            //App.Current.MainPage = new NavigationPage(new Home());
+            App.Current.MainPage = new NavigationPage(new RegisterPage());
         }
     }
 }

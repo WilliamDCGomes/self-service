@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"SelfService.Android.dll",
 		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"SelfService.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",

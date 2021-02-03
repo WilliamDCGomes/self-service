@@ -1,4 +1,5 @@
-﻿using SelfService.Services;
+﻿using SelfService.Models;
+using SelfService.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +21,6 @@ namespace SelfService.Views {
             IdUserShow.Text = idUser.ToString();
         }
 
-        private void ProductSelected(object sender, EventArgs e) {
-            
-        }
-
         private void RefreshEvent(object sender, EventArgs e) {
             RefreshList();
             Products.IsRefreshing = false;
@@ -33,13 +30,19 @@ namespace SelfService.Views {
             Products.ItemsSource = dbProducts.ListProducts();
         }
 
-        private void Products_ItemTapped(object sender, ItemTappedEventArgs e) {
-            Ordering order = new Ordering();
+        private void ProductSelected(object sender, SelectedItemChangedEventArgs e) {
+            ModelProducts product = (ModelProducts) Products.SelectedItem;
+            Ordering order = new Ordering(product, IdUser);
             Navigation.PushAsync(order);
+            RefreshList();
         }
 
         private void DoLogout(object sender, EventArgs e) {
             App.Current.MainPage = new NavigationPage(new Login());
+        }
+
+        private void AddProduct(object sender, EventArgs e) {
+            Navigation.PushAsync(new RegisterPage());
         }
     }
 }

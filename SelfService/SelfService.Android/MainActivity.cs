@@ -21,6 +21,7 @@ namespace SelfService.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
             string dbName = "dbSelfService.db3";
             string dbPath = FileAccessHelper.GetLocalFilePath(dbName);

@@ -1,4 +1,6 @@
-﻿using SelfService.Services;
+﻿using JobSearch.App.Utility.Load;
+using Rg.Plugins.Popup.Extensions;
+using SelfService.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,13 +34,15 @@ namespace SelfService.Views {
             Navigation.PushAsync(new Register());
         }
 
-        private void EnterMenu(object sender, EventArgs e) {
+        private async void EnterMenu(object sender, EventArgs e) {
+            await Navigation.PushPopupAsync(new Loading());
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             if (dbUser.checkUserExist(LoginInput.Text, PasswordEntry.Text)) {
                 App.Current.MainPage = new NavigationPage(new Home(dbUser.IdUser));
             } else {
-                DisplayAlert("ERRO", "LOGIN OU SENHA INCORRETO, REVISE OS CAMPOS", "OK");
+                await DisplayAlert("ERRO", "LOGIN OU SENHA INCORRETO, REVISE OS CAMPOS", "OK");
             }
+            await Navigation.PopAllPopupAsync();
         }
     }
 }

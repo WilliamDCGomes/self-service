@@ -18,13 +18,13 @@ namespace SelfService.Views {
         public Ordering() {
             InitializeComponent();
         }
-        public Ordering(int idUser, int idProduct, string nome, string price, string description) {
+        public Ordering(ModelProducts product, int idUser) {
             InitializeComponent();
             IdUser = idUser;
-            IdProduct = idProduct;
-            OutputNameProduct.Text = nome;
-            OutputPrice.Text = price.ToString().Replace(".", ",");
-
+            IdProduct = product.Id;
+            OutputNameProduct.Text = product.Title;
+            OutputPrice.Text = product.Price.ToString().Replace(".", ",");
+            OutputOrderDate.Text = DateTime.Now.ToString();
         }
 
         

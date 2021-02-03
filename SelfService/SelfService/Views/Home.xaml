@@ -10,41 +10,33 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
              x:Class="SelfService.Views.Home">
     <ContentPage Title="Inicio" IconImageSource="Home">
-        <ListView  x:Name="Products" HasUnevenRows="True" ItemTapped="Products_ItemTapped" SeparatorColor="#F0C33B" IsPullToRefreshEnabled="True" Refreshing="RefreshEvent" Margin="15">
+        <ListView  x:Name="Products" HasUnevenRows="True" ItemSelected="ProductSelected" IsPullToRefreshEnabled="True" Refreshing="RefreshEvent" Margin="15">
             <ListView.Header>
                 <Label Text="Pratos" Margin="0, 0, 0, 15" FontSize="38" TextColor="White" HorizontalOptions="CenterAndExpand"/>
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame StyleClass="EntryFrame" BorderColor="#F0C33B" HeightRequest="150" WidthRequest="100" BackgroundColor="#B30000" Margin="0, 0, 0, 15">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="ProductSelected" />
-                            </Frame.GestureRecognizers>
-                            <ScrollView>
-                                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" WidthRequest="100" RowSpacing="0" HeightRequest="150" Margin="10">
-                                    <Grid.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="ProductSelected" />
-                                    </Grid.GestureRecognizers>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="25"/>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="15"/>
-                                    </Grid.RowDefinitions>
-                                    <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="0"/>
-                                    <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="1" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
-                                        <Label.FormattedText>
-                                            <FormattedString>
-                                                <Span Text="R$ " />
-                                                <Span Text="{Binding Price}" />
-                                            </FormattedString>
-                                        </Label.FormattedText>
-                                    </Label>
-                                    <Label x:Name="DescriptionProduct" Text="{Binding Description}" TextColor="White" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
-                                </Grid>
-                            </ScrollView>
-                        </Frame>
+                        <Grid RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+                            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0"/>
+                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1"/>
+                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="R$ " />
+                                        <Span Text="{Binding Price}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label x:Name="DescriptionProduct" Text="{Binding Description}" TextColor="White" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -70,6 +62,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Logout" Clicked="DoLogout" />
+            <Button Text="Add Product" Clicked="AddProduct" />
         </StackLayout>
     </ContentPage>
 </TabbedPage>

@@ -55,7 +55,7 @@
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>
                                 </Grid.RowDefinitions>
-                                <Label Text="Código do Prato" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Label Text="Nome do Prato" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
                                     <Controls:CustomEntry x:Name="OutputNameProduct" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
@@ -77,7 +77,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Status" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry x:Name="OutputStatus" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="OutputStatus" Text="Solicitando" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                             <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >

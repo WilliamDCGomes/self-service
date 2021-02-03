@@ -24,5 +24,62 @@ namespace SelfService.Services {
             }
             return false;
         }
+
+        public List<ModelOrder> ListOrder() {
+            List<ModelOrder> orders = new List<ModelOrder>();
+            try {
+                orders = connection.Table<ModelOrder>().ToList();
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return orders;
+        }
+
+        public bool Update(ModelOrder orders) {
+            try {
+                int result = 0;
+                result = connection.Update(orders);
+                if (result != 0) {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return false;
+        }
+
+        public bool Delete(ModelOrder orders) {
+            try {
+                int result = 0;
+                result = connection.Table<ModelOrder>().Delete(data => data.Id == orders.Id);
+                if (result != 0) {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return false;
+        }
+
+        public List<ModelOrder> Locale(ModelOrder order) {
+            List<ModelOrder> list = new List<ModelOrder>();
+            try {
+                var data = from p in connection.Table<ModelOrder>() where p.IdUser == order.IdUser select p;
+                list = data.ToList();
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return list;
+        }
+
+        public ModelOrder GetOrder(ModelOrder orders) {
+            ModelOrder order = new ModelOrder();
+            try {
+                order = connection.Table<ModelOrder>().First(n => n.IdUser == orders.IdUser);
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return order;
+        }
     }
 }

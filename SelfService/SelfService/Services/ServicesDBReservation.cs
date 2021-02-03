@@ -24,5 +24,62 @@ namespace SelfService.Services {
             }
             return false;
         }
+
+        public List<ModelReservation> ListReservation() {
+            List<ModelReservation> reservations = new List<ModelReservation>();
+            try {
+                reservations = connection.Table<ModelReservation>().ToList();
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return reservations;
+        }
+
+        public bool Update(ModelReservation reservations) {
+            try {
+                int result = 0;
+                result = connection.Update(reservations);
+                if (result != 0) {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return false;
+        }
+
+        public bool Delete(ModelReservation reservations) {
+            try {
+                int result = 0;
+                result = connection.Table<ModelReservation>().Delete(data => data.Id == reservations.Id);
+                if (result != 0) {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return false;
+        }
+
+        public List<ModelReservation> Locale(ModelReservation reservation) {
+            List<ModelReservation> list = new List<ModelReservation>();
+            try {
+                var data = from p in connection.Table<ModelReservation>() where p.IdUser == reservation.IdUser select p;
+                list = data.ToList();
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return list;
+        }
+
+        public ModelReservation GetReservation(ModelReservation reservations) {
+            ModelReservation reservation = new ModelReservation();
+            try {
+                reservation = connection.Table<ModelReservation>().First(n => n.IdUser == reservations.IdUser);
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return reservation;
+        }
     }
 }

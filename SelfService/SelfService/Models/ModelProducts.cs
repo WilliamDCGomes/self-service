@@ -10,7 +10,7 @@ namespace SelfService.Models {
         public int Id { get; set; }
 
         [NotNull]
-        public string Titulo { get; set; }
+        public string Title { get; set; }
 
         [NotNull]
         public double Price { get; set; }

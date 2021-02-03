@@ -14,8 +14,17 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Ordering : ContentPage {
         public int IdUser { get; set; }
+        public int IdProduct { get; set; }
         public Ordering() {
             InitializeComponent();
+        }
+        public Ordering(int idUser, int idProduct, string nome, string price, string description) {
+            InitializeComponent();
+            IdUser = idUser;
+            IdProduct = idProduct;
+            OutputNameProduct.Text = nome;
+            OutputPrice.Text = price.ToString().Replace(".", ",");
+
         }
 
         
@@ -27,7 +36,7 @@ namespace SelfService.Views {
         public async void InsertOrder() {
             ModelOrder order = new ModelOrder();
             order.IdUser = this.IdUser;
-            order.IdProduct = int.Parse(OutputNameProduct.Text);
+            order.IdProduct = IdProduct;
             order.StatusOrder = 1;
             order.OrderDate = DateTime.Parse(OutputOrderDate.Text);
             order.AlreadyPayed = false;

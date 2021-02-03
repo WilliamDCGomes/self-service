@@ -29,7 +29,7 @@
                 <ScrollView>
                     <Grid Margin="30, 30, 30, 30" RowSpacing="7">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="235"/>
+                            <RowDefinition Height="305"/>
                             <RowDefinition Height="160"/>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="20"/>
@@ -37,6 +37,7 @@
                         <Grid Grid.Row="0" RowSpacing="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
                                 <RowDefinition Height="68"/>
                                 <RowDefinition Height="68"/>
                                 <RowDefinition Height="68"/>
@@ -64,12 +65,22 @@
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>
                                 </Grid.RowDefinitions>
+                                <Label Text="Preço" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="OutputPrice" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
                                 <Label Text="Status" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
                                     <Controls:CustomEntry x:Name="OutputStatus" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
-                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>

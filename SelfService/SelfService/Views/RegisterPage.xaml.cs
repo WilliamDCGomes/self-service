@@ -25,7 +25,7 @@ namespace SelfService.Views {
 
         public async void InsertOrder() {
             ModelProducts modelProducts = new ModelProducts();
-            modelProducts.Titulo = InputNameProduct.Text;
+            modelProducts.Title = InputNameProduct.Text;
             modelProducts.Price = Double.Parse(InputPrice.Text.Replace(",", "."));
             modelProducts.Description = InputDescription.Text;
             if (String.IsNullOrEmpty(InputDescont.Text)) {

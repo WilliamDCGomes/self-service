@@ -20,6 +20,9 @@ namespace SelfService.Views {
         private global::SelfService.Formatting.CustomEntry OutputNameProduct;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEntry OutputPrice;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::SelfService.Formatting.CustomEntry OutputStatus;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -35,6 +38,7 @@ namespace SelfService.Views {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Ordering));
             OutputNameProduct = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputNameProduct");
+            OutputPrice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputPrice");
             OutputStatus = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputStatus");
             OutputOrderDate = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputOrderDate");
             Picker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomPicker>(this, "Picker");

@@ -609,3 +609,4 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc6480997b3ef81bf9b2\ZxingOverlayView.java
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc6480997b3ef81bf9b2\ZXingScannerFragment.java
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc6480997b3ef81bf9b2\ZXingSurfaceView.java
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc646b74bfe0a0a6fc72\CustomEditorRenderer.java

@@ -68,8 +68,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomEntryRenderer.cs" />
-    <Compile Include="CustomPickerRenderer.cs" />
+    <Compile Include="Masks\CustomEditorRenderer.cs" />
+    <Compile Include="Masks\CustomEntryRenderer.cs" />
+    <Compile Include="Masks\CustomPickerRenderer.cs" />
     <Compile Include="FileAccessHelper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

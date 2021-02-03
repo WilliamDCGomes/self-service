@@ -1,11 +1,118 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Controls="clr-namespace:SelfService.Formatting"
+             BackgroundColor="#B30000"
              x:Class="SelfService.Views.RegisterPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Button x:Name="button" Text="GetPicture" Clicked="GetPicture" />
-            <Image x:Name="resultImage" />
-        </StackLayout>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="21*"/>
+                <RowDefinition Height="70*"/>
+            </Grid.RowDefinitions>
+            <Frame BackgroundColor="#B30000" HasShadow="False" Grid.Row="0">
+                <Grid ColumnSpacing="10" RowSpacing="0" Margin="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="90*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Start" Clicked="BackHome"/>
+                    <Label Text="Cadastrando Prato" FontSize="17" TextColor="White" BackgroundColor="Transparent" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                </Grid>
+            </Frame>
+            <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="#B30000" BackgroundColor="#B30000">
+                <Image x:Name="ProductImage" Source="Logo"/>
+            </Frame>
+            <Grid Grid.Row="2">
+                <ScrollView>
+                    <Grid Margin="30, 30, 30, 30" RowSpacing="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="135"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="INFORMAÇÕES DO PRATO" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#F0C33B" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Nome *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputNameProduct" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Preço *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputPrice" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="110"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Descrição" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEditor x:Name="InputDescription" Grid.Row="1" AutoSize="TextChanges" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="135"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="AJUSTES" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#F0C33B" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Desconto (EX: 25%)" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputDescont" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                                <Label Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
+                                <Button Grid.Row="3" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                            </Grid>
+                        </Grid>
+                        <Button Grid.Row="3" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>
+                    </Grid>
+                </ScrollView>
+            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

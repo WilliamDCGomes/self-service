@@ -14,10 +14,15 @@ namespace SelfService.Services {
             connection = new SQLiteConnection(dbPath);
             connection.CreateTable<ModelProducts>();
         }
-        public void Insert(ModelProducts product) {
+        public bool Insert(ModelProducts product) {
             if (product.Titulo != null && product.Price != 0) {
-                int result = connection.Insert(product);
-            } 
+                int result = 0;
+                result = connection.Insert(product);
+                if (result != 0) {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

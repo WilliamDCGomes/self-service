@@ -14,10 +14,15 @@ namespace SelfService.Services {
             connection = new SQLiteConnection(dbPath);
             connection.CreateTable<ModelReservation>();
         }
-        public void Insert(ModelReservation reservation) {
+        public bool Insert(ModelReservation reservation) {
             if (reservation.IdUser != 0 && reservation.LocationClient != null && reservation.NumberSeats != 0 && reservation.ReservationDate != null) {
-                int result = connection.Insert(reservation);
-            } 
+                int result = 0;
+                result = connection.Insert(reservation);
+                if (result != 0) {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

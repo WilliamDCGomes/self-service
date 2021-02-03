@@ -17,5 +17,9 @@ namespace SelfService.Views {
         private void CloseForgotPassword(object sender, EventArgs e) {
             Navigation.PopModalAsync();
         }
+
+        private void Close(object sender, EventArgs e) {
+            Navigation.PopModalAsync();
+        }
     }
 }

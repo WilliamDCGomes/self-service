@@ -14,10 +14,15 @@ namespace SelfService.Services {
             connection = new SQLiteConnection(dbPath);
             connection.CreateTable<ModelHistoricOrders>();
         }
-        public void Insert(ModelHistoricOrders historicOrders) {
+        public bool Insert(ModelHistoricOrders historicOrders) {
             if (historicOrders.IdUser != 0 && historicOrders.Titulo != null && historicOrders.Price != 0) {
-                int result = connection.Insert(historicOrders);
-            } 
+                int result = 0;
+                result = connection.Insert(historicOrders);
+                if (result != 0) {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

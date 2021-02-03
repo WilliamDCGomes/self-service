@@ -66,8 +66,17 @@ namespace SelfService.Views {
             } 
         }
         private bool DataValidation() {
-            if(InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
-                return true;
+            ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+            if (InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
+                if (InputPassword.Text.Length < 6) {
+                    DisplayAlert("AVISO", "A SENHA DEVE CONTER NO MÍNIMO 6 DÍGITOS", "OK");
+                }
+                else if (dbUser.Locale(InputLogin.Text)) {
+                    return true;
+                } 
+                else {
+                    DisplayAlert("AVISO", "O LOGIN QUE VOCÊ ESTÁ TENTANDO CADASTRAR JÁ ESTÁ EM USO", "OK");
+                }
             } 
             else if (!(InputPassword.Text == RepetPasswordEntry.Text)) {
                 DisplayAlert("AVISO", "AS SENHAS NÃO COINCIDEM", "OK");

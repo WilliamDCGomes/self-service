@@ -66,9 +66,10 @@
     </ContentPage>
     <ContentPage Title="Conta" IconImageSource="Account">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label x:Name="IdUserShow" Text="Welcome to Xamarin.Forms!" TextColor="White"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Logout" Clicked="DoLogout" />
         </StackLayout>
     </ContentPage>
 </TabbedPage>

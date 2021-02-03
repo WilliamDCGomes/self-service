@@ -7,6 +7,7 @@ using SQLite;
 namespace SelfService.Services {
     public class ServicesDBUser {
         SQLiteConnection connection;
+        public int IdUser { get; set; }
         public ServicesDBUser(string dbPath) {
             if (dbPath == null) {
                 dbPath = App.DbPath;
@@ -61,25 +62,38 @@ namespace SelfService.Services {
             return false;
         }
 
-        public List<ModelUser> Locale(ModelUser users) {
+        public bool Locale(string login) {
             List<ModelUser> list = new List<ModelUser>();
             try {
-                var data = from p in connection.Table<ModelUser>() where p.Name.ToLower().Contains(users.Name.ToLower()) select p;
+                var data = from p in connection.Table<ModelUser>() where p.Login.ToLower().Contains(login.ToLower()) select p;
                 list = data.ToList();
+                if(list.Count == 0) {
+                    return true;
+                }
             } catch (Exception e) {
                 throw new Exception(e.Message);
             }
-            return list;
+            return false;
         }
 
-        public ModelUser GetUser(ModelUser users) {
-            ModelUser user = new ModelUser();
+        public bool checkUserExist(string login, string password) {
+            List<ModelUser> loginAccount = new List<ModelUser>();
+            List<ModelUser> passwordAccount = new List<ModelUser>();
             try {
-                user = connection.Table<ModelUser>().First(n => n.Id == users.Id);
+                var dataLogin = from p in connection.Table<ModelUser>() where p.Login.ToLower().Contains(login.ToLower()) select p;
+                loginAccount = dataLogin.ToList();
+                var dataPassword = from p in connection.Table<ModelUser>() where p.Password.Contains(password) select p;
+                passwordAccount = dataPassword.ToList();
+                if (loginAccount.Count != 0 && passwordAccount.Count != 0) {
+                    foreach (ModelUser i in loginAccount) {
+                        IdUser = i.Id;
+                        return true;
+                    }
+                }
             } catch (Exception e) {
                 throw new Exception(e.Message);
             }
-            return user;
+            return false;
         }
     }
 }

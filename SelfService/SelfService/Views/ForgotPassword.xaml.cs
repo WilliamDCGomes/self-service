@@ -21,5 +21,10 @@ namespace SelfService.Views {
         private void Close(object sender, EventArgs e) {
             Navigation.PopModalAsync();
         }
+
+        private async void SendEmail(object sender, EventArgs e) {
+            await DisplayAlert("MENSAGEM", "VOCÊ RECEBERÁ UM EMAIL DE INSTRUÇÕES", "OK");
+            await Navigation.PopModalAsync();
+        }
     }
 }

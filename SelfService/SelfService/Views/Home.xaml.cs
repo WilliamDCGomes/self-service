@@ -12,9 +12,12 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : TabbedPage {
         ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
-        public Home() {
+        public int IdUser { get; private set; }
+        public Home(int idUser) {
             InitializeComponent();
             RefreshList();
+            IdUser = idUser;
+            IdUserShow.Text = idUser.ToString();
         }
 
         private void ProductSelected(object sender, EventArgs e) {
@@ -33,6 +36,10 @@ namespace SelfService.Views {
         private void Products_ItemTapped(object sender, ItemTappedEventArgs e) {
             Ordering order = new Ordering();
             Navigation.PushAsync(order);
+        }
+
+        private void DoLogout(object sender, EventArgs e) {
+            App.Current.MainPage = new NavigationPage(new Login());
         }
     }
 }

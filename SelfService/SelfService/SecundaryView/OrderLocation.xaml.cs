@@ -33,7 +33,7 @@ namespace SelfService.SecundaryView {
         }
 
         private bool ValidateCode(string code) {
-            if (code.Equals("William Douglas é Foda!!")) {
+            if (code.Equals("12345678")) {
                 return true;
             }
             return false;

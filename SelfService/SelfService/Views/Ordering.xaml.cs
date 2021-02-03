@@ -26,10 +26,10 @@ namespace SelfService.Views {
 
         public async void InsertOrder() {
             ModelOrder order = new ModelOrder();
-            order.IdUser = 1;//this.IdUser;
-            order.IdProduct = 1;//int.Parse(OutputNameProduct.Text);
+            order.IdUser = this.IdUser;
+            order.IdProduct = int.Parse(OutputNameProduct.Text);
             order.StatusOrder = 1;
-            order.OrderDate = DateTime.Now;//DateTime.Parse(OutputOrderDate.Text);
+            order.OrderDate = DateTime.Parse(OutputOrderDate.Text);
             order.AlreadyPayed = false;
             order.LocationClient = InputLocation.Text;
             ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);

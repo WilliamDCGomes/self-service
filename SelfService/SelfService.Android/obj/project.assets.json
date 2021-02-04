@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "Correios-Api/1.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/portable-net45+win/Correios.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win/Correios.dll": {}
+        }
+      },
       "FastAndroidCamera/2.0.0": {
         "type": "package",
         "compile": {
@@ -84,6 +96,15 @@
         }
       },
       "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.ServiceModel.Primitives/4.8.1": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -916,7 +937,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Correios-Api": "1.1.1",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "System.ServiceModel.Primitives": "4.8.1",
           "Xamarin.Essentials": "1.6.0-rc1",
           "Xamarin.Forms": "4.8.0.1451",
           "ZXing.Net.Mobile.Forms": "3.0.0-beta5",
@@ -932,6 +955,25 @@
     }
   },
   "libraries": {
+    "Correios-Api/1.1.1": {
+      "sha512": "K16sLS8pVPndiqLmuMKokfuN/23OzaFDL/0H4YkbGzO/VYt3RIYsQ1ottjJNeZ/01WEYhgrJrEiwg/rIuInrDw==",
+      "type": "package",
+      "path": "correios-api/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "correios-api.1.1.1.nupkg.sha512",
+        "correios-api.nuspec",
+        "lib/portable-net45+win/Correios.dll",
+        "lib/portable-net45+win/Correios.pdb",
+        "src/CorreiosService.cs",
+        "src/ICorreiosApi.cs",
+        "src/ICorreiosApiAsync.cs",
+        "src/ICorreiosApiSync.cs",
+        "src/Properties/AssemblyInfo.cs",
+        "src/Service.cs"
+      ]
+    },
     "FastAndroidCamera/2.0.0": {
       "sha512": "RQix6VHmVyQXVdP3Y4+Khw1F7HirONNCa5ubGng58gUkmSAhlS4t1Qf1Biyfakx/LjCYJ3SZ99rWSjQgV15uVQ==",
       "type": "package",
@@ -1137,6 +1179,61 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.ServiceModel.Primitives/4.8.1": {
+      "sha512": "XjzGCqvWZBHnw2ym8t9PVeTm5Tsp7lSDKEwhDZAU4Jnw+6+zEDu/2ZQYQbRqBR0t/KpfNA4Aya/5aONKJnuyEw==",
+      "type": "package",
+      "path": "system.servicemodel.primitives/4.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.ServiceModel.Primitives.dll",
+        "lib/net461/System.ServiceModel.Primitives.dll",
+        "lib/net461/System.ServiceModel.Primitives.pdb",
+        "lib/netcore50/System.ServiceModel.Primitives.dll",
+        "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "lib/netcoreapp2.1/System.ServiceModel.Primitives.pdb",
+        "lib/netcoreapp2.1/System.ServiceModel.dll",
+        "lib/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.pdb",
+        "lib/netstandard2.0/System.ServiceModel.dll",
+        "lib/portable-net45+win8+wp8/_._",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.ServiceModel.Primitives.dll",
+        "ref/net461/System.ServiceModel.Primitives.dll",
+        "ref/netcore50/System.ServiceModel.Primitives.dll",
+        "ref/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "ref/netcoreapp2.1/System.ServiceModel.dll",
+        "ref/netstandard1.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.1/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.dll",
+        "ref/portable-net45+win8+wp8/_._",
+        "ref/win8/_._",
+        "ref/wp8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.servicemodel.primitives.4.8.1.nupkg.sha512",
+        "system.servicemodel.primitives.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -2331,6 +2428,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Correios-Api >= 1.1.1",
       "Rg.Plugins.Popup >= 1.2.0.223",
       "SelfService >= 1.0.0",
       "Xamarin.Essentials >= 1.6.0-rc1",
@@ -2381,6 +2479,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Correios-Api": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
           "Rg.Plugins.Popup": {
             "target": "Package",
             "version": "[1.2.0.223, )"

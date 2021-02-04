@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Correios;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Rg.Plugins.Popup.Extensions;
+using JobSearch.App.Utility.Load;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -85,6 +87,32 @@ namespace SelfService.Views {
                 DisplayAlert("AVISO", "PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS PARA SE CADASTRAR", "OK");
             }
             return false;
+        }
+
+        private async void GetCep(object sender, FocusEventArgs e) {
+            if (!string.IsNullOrEmpty(InputCEP.Text)) {
+                if (InputCEP.Text.Length > 7 && InputCEP.Text.Length < 9) {
+                    try {
+                        await Navigation.PushPopupAsync(new Loading());
+                        CorreiosApi deliveryApi = new CorreiosApi();
+                        var data = deliveryApi.consultaCEP(InputCEP.Text);
+                        InputStreet.Text = data.end;
+                        InputNeighborhood.Text = data.bairro;
+                        InputCity.Text = data.cidade;
+                        PickerStates.SelectedItem = data.uf;
+                        await Navigation.PopAllPopupAsync();
+                    } catch (Exception ex) {
+                        await DisplayAlert("ERRO", "CEP NÃO LOCALIZADO\n" + ex.Message, "OK");
+                    }
+                } 
+                else {
+                        await DisplayAlert("ERRO", "O CEP DEVE TER 8 DIGÍTOS", "OK");
+                }
+            }
+        }
+
+        private void OpenPicker(object sender, EventArgs e) {
+            PickerStates.Focus();
         }
     }
 }

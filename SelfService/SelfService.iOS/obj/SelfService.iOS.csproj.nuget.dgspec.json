@@ -42,6 +42,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Correios-Api": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[1.2.0.223, )"
@@ -117,6 +121,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Correios-Api": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -126,6 +134,10 @@
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[1.2.0.223, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.8.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

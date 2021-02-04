@@ -32,6 +32,9 @@ namespace SelfService.Views {
         private global::SelfService.Formatting.CustomEntry InputDescont;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.DatePicker DPCalendar;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RegisterPage));
             ProductImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "ProductImage");
@@ -39,6 +42,7 @@ namespace SelfService.Views {
             InputPrice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputPrice");
             InputDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEditor>(this, "InputDescription");
             InputDescont = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "InputDescont");
+            DPCalendar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "DPCalendar");
         }
     }
 }

@@ -27,10 +27,14 @@ namespace SelfService.Models {
         [NotNull]
         public string LocationClient { get; set; }
 
+        [NotNull]
+        public double Price { get; set; }
+
         public ModelOrder() {
             StatusOrder = 1;
             OrderDate = DateTime.Now;
             AlreadyPayed = false;
+            Price = 0;
         }
     }
 }

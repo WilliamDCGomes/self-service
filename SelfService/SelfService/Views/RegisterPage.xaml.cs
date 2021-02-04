@@ -33,6 +33,9 @@ namespace SelfService.Views {
             } else {
                 modelProducts.InDescont = true;
                 modelProducts.DescontPercent = Double.Parse(InputDescont.Text.Replace(",", "."));
+                string value = (Double.Parse(InputPrice.Text.Replace(",", ".")) - ((Double.Parse(InputPrice.Text.Replace(",", ".")) * Double.Parse(InputDescont.Text.Replace(",", "."))) / 100)).ToString("F");
+                modelProducts.NewValue = Double.Parse(value.Replace(",", "."));
+                modelProducts.DateDescont = DPCalendar.Date;
             }
             ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
             bool Worked = dbProducts.Insert(modelProducts);

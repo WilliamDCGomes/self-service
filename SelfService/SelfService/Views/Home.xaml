@@ -12,7 +12,9 @@
     <ContentPage Title="Inicio" IconImageSource="Home">
         <ListView  x:Name="Products" HasUnevenRows="True" ItemSelected="ProductSelected" IsPullToRefreshEnabled="True" Refreshing="RefreshEvent" Margin="15">
             <ListView.Header>
-                <Label Text="Pratos" Margin="0, 0, 0, 15" FontSize="38" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                <Frame StyleClass="EntryFrame" BackgroundColor="#B30000" BorderColor="#F0C33B" Margin="0, 0, 0, 5">
+                    <Label Text="Pratos" Margin="0, 0, 0, 15" FontSize="38" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                </Frame>
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -43,11 +45,49 @@
         </ListView>
     </ContentPage>
     <ContentPage Title="Promoções" IconImageSource="Promotions">
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView  x:Name="PromotionProducts" HasUnevenRows="True" ItemSelected="ProductPromotionSelected" IsPullToRefreshEnabled="True" Refreshing="RefreshEvent" Margin="15">
+            <ListView.Header>
+                <Frame StyleClass="EntryFrame" BackgroundColor="#B30000" BorderColor="#F0C33B" Margin="0, 0, 0, 5">
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="45"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Text="Pratos na Promoção" FontSize="25" TextColor="White" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"/>
+                        <DatePicker Format="dd/MM/yyyy" Grid.Row="1" x:Name="DPCalendar" DateSelected="DateSelectedAction" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+                    </Grid>
+                </Frame>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+                            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0"/>
+                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1"/>
+                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="De "/>
+                                        <Span Text="R$ " TextDecorations="Strikethrough"/>
+                                        <Span Text="{Binding Price}" TextDecorations="Strikethrough" />
+                                        <Span Text=" Por R$ " />
+                                        <Span Text="{Binding NewValue}" x:Name="NewValueProduct"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label x:Name="DescriptionProduct" Text="{Binding Description}" TextColor="White" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage>
     <ContentPage Title="Reserva" IconImageSource="Reservation">
         <StackLayout>

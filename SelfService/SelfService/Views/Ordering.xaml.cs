@@ -15,6 +15,7 @@ namespace SelfService.Views {
     public partial class Ordering : ContentPage {
         public int IdUser { get; set; }
         public int IdProduct { get; set; }
+        public double Price { get; set; }
         public Ordering() {
             InitializeComponent();
         }
@@ -23,11 +24,15 @@ namespace SelfService.Views {
             IdUser = idUser;
             IdProduct = product.Id;
             OutputNameProduct.Text = product.Title;
-            OutputPrice.Text = product.Price.ToString().Replace(".", ",");
+            if (product.InDescont) {
+                OutputPrice.Text = product.NewValue.ToString("F").Replace(".", ",");
+                Price = product.NewValue;
+            } else {
+                OutputPrice.Text = product.Price.ToString("F").Replace(".", ",");
+                Price = product.Price;
+            }
             OutputOrderDate.Text = DateTime.Now.ToString();
         }
-
-        
 
         private void BackHome(object sender, EventArgs e) {
             Navigation.PopAsync();
@@ -40,6 +45,7 @@ namespace SelfService.Views {
             order.StatusOrder = 1;
             order.OrderDate = DateTime.Parse(OutputOrderDate.Text);
             order.AlreadyPayed = false;
+            order.Price = Price;
             order.LocationClient = InputLocation.Text;
             ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
             bool Worked = dbOrder.Insert(order);

@@ -21,11 +21,16 @@ namespace SelfService.Models {
 
         public double DescontPercent { get; set; }
 
+        public DateTime DateDescont { get; set; }
+
+        public double NewValue { get; set; }
+
         public string ImageAdress { get; set; }
 
         public ModelProducts() {
             InDescont = false;
             DescontPercent = 0;
+            NewValue = 0;
         }
     }
 }

@@ -84,7 +84,7 @@
                         <Grid Grid.Row="1" RowSpacing="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="23"/>
-                                <RowDefinition Height="135"/>
+                                <RowDefinition Height="200"/>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
                                 <Grid.RowDefinitions>
@@ -100,13 +100,19 @@
                                     <RowDefinition Height="45"/>
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
                                 </Grid.RowDefinitions>
                                 <Label Text="Desconto (EX: 25%)" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
                                     <Controls:CustomEntry x:Name="InputDescont" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
-                                <Label Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
-                                <Button Grid.Row="3" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                                <Label Text="Dia do Desconto" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
+                                    <DatePicker Format="dd/MM/yyyy" x:Name="DPCalendar" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                                <Label Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="4" VerticalOptions="End"/>
+                                <Button Grid.Row="5" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
                             </Grid>
                         </Grid>
                         <Button Grid.Row="3" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>

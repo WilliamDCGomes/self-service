@@ -66,7 +66,24 @@ namespace SelfService.Services {
             }
             return false;
         }
-    
+
+        public List<ModelProducts> LocalePromotion(DateTime date) {
+            List<ModelProducts> list = new List<ModelProducts>();
+            List<ModelProducts> promotion = new List<ModelProducts>();
+            try {
+                var data = from p in connection.Table<ModelProducts>() where p.InDescont == true select p;
+                list = data.ToList();
+                foreach(ModelProducts i in list) {
+                    if(i.DateDescont == date) {
+                        promotion.Add(i);
+                    }
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return promotion;
+        }
+
         public List<ModelProducts> Locale(ModelProducts products) {
             List<ModelProducts> list = new List<ModelProducts>();
             try {

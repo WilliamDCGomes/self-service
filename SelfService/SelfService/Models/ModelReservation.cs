@@ -16,7 +16,7 @@ namespace SelfService.Models {
         public string NameUser { get; set; }
 
         [NotNull]
-        public DateTime ReservationDate { get; set; }
+        public string ReservationDate { get; set; }
 
         [NotNull]
         public string LocationClient { get; set; }
@@ -26,7 +26,7 @@ namespace SelfService.Models {
 
         public ModelReservation() {
             NumberSeats = 1;
-            ReservationDate = DateTime.Now;
+            ReservationDate = DateTime.Now.ToString("dd/MM/yyyy");
         }
     }
 }

@@ -62,6 +62,21 @@ namespace SelfService.Services {
             return false;
         }
 
+        public ModelUser LocaleByID(int id) {
+            List<ModelUser> list = new List<ModelUser>();
+            ModelUser user = new ModelUser();
+            try {
+                var data = from p in connection.Table<ModelUser>() where p.Id == id select p;
+                list = data.ToList();
+                foreach(ModelUser i in list) {
+                    user = i;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return user;
+        }
+
         public bool Locale(string login) {
             List<ModelUser> list = new List<ModelUser>();
             try {

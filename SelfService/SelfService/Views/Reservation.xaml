@@ -80,7 +80,7 @@
                                         <RowDefinition Height="20"/>
                                         <RowDefinition Height="45"/>
                                     </Grid.RowDefinitions>
-                                    <Label x:Name="LocationOutput" Text="Por favor, insira a sua mesa *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                    <Label x:Name="LocationOutput" Text="Por favor, insira a sua mesa" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                     <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
                                         <Grid>
                                             <Grid.ColumnDefinitions>
@@ -122,7 +122,7 @@
                                     </Frame>
                                 </Grid>
                             </Grid>
-                            <Button Grid.Row="2" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="25" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>
+                            <Button Grid.Row="2" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="25" HorizontalOptions="FillAndExpand" Clicked="FinishReservation"/>
                         </Grid>
                     </ScrollView>
                 </Grid>

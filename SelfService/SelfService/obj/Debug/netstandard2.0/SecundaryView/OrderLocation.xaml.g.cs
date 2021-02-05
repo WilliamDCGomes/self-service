@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SelfService.SecundaryView.OrderLocation.xaml", "SecundaryView/OrderLocation.xaml", typeof(global::SelfService.SecundaryView.OrderLocation))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SelfService.SecundaryView.OrderLocation.xaml", "SecundaryView/OrderLocation.xaml", typeof(global::SelfService.SecundaryView.ScannerPlaces))]
 
 namespace SelfService.SecundaryView {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("SecundaryView\\OrderLocation.xaml")]
-    public partial class OrderLocation : global::Xamarin.Forms.ContentPage {
+    public partial class ScannerPlaces : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(OrderLocation));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ScannerPlaces));
         }
     }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="Transparent"
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
-             x:Class="SelfService.SecundaryView.OrderLocation">
+             x:Class="SelfService.SecundaryView.ScannerPlaces">
     <ContentPage.Content>
         <Grid  HorizontalOptions="Center" VerticalOptions="Center">
             <Grid.GestureRecognizers>

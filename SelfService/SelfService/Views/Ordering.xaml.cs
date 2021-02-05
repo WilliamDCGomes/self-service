@@ -89,7 +89,7 @@ namespace SelfService.Views {
         private void GetLocation(object sender, EventArgs e) {
             if (Picker.SelectedIndex == 0) {
                 InputLocation.IsEnabled = false;
-                Navigation.PushModalAsync(new OrderLocation(this));
+                Navigation.PushModalAsync(new ScannerPlaces(this));
             }
             else if(Picker.SelectedIndex == 1) {
                 InputLocation.IsEnabled = true;

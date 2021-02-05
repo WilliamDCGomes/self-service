@@ -16,6 +16,7 @@ namespace SelfService.Views {
     public partial class Home : TabbedPage {
         ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
         ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
+        ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
         public int IdUser { get; private set; }
         public Home(int idUser) {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace SelfService.Views {
         }
 
         private void CreateReservation(object sender, EventArgs e) {
-            Navigation.PushModalAsync(new Reservation());
+            Navigation.PushModalAsync(new Reservation(dbUser.LocaleByID(IdUser)));
         }
 
         private void ReservationSelected(object sender, SelectedItemChangedEventArgs e) {

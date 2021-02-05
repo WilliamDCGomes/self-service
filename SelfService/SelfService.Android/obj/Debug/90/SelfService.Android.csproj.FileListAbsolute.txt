@@ -629,3 +629,9 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\assets\System.ServiceModel.Primitives.dll
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\assets\System.Xml.XmlSerializer.dll
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-mdpi\orders.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xhdpi\orders.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxhdpi\orders.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxxhdpi\orders.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-hdpi\orders.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-ldpi\orders.png

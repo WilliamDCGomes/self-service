@@ -105,11 +105,11 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Desconto (EX: 25%)" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
-                                    <Controls:CustomEntry x:Name="InputDescont" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <Controls:CustomEntry x:Name="InputDescont" Unfocused="GetDate" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                                 <Label Text="Dia do Desconto" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
-                                    <DatePicker Format="dd/MM/yyyy" x:Name="DPCalendar" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    <DatePicker Format="dd/MM/yyyy" IsEnabled="False" x:Name="DPCalendar" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                                 <Label Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="4" VerticalOptions="End"/>
                                 <Button Grid.Row="5" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>

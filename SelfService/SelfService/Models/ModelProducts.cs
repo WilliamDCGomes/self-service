@@ -21,7 +21,7 @@ namespace SelfService.Models {
 
         public double DescontPercent { get; set; }
 
-        public DateTime DateDescont { get; set; }
+        public string DateDescont { get; set; }
 
         public double NewValue { get; set; }
 

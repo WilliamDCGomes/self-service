@@ -11,6 +11,9 @@ namespace SelfService.Models {
 
         [NotNull]
         public int IdUser { get; set; }
+        
+        [NotNull]
+        public string NameUser { get; set; }
 
         [NotNull]
         public DateTime ReservationDate { get; set; }

@@ -31,7 +31,23 @@ namespace SelfService.Views {
                 OutputPrice.Text = product.Price.ToString("F").Replace(".", ",");
                 Price = product.Price;
             }
-            OutputOrderDate.Text = DateTime.Now.ToString();
+            OutputOrderDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        }
+        public Ordering(ModelOrder order) {
+            InitializeComponent();
+            OutputNameProduct.Text = order.ProductName;
+            OutputPrice.Text = order.Price.ToString("F").Replace(".", ",");
+            OutputOrderDate.Text = order.OrderDate;
+            OutputStatus.Text = order.StatusOrder;
+            Picker.IsEnabled = false;
+            LocationOutput.Text = "Mesa";
+            Picker.Title = order.LocationClient;
+            Picker.IsEnabled = false;
+            FinalizeOrder.IsVisible = false;
+            LocationSelectImage.IsVisible = false;
+            LocationWrite.IsVisible = false;
+            FrameEntry.IsVisible = false;
+            InputLocation.IsVisible = false;
         }
 
         private void BackHome(object sender, EventArgs e) {
@@ -42,8 +58,9 @@ namespace SelfService.Views {
             ModelOrder order = new ModelOrder();
             order.IdUser = this.IdUser;
             order.IdProduct = IdProduct;
-            order.StatusOrder = 1;
-            order.OrderDate = DateTime.Parse(OutputOrderDate.Text);
+            order.ProductName = OutputNameProduct.Text;
+            order.StatusOrder = "Solicitado";
+            order.OrderDate = OutputOrderDate.Text;
             order.AlreadyPayed = false;
             order.Price = Price;
             order.LocationClient = InputLocation.Text;

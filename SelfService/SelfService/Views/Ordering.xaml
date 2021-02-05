@@ -111,33 +111,33 @@
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>
                                 </Grid.RowDefinitions>
-                                <Label Text="Por favor, insira a sua mesa *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Label x:Name="LocationOutput" Text="Por favor, insira a sua mesa *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
                                 <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="97*"/>
                                             <ColumnDefinition Width="3*"/>
                                         </Grid.ColumnDefinitions>
-                                        <Controls:CustomPicker x:Name="Picker" TextColor="Black" BackgroundColor="Transparent" Grid.Column="0" FontSize="15" Focused="ClickedPicker" SelectedIndexChanged="GetLocation" >
+                                        <Controls:CustomPicker x:Name="Picker" Title="QRCode ou Manual" TitleColor="LightGray" FontSize="18" TextColor="Black" BackgroundColor="Transparent" Grid.Column="0" Focused="ClickedPicker" SelectedIndexChanged="GetLocation" >
                                             <Controls:CustomPicker.Items>
                                                 <x:String>Scannear QR Code</x:String>
                                                 <x:String>Inserir Manualmente</x:String>
                                             </Controls:CustomPicker.Items>
                                         </Controls:CustomPicker>
-                                        <Image Source="select" Grid.Column="1" >
+                                        <Image x:Name="LocationSelectImage" Source="select" Grid.Column="1" >
                                             <Image.GestureRecognizers>
                                                 <TapGestureRecognizer Tapped="OpenPicker" />
                                             </Image.GestureRecognizers>
                                         </Image>
                                     </Grid>
                                 </Frame>
-                                <Label Text="Mesa" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
-                                <Frame StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
+                                <Label x:Name="LocationWrite" Text="Mesa" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
+                                <Frame x:Name="FrameEntry" StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
                                     <Controls:CustomEntry x:Name="InputLocation" Keyboard="Numeric" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
                         </Grid>
-                        <Button Grid.Row="2" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>
+                        <Button x:Name="FinalizeOrder" Grid.Row="2" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>
                     </Grid>
                 </ScrollView>
             </Grid>

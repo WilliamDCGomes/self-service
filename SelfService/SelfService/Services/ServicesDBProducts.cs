@@ -28,15 +28,15 @@ namespace SelfService.Services {
             return false;
         }
 
-        public List<ModelProducts> ListProducts() {
-            List<ModelProducts> products = new List<ModelProducts>();
+        public List<ModelProducts> ListProducts(string date) {
+            List<ModelProducts> list = new List<ModelProducts>();
             try {
-                products = connection.Table<ModelProducts>().ToList();
-            }
-            catch(Exception e) {
+                var data = from p in connection.Table<ModelProducts>() where p.DateDescont != date  select p;
+                list = data.ToList();
+            } catch (Exception e) {
                 throw new Exception(e.Message);
             }
-            return products;
+            return list;
         }
 
         public bool Update(ModelProducts products) {
@@ -74,7 +74,7 @@ namespace SelfService.Services {
                 var data = from p in connection.Table<ModelProducts>() where p.InDescont == true select p;
                 list = data.ToList();
                 foreach(ModelProducts i in list) {
-                    if(i.DateDescont == date) {
+                    if(i.DateDescont.Equals(date.ToString("dd/MM/yyyy"))) {
                         promotion.Add(i);
                     }
                 }

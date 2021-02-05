@@ -30,12 +30,15 @@ namespace SelfService.Views {
             modelProducts.Description = InputDescription.Text;
             if (String.IsNullOrEmpty(InputDescont.Text)) {
                 modelProducts.InDescont = false;
+                modelProducts.DescontPercent = 0;
+                modelProducts.NewValue = 0;
+                modelProducts.DateDescont = "30/01/1998";
             } else {
                 modelProducts.InDescont = true;
                 modelProducts.DescontPercent = Double.Parse(InputDescont.Text.Replace(",", "."));
                 string value = (Double.Parse(InputPrice.Text.Replace(",", ".")) - ((Double.Parse(InputPrice.Text.Replace(",", ".")) * Double.Parse(InputDescont.Text.Replace(",", "."))) / 100)).ToString("F");
                 modelProducts.NewValue = Double.Parse(value.Replace(",", "."));
-                modelProducts.DateDescont = DPCalendar.Date;
+                modelProducts.DateDescont = DPCalendar.Date.ToString("dd/MM/yyyy");
             }
             ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
             bool Worked = dbProducts.Insert(modelProducts);
@@ -57,6 +60,14 @@ namespace SelfService.Views {
             }
             DisplayAlert("ERRO", "POR FAVOR PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS", "OK");
             return false;
+        }
+
+        private void GetDate(object sender, FocusEventArgs e) {
+            if (InputDescont.Text.Length > 0) {
+                DPCalendar.IsEnabled = true;
+            } else {
+                DPCalendar.IsEnabled = false;
+            }
         }
 
 

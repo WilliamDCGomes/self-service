@@ -20,3 +20,4 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\Views\Ordering.xaml.g.cs
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\SecundaryView\OrderLocation.xaml.g.cs
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\SecundaryView\Loading.xaml.g.cs
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\Views\Reservation.xaml.g.cs

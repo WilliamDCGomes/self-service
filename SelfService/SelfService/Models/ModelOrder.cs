@@ -15,11 +15,13 @@ namespace SelfService.Models {
         [NotNull]
         public int IdProduct { get; set; }
 
-        [NotNull]
-        public int StatusOrder { get; set; }
+        public string ProductName { get; set; }
 
         [NotNull]
-        public DateTime OrderDate { get; set; }
+        public string StatusOrder { get; set; }
+
+        [NotNull]
+        public string OrderDate { get; set; }
 
         [NotNull]
         public bool AlreadyPayed { get; set; }
@@ -31,8 +33,8 @@ namespace SelfService.Models {
         public double Price { get; set; }
 
         public ModelOrder() {
-            StatusOrder = 1;
-            OrderDate = DateTime.Now;
+            StatusOrder = "Solicitado";
+            OrderDate = DateTime.Now.ToString("dd/MM/yyyy");
             AlreadyPayed = false;
             Price = 0;
         }

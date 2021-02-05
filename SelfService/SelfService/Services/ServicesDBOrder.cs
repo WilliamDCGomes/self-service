@@ -15,7 +15,7 @@ namespace SelfService.Services {
             connection.CreateTable<ModelOrder>();
         }
         public bool Insert(ModelOrder order) {
-            if (order.IdUser != 0 && order.IdProduct != 0 && order.StatusOrder != 0 &&  order.LocationClient != null && order.OrderDate != null) {
+            if (order.IdUser != 0 && order.IdProduct != 0 && order.ProductName != null && order.StatusOrder != null &&  order.LocationClient != null && order.OrderDate != null) {
                 int result = 0;
                 result = connection.Insert(order);
                 if (result != 0) {
@@ -61,10 +61,10 @@ namespace SelfService.Services {
             return false;
         }
 
-        public List<ModelOrder> Locale(ModelOrder order) {
+        public List<ModelOrder> Locale(string date) {
             List<ModelOrder> list = new List<ModelOrder>();
             try {
-                var data = from p in connection.Table<ModelOrder>() where p.IdUser == order.IdUser select p;
+                var data = from p in connection.Table<ModelOrder>() where p.OrderDate.Equals(date) select p;
                 list = data.ToList();
             } catch (Exception e) {
                 throw new Exception(e.Message);

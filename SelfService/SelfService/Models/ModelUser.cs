@@ -32,6 +32,10 @@ namespace SelfService.Models {
         [NotNull]
         public string HouseNumber { get; set; }
 
+        public string City { get; set; }
+
+        public string State { get; set; }
+
         [NotNull]
         public string Login { get; set; }
 

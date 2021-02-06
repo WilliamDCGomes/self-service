@@ -49,6 +49,8 @@ namespace SelfService.Views {
             user.Street = InputStreet.Text;
             user.Neighborhood = InputNeighborhood.Text;
             user.HouseNumber = InputHouseNumber.Text;
+            user.City = InputCity.Text;
+            user.State = PickerStates.SelectedItem.ToString();
             user.Login = InputLogin.Text;
             user.Password = InputPassword.Text;
             if (InputLogin.Text.Equals("Admin")) {

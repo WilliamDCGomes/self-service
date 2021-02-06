@@ -17,12 +17,13 @@ namespace SelfService.Views {
         ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
         ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+        ServicesDBReservation dbReservation = new ServicesDBReservation(App.DbPath);
         public int IdUser { get; private set; }
         public Home(int idUser) {
             InitializeComponent();
             RefreshList();
             IdUser = idUser;
-            IdUserShow.Text = idUser.ToString();
+            setUser();
         }
 
         private void RefreshEvent(object sender, EventArgs e) {
@@ -37,6 +38,22 @@ namespace SelfService.Views {
             Products.ItemsSource = dbProducts.ListProducts(DateTime.Now.ToString("dd/MM/yyyy"));
             PromotionProducts.ItemsSource = dbProducts.LocalePromotion(DPCalendar.Date);
             Orders.ItemsSource = dbOrder.Locale(DPCalendarOrder.Date.ToString("dd/MM/yyyy"));
+            Reservation.ItemsSource = dbReservation.LocalePerDate(DPCalendarReservation.Date.ToString("dd/MM/yyyy"));
+        }
+
+        public void setUser() {
+            ModelUser user = dbUser.LocaleByID(IdUser);
+            OutputName.Text = user.Name;
+            OutputLastName.Text = user.LastName;
+            OutputEmailAdress.Text = user.EmailAdress;
+            OutputPhoneNumber.Text = user.Phone;
+            OutputCEP.Text = user.Cep;
+            OutputStreet.Text = user.Street;
+            OutputHouseNumber.Text = user.HouseNumber;
+            OutputNeighborhood.Text = user.Neighborhood;
+            OutputCity.Text = user.City;
+            PickerStates.SelectedItem = user.State;
+            OutputLogin.Text = user.Login;
         }
 
         private void ProductSelected(object sender, SelectedItemChangedEventArgs e) {
@@ -85,11 +102,13 @@ namespace SelfService.Views {
         }
 
         private void ReservationSelected(object sender, SelectedItemChangedEventArgs e) {
-
+            ModelReservation reservation = (ModelReservation)Reservation.SelectedItem;
+            Navigation.PushAsync(new ReservationScreen(reservation));
+            RefreshList();
         }
 
         private void DateSelectedReservation(object sender, DateChangedEventArgs e) {
-
+            RefreshList();
         }
     }
 }

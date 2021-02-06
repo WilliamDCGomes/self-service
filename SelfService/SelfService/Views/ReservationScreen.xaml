@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Controls="clr-namespace:SelfService.Formatting"
+             BackgroundColor="#B30000"
+             Title="Reserva"
+             x:Class="SelfService.Views.ReservationScreen">
+    <ContentPage.Content>
+        <Grid Margin="15, 15, 15, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23"/>
+                <RowDefinition Height="275"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" VerticalOptions="Center" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+                <Label Text="INFORMAÇÕES DA RESERVA" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                <BoxView HeightRequest="1" Color="#F0C33B" Grid.Row="1"/>
+            </Grid>
+            <Grid Grid.Row="1" RowSpacing="20" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="68"/>
+                    <RowDefinition Height="68"/>
+                    <RowDefinition Height="68"/>
+                    <RowDefinition Height="68"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" VerticalOptions="End" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Nome" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                    <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                        <Controls:CustomEntry x:Name="OutputNameUser" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="1" VerticalOptions="End" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Dia da Reserva" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                    <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                        <Controls:CustomEntry x:Name="ReservationDate" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="2" VerticalOptions="End" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="LocationWrite" Text="Mesa" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                    <Frame x:Name="FrameEntry" StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                        <Controls:CustomEntry x:Name="OutputLocation" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                    </Frame>
+                    </Grid>
+                <Grid Grid.Row="3" VerticalOptions="End" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Cadeiras para Reserva" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                    <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                        <Controls:CustomEntry x:Name="OutputQuantityPeople" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

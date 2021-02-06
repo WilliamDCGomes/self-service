@@ -35,14 +35,18 @@ namespace SelfService.Views {
         }
 
         private async void EnterMenu(object sender, EventArgs e) {
-            await Navigation.PushPopupAsync(new Loading());
-            ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
-            if (dbUser.checkUserExist(LoginInput.Text, PasswordEntry.Text)) {
-                App.Current.MainPage = new NavigationPage(new Home(dbUser.IdUser));
+            if (String.IsNullOrEmpty(LoginInput.Text) || String.IsNullOrEmpty(PasswordEntry.Text)) {
+                await DisplayAlert("ERRO", "PREENCHA O CAMPO DO LOGIN E DA SENHA PARA LOGAR", "OK");
             } else {
-                await DisplayAlert("ERRO", "LOGIN OU SENHA INCORRETO, REVISE OS CAMPOS", "OK");
+                await Navigation.PushPopupAsync(new Loading());
+                ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+                if (dbUser.checkUserExist(LoginInput.Text, PasswordEntry.Text)) {
+                    App.Current.MainPage = new NavigationPage(new Home(dbUser.IdUser));
+                } else {
+                    await DisplayAlert("ERRO", "LOGIN OU SENHA INCORRETO, REVISE OS CAMPOS", "OK");
+                }
+                await Navigation.PopAllPopupAsync();
             }
-            await Navigation.PopAllPopupAsync();
         }
     }
 }

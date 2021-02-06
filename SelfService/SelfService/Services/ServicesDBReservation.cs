@@ -25,6 +25,17 @@ namespace SelfService.Services {
             return false;
         }
 
+        public List<ModelReservation> LocalePerDate(string date) {
+            List<ModelReservation> list = new List<ModelReservation>();
+            try {
+                var data = from p in connection.Table<ModelReservation>() where p.ReservationDate.Equals(date) select p;
+                list = data.ToList();
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return list;
+        }
+
         public List<ModelReservation> ListReservation() {
             List<ModelReservation> reservations = new List<ModelReservation>();
             try {

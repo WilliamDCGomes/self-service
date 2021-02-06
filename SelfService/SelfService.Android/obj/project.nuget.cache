@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TzdC1O/FQm2/BPRbCZxgx13X8AxUfMoDKHX5nOnyFW6vFGf+IV6ibHeECALySdZIZk8tOePBcIItwWjnVQZz3Q==",
+  "dgSpecHash": "4gjts709T4neFtAxWt4yT/Z9BUpL4CS+fa/w6ZLvPHD4VR1BpYwROFGcLKgHyg1rLdbfrdQG1j7dd2yu3pss5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\correios-api\\1.1.1\\correios-api.1.1.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\plugin.fingerprint\\1.4.9\\plugin.fingerprint.1.4.9.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",

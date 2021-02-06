@@ -11,6 +11,7 @@
         "dependencies": {
           "Correios-Api": "1.1.1",
           "NETStandard.Library": "2.0.3",
+          "Plugin.Fingerprint": "1.4.9",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xamarin.Essentials": "1.6.0-rc1",
@@ -34,6 +35,21 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Plugin.Fingerprint/1.4.9": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Fingerprint.Abstractions.dll": {
+            "assemblyVersion": "1.4.9.0",
+            "fileVersion": "1.4.9.0"
+          },
+          "lib/netstandard1.0/Plugin.Fingerprint.dll": {
+            "assemblyVersion": "1.4.9.0",
+            "fileVersion": "1.4.9.0"
+          }
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -306,6 +322,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Plugin.Fingerprint/1.4.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J2IzXTorHra6GiQ0E5rQZUmra5ktqPXrgaOvpH47EmejUmEYKYy+g2SbKeJg5sUQ/j6eZl8hPe0tJI65LH0q/A==",
+      "path": "plugin.fingerprint/1.4.9",
+      "hashPath": "plugin.fingerprint.1.4.9.nupkg.sha512"
     },
     "Rg.Plugins.Popup/1.2.0.223": {
       "type": "package",

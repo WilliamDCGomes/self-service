@@ -54,6 +54,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[1.4.9, )"
+            },
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[1.2.0.223, )"

@@ -28,7 +28,7 @@
                             <ColumnDefinition Width="93*"/>
                         </Grid.ColumnDefinitions>
                         <Image HorizontalOptions="Start" Source="loginIcon" Grid.Column="0"/>
-                        <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                        <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black" Focused="TryLoginBiometric"/>
                     </Grid>
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="1" CornerRadius="25">
@@ -39,7 +39,7 @@
                             <ColumnDefinition Width="6*"/>
                         </Grid.ColumnDefinitions>
                         <Image HorizontalOptions="Start" Source="passwordIcon" Grid.Column="0"/>
-                        <Controls:CustomEntry x:Name="PasswordEntry" Placeholder="Senha" IsPassword="True" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                        <Controls:CustomEntry x:Name="PasswordEntry" Placeholder="Senha" IsPassword="True" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black" Focused="TryLoginBiometric"/>
                         <ImageButton x:Name="ImagePasswordHideShow" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="2" BackgroundColor="Transparent" Clicked="ShowAndHidePassword"/>
                     </Grid>
                 </Frame>

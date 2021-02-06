@@ -6,15 +6,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage {
+        bool tried = false;
         public Login() {
             InitializeComponent();
+        }
+
+        private async void loginFingerPrint() {
+            if (!tried) {
+                var availability = await CrossFingerprint.Current.IsAvailableAsync(true);
+                if (availability) {
+                    var authResult = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("POSICIONE O SEU DEDO NO LEITO BIOMETRICO PARA O LOGIN"));
+                    if (authResult.Authenticated) {
+                        await Navigation.PushPopupAsync(new Loading());
+                        ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+                        App.Current.MainPage = new NavigationPage(new Home(1));
+                        await Navigation.PopAllPopupAsync();
+                    }
+                }
+                tried = true;
+            }
         }
 
         private void DoForgetPassword(object sender, EventArgs e) {
@@ -47,6 +65,10 @@ namespace SelfService.Views {
                 }
                 await Navigation.PopAllPopupAsync();
             }
+        }
+
+        private void TryLoginBiometric(object sender, FocusEventArgs e) {
+            loginFingerPrint(); ;
         }
     }
 }

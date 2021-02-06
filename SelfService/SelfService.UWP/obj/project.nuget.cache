@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pju7RAtAXae5YLU2u/hShqcMUD9BoasORNtkSx0OA5+uO5H6HYJesP1q/SELnRmhB7yOpsmXn6X/Bmp5XkeCZQ==",
+  "dgSpecHash": "8RDfqKef+INTZ8QOt20zc20dBve5Qngilqocjux3kHjrSLGK5DTIwwOulf1SoHSlR4kn76rPyOb+zXlWX5rzYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.UWP\\SelfService.UWP.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.ui.xaml\\2.4.2\\microsoft.ui.xaml.2.4.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\plugin.fingerprint\\1.4.9\\plugin.fingerprint.1.4.9.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",

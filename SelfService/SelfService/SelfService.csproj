@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Correios-Api" Version="1.1.1" />
+    <PackageReference Include="Plugin.Fingerprint" Version="1.4.9" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.2.0.223" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />

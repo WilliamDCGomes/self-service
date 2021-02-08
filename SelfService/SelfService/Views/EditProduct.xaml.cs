@@ -18,14 +18,14 @@ namespace SelfService.Views {
             InitializeComponent();
             IdUser = idUser;
             Product = product;
-            InputNameProduct.Text = Product.Title;
-            InputPrice.Text = Product.Price.ToString().Replace(".", ",");
-            InputDescription.Text = Product.Description;
-            if (Product.DescontPercent != 0) {
-                InputDescont.Text = Product.DescontPercent.ToString().Replace(".", ",");
+            InputNameProduct.Text = product.Title;
+            InputPrice.Text = product.Price.ToString().Replace(".", ",");
+            InputDescription.Text = product.Description;
+            if (product.DescontPercent != 0) {
+                InputDescont.Text = product.DescontPercent.ToString().Replace(".", ",");
             }
-            if (!Product.DateDescont.Equals("30/01/1998")) {
-                string[] newdate = Product.DateDescont.Split('/');
+            if (!product.DateDescont.Equals("30/01/1998") && !product.DateDescont.Equals("30-01-1998")) {
+                string[] newdate = product.DateDescont.Split('/', '-');
                 DPCalendar.Date = DateTime.Parse(newdate[1] + "/" + newdate[0] + "/" + newdate[2]);
             } 
             else {

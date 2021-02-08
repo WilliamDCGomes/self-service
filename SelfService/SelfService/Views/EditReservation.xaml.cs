@@ -18,7 +18,7 @@ namespace SelfService.Views {
             InitializeComponent();
             Reservation = reservation;
             OutputNameUser.Text = reservation.NameUser;
-            string[] newdate = reservation.ReservationDate.Split('/');
+            string[] newdate = reservation.ReservationDate.Split('/', '-');
             ReservationDate.Date = DateTime.Parse(newdate[1] + "/" + newdate[0] + "/" + newdate[2]);
             InputLocation.Text = reservation.LocationClient;
             InputQuantityPeople.Text = reservation.LocationClient;

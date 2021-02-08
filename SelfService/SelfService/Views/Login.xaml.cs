@@ -10,6 +10,7 @@ using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]

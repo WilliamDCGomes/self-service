@@ -22,7 +22,6 @@ namespace SelfService.Views {
         }
 
         private void EditReservation(object sender, EventArgs e) {
-            Console.WriteLine("dds");
             Navigation.PushAsync(new EditReservation(Reservation));
         }
     }

@@ -21,7 +21,7 @@
                     </Grid.ColumnDefinitions>
                     <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="BackHome"/>
                     <Label Text="Pedido" FontSize="17" TextColor="White" BackgroundColor="Transparent" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
-                    <ImageButton Source="Edit" Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="EditProduct"/>
+                    <ImageButton x:Name="EditProductImage" Source="Edit" Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="EditProduct"/>
                 </Grid>
             </Frame>
             <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="#B30000" BackgroundColor="#B30000">

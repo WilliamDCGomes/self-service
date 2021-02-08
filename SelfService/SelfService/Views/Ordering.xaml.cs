@@ -50,6 +50,7 @@ namespace SelfService.Views {
             LocationWrite.IsVisible = false;
             FrameEntry.IsVisible = false;
             InputLocation.IsVisible = false;
+            EditProductImage.IsVisible = false;
         }
 
         private void BackHome(object sender, EventArgs e) {
@@ -80,7 +81,11 @@ namespace SelfService.Views {
                     InsertOrder();
                 }
             } else if (FinalizeOrder.Text.Equals("EDITAR")) {
-                Navigation.PushAsync(new EditOrder(Order));
+                if (DateTime.Now.ToString("dd/MM/yyyy").Equals(Order.OrderDate)) {
+                    Navigation.PushAsync(new EditOrder(Order));
+                } else {
+                    DisplayAlert("ERRO", "VOCÊ NÃO PODE EDITAR O PEDIDO DE OUTRO DIA!", "OK");
+                }
             }
         }
 

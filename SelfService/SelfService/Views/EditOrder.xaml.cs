@@ -23,7 +23,7 @@ namespace SelfService.Views {
             OutputNameProduct.Text = order.ProductName;
             OutputPrice.Text = order.Price.ToString("F").Replace(".", ",");
             Price = order.Price;
-            string[] newdate = order.OrderDate.Split('/');
+            string[] newdate = order.OrderDate.Split('/', '-');
             OutputOrderDate.Date = DateTime.Parse(newdate[1] + "/" + newdate[0] + "/" + newdate[2]);
             InputLocation.Text = order.LocationClient;
         }

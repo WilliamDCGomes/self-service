@@ -13,6 +13,8 @@ namespace SelfService.SecundaryView {
     public partial class ScannerPlaces : ContentPage {
         public Ordering Ordering = null;
         public Reservation Reservation = null;
+        public EditOrder EditOrder = null;
+        public EditReservation EditReservation = null;
         public ScannerPlaces(Ordering ordering) {
             InitializeComponent();
             Ordering = ordering;
@@ -20,6 +22,14 @@ namespace SelfService.SecundaryView {
         public ScannerPlaces(Reservation reservation) {
             InitializeComponent();
             Reservation = reservation;
+        }
+        public ScannerPlaces(EditOrder editOrder) {
+            InitializeComponent();
+            EditOrder = editOrder;
+        }
+        public ScannerPlaces(EditReservation editReservation) {
+            InitializeComponent();
+            EditReservation = editReservation;
         }
 
         private async void Scanneing(ZXing.Result result) {
@@ -29,6 +39,10 @@ namespace SelfService.SecundaryView {
                         Ordering.SetLocation("1");
                     } else if (Reservation != null) {
                         Reservation.SetLocation("1");
+                    } else if (EditOrder != null) {
+                        EditOrder.SetLocation("1");
+                    } else if (EditReservation != null) {
+                        EditReservation.SetLocation("1");
                     }
                     await Navigation.PopModalAsync();
                 } else {

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#FAFAFA"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Controls="clr-namespace:SelfService.Formatting"
+             x:Class="SelfService.Views.EditAccount">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="91*"/>
+            </Grid.RowDefinitions>
+            <Frame BackgroundColor="#B30000" HasShadow="False" Grid.Row="0">
+                <Grid ColumnSpacing="10" RowSpacing="0" Margin="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="90*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Start" Clicked="Back"/>
+                    <Label Text="Atualização de Usuário" FontSize="17" TextColor="White" BackgroundColor="Transparent" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                </Grid>
+            </Frame>
+            <Grid Grid.Row="1">
+                <ScrollView>
+                    <Grid Margin="30, 30, 30, 30" RowSpacing="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="440"/>
+                            <RowDefinition Height="235"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Row="0" RowSpacing="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="INFORMAÇÕES PESSOAIS" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#B30000" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Nome *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputName" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Sobrenome *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputLastName" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Email *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputEmailAdress" Keyboard="Email" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Telefone" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Grid Grid.Row="1" VerticalOptions="Center" ColumnSpacing="10" RowSpacing="0">
+                                    <Frame StyleClass="EntryFrame" BorderColor="LightGray">
+                                        <Controls:CustomEntry x:Name="InputPhoneNumber" Keyboard="Telephone" Placeholder="Telefone" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                    </Frame>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1" RowSpacing="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="ENDEREÇO" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#B30000" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="CEP *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputCEP" Keyboard="Numeric" Unfocused="GetCep" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Rua *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputStreet" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Número da Casa *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputHouseNumber" Keyboard="Numeric" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Bairro *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputNeighborhood" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="5" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Cidade *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputCity" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="6" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Estado *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" BorderColor="LightGray" Grid.Row="1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="97*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Controls:CustomPicker x:Name="PickerStates" Title="Selecione seu Estado" TextColor="Black" BackgroundColor="Transparent" Grid.Column="0" FontSize="15"  >
+                                            <Controls:CustomPicker.Items>
+                                                <x:String>AC</x:String>
+                                                <x:String>AL</x:String>
+                                                <x:String>AP</x:String>
+                                                <x:String>AM</x:String>
+                                                <x:String>BA</x:String>
+                                                <x:String>CE</x:String>
+                                                <x:String>DF</x:String>
+                                                <x:String>ES</x:String>
+                                                <x:String>GO</x:String>
+                                                <x:String>MA</x:String>
+                                                <x:String>MT</x:String>
+                                                <x:String>MS</x:String>
+                                                <x:String>MG</x:String>
+                                                <x:String>PA</x:String>
+                                                <x:String>PB</x:String>
+                                                <x:String>PR</x:String>
+                                                <x:String>PE</x:String>
+                                                <x:String>PI</x:String>
+                                                <x:String>RJ</x:String>
+                                                <x:String>RN</x:String>
+                                                <x:String>RS</x:String>
+                                                <x:String>RO</x:String>
+                                                <x:String>RR</x:String>
+                                                <x:String>SC</x:String>
+                                                <x:String>SP</x:String>
+                                                <x:String>SE</x:String>
+                                                <x:String>TO</x:String>
+                                            </Controls:CustomPicker.Items>
+                                        </Controls:CustomPicker>
+                                        <Image Source="select" Grid.Column="1" >
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="OpenPicker" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2" RowSpacing="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="USUÁRIO" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="LightGray" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Login *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputLogin" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Senha *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Grid ColumnSpacing="18">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="94*"/>
+                                            <ColumnDefinition Width="6*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Controls:CustomEntry x:Name="InputPassword" IsPassword="True" Grid.Column="0" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                        <ImageButton x:Name="ImagePasswordHideShow" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="1" BackgroundColor="Transparent" Clicked="ShowAndHidePassword"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Confirmar Senha *" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Grid ColumnSpacing="18">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="94*"/>
+                                            <ColumnDefinition Width="6*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Controls:CustomEntry x:Name="RepetPasswordEntry" IsPassword="True" Grid.Column="0" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
+                                        <ImageButton x:Name="ImagePasswordHideShow2" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="1" BackgroundColor="Transparent" Clicked="ShowAndHidePassword2"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        <Button Grid.Row="3" Grid.Column="0" Text="ATUALIZAR CONTA" TextColor="White" BackgroundColor="#B30000" HorizontalOptions="FillAndExpand" Clicked="UpdateAccount"/>
+                        <Button Grid.Row="3" Grid.Column="1" Text="EXCLUIR CONTA" TextColor="White" BackgroundColor="#B30000" HorizontalOptions="FillAndExpand" Clicked="DeleteAccount"/>
+                    </Grid>
+                </ScrollView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

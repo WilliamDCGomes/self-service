@@ -204,6 +204,7 @@
                         <RowDefinition Height="440"/>
                         <RowDefinition Height="95"/>
                         <RowDefinition Height="45"/>
+                        <RowDefinition Height="45"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -406,6 +407,7 @@
                     </Grid>
                     <Button Text="Add Produto" Clicked="AddProduct" Grid.Row="3" Grid.Column="0" TextColor="#B30000" BackgroundColor="#F0C33B"/>
                     <Button Text="Logout" Clicked="DoLogout" Grid.Row="3" Grid.Column="1" TextColor="#B30000" BackgroundColor="#F0C33B"/>
+                    <Button Text="EDITAR CONTA" Clicked="EditAccount" Grid.Row="4" Grid.ColumnSpan="2" TextColor="#B30000" BackgroundColor="#F0C33B"/>
                 </Grid>
             </ScrollView>
         </Grid>

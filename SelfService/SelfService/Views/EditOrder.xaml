@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#B30000"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Controls="clr-namespace:SelfService.Formatting"
+             x:Class="SelfService.Views.EditOrder">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="21*"/>
+                <RowDefinition Height="70*"/>
+            </Grid.RowDefinitions>
+            <Frame BackgroundColor="#B30000" HasShadow="False" Grid.Row="0">
+                <Grid ColumnSpacing="20" RowSpacing="0" Margin="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="90*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="Back"/>
+                    <Label Text="Atualizando Pedido" FontSize="17" TextColor="White" BackgroundColor="Transparent" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                </Grid>
+            </Frame>
+            <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="#B30000" BackgroundColor="#B30000">
+                <Image Source="Logo"/>
+            </Frame>
+            <Grid Grid.Row="2">
+                <ScrollView>
+                    <Grid Margin="30, 30, 30, 30" RowSpacing="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="305"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Row="0" RowSpacing="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                                <RowDefinition Height="68"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="INFORMAÇÕES DO PEDIDO" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#F0C33B" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Nome do Prato" FontSize="11" IsEnabled="False" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry IsEnabled="False" x:Name="OutputNameProduct" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="2" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Preço" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="OutputPrice" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Status" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="OutputStatus" Text="Solicitando" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Data do Pedido" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <DatePicker Format="dd/MM/yyyy" IsEnabled="False" x:Name="OutputOrderDate" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1" RowSpacing="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="23"/>
+                                <RowDefinition Height="135"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" RowSpacing="0" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="2"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="LOCALIZAÇÃO" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <BoxView HeightRequest="1" Color="#F0C33B" Grid.Row="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Label x:Name="LocationOutput" Text="Por favor, insira a sua mesa *" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="97*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Controls:CustomPicker x:Name="Picker" Title="QRCode ou Manual" TitleColor="LightGray" FontSize="18" TextColor="Black" BackgroundColor="Transparent" Grid.Column="0" Focused="ClickedPicker" SelectedIndexChanged="GetLocation" >
+                                            <Controls:CustomPicker.Items>
+                                                <x:String>Scannear QR Code</x:String>
+                                                <x:String>Inserir Manualmente</x:String>
+                                            </Controls:CustomPicker.Items>
+                                        </Controls:CustomPicker>
+                                        <Image x:Name="LocationSelectImage" Source="select" Grid.Column="1" >
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="OpenPicker" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </Grid>
+                                </Frame>
+                                <Label x:Name="LocationWrite" Text="Mesa" FontSize="11" TextColor="#FFFFFF" Grid.Row="2" VerticalOptions="End"/>
+                                <Frame x:Name="FrameEntry" StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
+                                    <Controls:CustomEntry x:Name="InputLocation" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        <Button x:Name="FinalizeOrder" Grid.Row="2" Grid.Column="0" Text="SALVAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>
+                        <Button Grid.Row="2" Grid.Column="1" Text="CANCELAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="CancelOrder"/>
+                    </Grid>
+                </ScrollView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

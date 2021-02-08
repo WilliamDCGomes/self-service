@@ -44,7 +44,7 @@ namespace SelfService.Views {
             user.Name = InputName.Text;
             user.LastName = InputLastName.Text;
             user.EmailAdress = InputEmailAdress.Text;
-            user.Phone = InputPhoneDDD.Text + InputPhoneNumber.Text;
+            user.Phone = InputPhoneNumber.Text;
             user.Cep = InputCEP.Text;
             user.Street = InputStreet.Text;
             user.Neighborhood = InputNeighborhood.Text;

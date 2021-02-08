@@ -28,7 +28,7 @@ namespace SelfService.Views {
             modelProducts.Title = InputNameProduct.Text;
             modelProducts.Price = Double.Parse(InputPrice.Text.Replace(",", "."));
             modelProducts.Description = InputDescription.Text;
-            if (String.IsNullOrEmpty(InputDescont.Text)) {
+            if (String.IsNullOrEmpty(InputDescont.Text) || double.Parse(InputDescont.Text) <= 0.0) {
                 modelProducts.InDescont = false;
                 modelProducts.DescontPercent = 0;
                 modelProducts.NewValue = 0;

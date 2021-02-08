@@ -15,8 +15,15 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage {
         bool tried = false;
+        bool fromLogout = false;
         public Login() {
             InitializeComponent();
+            loginFingerPrint();
+        }
+
+        public Login(bool validation) {
+            InitializeComponent();
+            fromLogout = validation;
         }
 
         private async void loginFingerPrint() {
@@ -68,7 +75,9 @@ namespace SelfService.Views {
         }
 
         private void TryLoginBiometric(object sender, FocusEventArgs e) {
-            loginFingerPrint(); ;
+            if (fromLogout) {
+                loginFingerPrint();
+            }
         }
     }
 }

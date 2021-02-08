@@ -74,8 +74,11 @@ namespace SelfService.Views {
             }
         }
 
-        private void DoLogout(object sender, EventArgs e) {
-            App.Current.MainPage = new NavigationPage(new Login());
+        private async void DoLogout(object sender, EventArgs e) {
+            var logout = await DisplayAlert("LOGOUT", "DESEJA FAZER LOGOUT?", "SIM", "NÃO");
+            if (logout) {
+                App.Current.MainPage = new NavigationPage(new Login(true));
+            }
         }
 
         private void AddProduct(object sender, EventArgs e) {
@@ -109,6 +112,10 @@ namespace SelfService.Views {
 
         private void DateSelectedReservation(object sender, DateChangedEventArgs e) {
             RefreshList();
+        }
+
+        private void EditAccount(object sender, EventArgs e) {
+            Navigation.PushAsync(new EditAccount(IdUser));
         }
     }
 }

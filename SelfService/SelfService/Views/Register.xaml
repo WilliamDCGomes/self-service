@@ -84,14 +84,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Telefone" FontSize="11" TextColor="#B30000" Grid.Row="0" VerticalOptions="End"/>
                                 <Grid Grid.Row="1" VerticalOptions="Center" ColumnSpacing="10" RowSpacing="0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="55" />
-                                        <ColumnDefinition />
-                                    </Grid.ColumnDefinitions>
-                                    <Frame StyleClass="EntryFrame" BorderColor="LightGray" Grid.Column="0" >
-                                        <Controls:CustomEntry x:Name="InputPhoneDDD" Keyboard="Telephone" Placeholder="DDD" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
-                                    </Frame>
-                                    <Frame StyleClass="EntryFrame" BorderColor="LightGray" Grid.Column="1">
+                                    <Frame StyleClass="EntryFrame" BorderColor="LightGray">
                                         <Controls:CustomEntry x:Name="InputPhoneNumber" Keyboard="Telephone" Placeholder="Telefone" PlaceholderColor="LightGray" FontSize="14" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                     </Frame>
                                 </Grid>

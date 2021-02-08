@@ -111,8 +111,8 @@
                                 <Frame StyleClass="EntryFrame" Grid.Row="3" BorderColor="LightGray">
                                     <DatePicker Format="dd/MM/yyyy" IsEnabled="False" x:Name="DPCalendar" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
-                                <Label Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="4" VerticalOptions="End"/>
-                                <Button Grid.Row="5" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                                <Label IsVisible="False" Text="Foto" FontSize="11" TextColor="#FFFFFF" Grid.Row="4" VerticalOptions="End"/>
+                                <Button IsVisible="False" Grid.Row="5" Text="FOTO DO PRATO" IsEnabled="False" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
                             </Grid>
                         </Grid>
                         <Button Grid.Row="3" Text="FINALIZAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="FinishOrder"/>

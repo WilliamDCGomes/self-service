@@ -14,15 +14,16 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Ordering : ContentPage {
         public int IdUser { get; set; }
-        public int IdProduct { get; set; }
         public double Price { get; set; }
+        ModelProducts Product;
+        ModelOrder Order;
         public Ordering() {
             InitializeComponent();
         }
         public Ordering(ModelProducts product, int idUser) {
             InitializeComponent();
+            Product = product;
             IdUser = idUser;
-            IdProduct = product.Id;
             OutputNameProduct.Text = product.Title;
             if (product.InDescont) {
                 OutputPrice.Text = product.NewValue.ToString("F").Replace(".", ",");
@@ -35,6 +36,7 @@ namespace SelfService.Views {
         }
         public Ordering(ModelOrder order) {
             InitializeComponent();
+            Order = order;
             OutputNameProduct.Text = order.ProductName;
             OutputPrice.Text = order.Price.ToString("F").Replace(".", ",");
             OutputOrderDate.Text = order.OrderDate;
@@ -43,7 +45,7 @@ namespace SelfService.Views {
             LocationOutput.Text = "Mesa";
             Picker.Title = order.LocationClient;
             Picker.IsEnabled = false;
-            FinalizeOrder.IsVisible = false;
+            FinalizeOrder.Text = "EDITAR";
             LocationSelectImage.IsVisible = false;
             LocationWrite.IsVisible = false;
             FrameEntry.IsVisible = false;
@@ -57,7 +59,7 @@ namespace SelfService.Views {
         public async void InsertOrder() {
             ModelOrder order = new ModelOrder();
             order.IdUser = this.IdUser;
-            order.IdProduct = IdProduct;
+            order.IdProduct = Product.Id;
             order.ProductName = OutputNameProduct.Text;
             order.StatusOrder = "Solicitado";
             order.OrderDate = OutputOrderDate.Text;
@@ -73,8 +75,12 @@ namespace SelfService.Views {
         }
 
         private void FinishOrder(object sender, EventArgs e) {
-            if (DataValidation()) {
-                InsertOrder();
+            if (FinalizeOrder.Text.Equals("FINALIZAR")) {
+                if (DataValidation()) {
+                    InsertOrder();
+                }
+            } else if (FinalizeOrder.Text.Equals("EDITAR")) {
+                Navigation.PushAsync(new EditOrder(Order));
             }
         }
 
@@ -112,6 +118,10 @@ namespace SelfService.Views {
 
         private void OpenPicker(object sender, EventArgs e) {
             Picker.Focus();
+        }
+
+        private void EditProduct(object sender, EventArgs e) {
+            Navigation.PushAsync(new EditProduct(Product, IdUser));
         }
     }
 }

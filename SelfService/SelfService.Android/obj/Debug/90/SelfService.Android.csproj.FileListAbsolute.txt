@@ -648,3 +648,9 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc64bdcb4704cc77bd30\FingerprintDialogFragment.java
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\mono\com\samsung\android\sdk\pass\SpassFingerprint_IdentifyListenerImplementor.java
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\mono\com\samsung\android\sdk\pass\SpassFingerprint_RegisterListenerImplementor.java
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-mdpi\edit.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xhdpi\edit.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxhdpi\edit.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-xxxhdpi\edit.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-hdpi\edit.png
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\res\drawable-ldpi\edit.png

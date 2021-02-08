@@ -13,13 +13,15 @@
                 <RowDefinition Height="70*"/>
             </Grid.RowDefinitions>
             <Frame BackgroundColor="#B30000" HasShadow="False" Grid.Row="0">
-                <Grid ColumnSpacing="10" RowSpacing="0" Margin="0" >
+                <Grid ColumnSpacing="20" RowSpacing="0" Margin="0" >
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="10*" />
-                        <ColumnDefinition Width="90*" />
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
                     </Grid.ColumnDefinitions>
-                    <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Start" Clicked="BackHome"/>
+                    <ImageButton Source="back" Grid.Column="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="BackHome"/>
                     <Label Text="Pedido" FontSize="17" TextColor="White" BackgroundColor="Transparent" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <ImageButton Source="Edit" Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="EditProduct"/>
                 </Grid>
             </Frame>
             <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="#B30000" BackgroundColor="#B30000">

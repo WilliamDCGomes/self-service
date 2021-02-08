@@ -9,7 +9,7 @@
         <Grid Margin="15, 15, 15, 0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="23"/>
-                <RowDefinition Height="275"/>
+                <RowDefinition Height="420"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" VerticalOptions="Center" >
                 <Grid.RowDefinitions>
@@ -25,6 +25,7 @@
                     <RowDefinition Height="68"/>
                     <RowDefinition Height="68"/>
                     <RowDefinition Height="68"/>
+                    <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0" VerticalOptions="End" >
                     <Grid.RowDefinitions>
@@ -66,6 +67,7 @@
                         <Controls:CustomEntry x:Name="OutputQuantityPeople" IsEnabled="False" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                     </Frame>
                 </Grid>
+                <Button Grid.Row="4" Text="ALTERAR" TextColor="#B30000" BackgroundColor="#F0C33B" CornerRadius="5" HorizontalOptions="FillAndExpand" Clicked="EditReservation"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

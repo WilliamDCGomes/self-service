@@ -106,6 +106,16 @@ namespace SelfService.Services {
             }
             return product;
         }
-    
+
+        public ModelProducts GetProductById(int id) {
+            ModelProducts product = new ModelProducts();
+            try {
+                product = connection.Table<ModelProducts>().First(n => n.Id == id);
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return product;
+        }
+
     }
 }

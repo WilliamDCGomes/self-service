@@ -14,6 +14,7 @@
           "Plugin.Fingerprint": "1.4.9",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.6.0-rc1",
           "Xamarin.Forms": "4.8.0.1451",
           "ZXing.Net.Mobile.Forms": "3.0.0-beta5",
@@ -49,6 +50,14 @@
           "lib/netstandard1.0/Plugin.Fingerprint.dll": {
             "assemblyVersion": "1.4.9.0",
             "fileVersion": "1.4.9.0"
+          }
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -239,6 +248,17 @@
           }
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Xamarin.Essentials/1.6.0-rc1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -329,6 +349,13 @@
       "sha512": "sha512-J2IzXTorHra6GiQ0E5rQZUmra5ktqPXrgaOvpH47EmejUmEYKYy+g2SbKeJg5sUQ/j6eZl8hPe0tJI65LH0q/A==",
       "path": "plugin.fingerprint/1.4.9",
       "hashPath": "plugin.fingerprint.1.4.9.nupkg.sha512"
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
     },
     "Rg.Plugins.Popup/1.2.0.223": {
       "type": "package",
@@ -448,6 +475,13 @@
       "sha512": "sha512-XjzGCqvWZBHnw2ym8t9PVeTm5Tsp7lSDKEwhDZAU4Jnw+6+zEDu/2ZQYQbRqBR0t/KpfNA4Aya/5aONKJnuyEw==",
       "path": "system.servicemodel.primitives/4.8.1",
       "hashPath": "system.servicemodel.primitives.4.8.1.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "path": "xam.plugin.media/4.0.1.5",
+      "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.0-rc1": {
       "type": "package",

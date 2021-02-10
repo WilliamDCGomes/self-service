@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SelfService.SecundaryView.MediaPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="takePhoto" Grid.Row="0" Text="TIRAR FOTO"/>
+            <Button x:Name="pickPhoto" Grid.Row="1" Text="ESCOLHER FOTO"/>
+            <Image x:Name="image" Grid.Row="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

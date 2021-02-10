@@ -25,6 +25,9 @@ namespace SelfService.Views {
             Product = product;
             IdUser = idUser;
             OutputNameProduct.Text = product.Title;
+            if(product.ImageAdress != null) {
+                ImageProduct.Source = product.ImageAdress;
+            }
             if (product.InDescont) {
                 OutputPrice.Text = product.NewValue.ToString("F").Replace(".", ",");
                 Price = product.NewValue;
@@ -51,6 +54,15 @@ namespace SelfService.Views {
             FrameEntry.IsVisible = false;
             InputLocation.IsVisible = false;
             EditProductImage.IsVisible = false;
+            getImageProduct(order.IdProduct);
+        }
+
+        private void getImageProduct(int id) {
+            ServicesDBProducts productGet = new ServicesDBProducts(App.DbPath);
+            ModelProducts product = productGet.GetProductById(id);
+            if (product.ImageAdress != null) {
+                ImageProduct.Source = product.ImageAdress;
+            }
         }
 
         private void BackHome(object sender, EventArgs e) {

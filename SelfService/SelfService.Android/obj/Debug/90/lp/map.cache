@@ -1,7 +1,10 @@
 FastAndroidCamera
 FormsViewGroup
+Plugin.CurrentActivity
 Plugin.Fingerprint.Android.Samsung
 Plugin.Fingerprint
+Plugin.Media
+Plugin.Permissions
 Rg.Plugins.Popup.Droid
 SQLitePCLRaw.batteries_green
 SQLitePCLRaw.batteries_v2

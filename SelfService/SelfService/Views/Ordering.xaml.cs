@@ -70,7 +70,7 @@ namespace SelfService.Views {
             ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
             bool Worked = dbOrder.Insert(order);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "PEDIDO REALIZADO COM SUCESSO!\nPOR FAVOR, AGUARDE. LOGO VOCÊ O RECEBERÁ EM SUA MESA", "OK");
+                await DisplayAlert("SUCESSO", "Pedido realizado com sucesso!\nPor Favor, aguarde. Logo você o receberá em sua mesa", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -84,7 +84,7 @@ namespace SelfService.Views {
                 if (DateTime.Now.ToString("dd/MM/yyyy").Equals(Order.OrderDate)) {
                     Navigation.PushAsync(new EditOrder(Order));
                 } else {
-                    DisplayAlert("ERRO", "VOCÊ NÃO PODE EDITAR O PEDIDO DE OUTRO DIA!", "OK");
+                    DisplayAlert("ERRO", "Você não pode editar o pedido de outro dia!", "OK");
                 }
             }
         }
@@ -93,7 +93,7 @@ namespace SelfService.Views {
             if(!String.IsNullOrEmpty(InputLocation.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "POR FAVOR INFORME A SUA MESA ANTES DE FINALIZAR O PEDIDO", "OK");
+            DisplayAlert("ERRO", "Por Favor informe a dua mesa antes de finalizar o pedido", "OK");
             return false;
         }
 

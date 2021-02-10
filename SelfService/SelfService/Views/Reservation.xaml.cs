@@ -31,7 +31,7 @@ namespace SelfService.Views {
             ServicesDBReservation dbReservation = new ServicesDBReservation(App.DbPath);
             bool Worked = dbReservation.Insert(reservation);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "RESERVA REALIZADA COM SUCESSO!", "OK");
+                await DisplayAlert("SUCESSO", "Reserva realizada com sucesso!", "OK");
                 await Navigation.PopModalAsync();
             }
         }
@@ -76,7 +76,7 @@ namespace SelfService.Views {
             if (ReservationDate.Date != null && !String.IsNullOrEmpty(InputLocation.Text) && !String.IsNullOrEmpty(InputQuantityPeople.Text)) {
                 return true;
             } else {
-                DisplayAlert("AVISO", "POR FAVOR, PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS", "OK");
+                DisplayAlert("AVISO", "Por Favor, preencha todos os campos obrigatórios", "OK");
             }
             return false;
         }

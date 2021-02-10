@@ -46,7 +46,7 @@ namespace SelfService.Views {
             ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
             bool Worked = dbOrder.Update(order);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "PEDIDO ATUALIZADO COM SUCESSO!\nPOR FAVOR, AGUARDE. LOGO VOCÊ O RECEBERÁ EM SUA MESA", "OK");
+                await DisplayAlert("SUCESSO", "Pedido atualizado com sucesso!\nPor Favor, Aguarde. Logo você o receberá em sua mesa", "OK");
                 App.Current.MainPage = new NavigationPage(new Home(IdUser));
             }
         }
@@ -61,7 +61,7 @@ namespace SelfService.Views {
             if (!String.IsNullOrEmpty(InputLocation.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "POR FAVOR INFORME A SUA MESA ANTES DE ATUALIZAR O PEDIDO", "OK");
+            DisplayAlert("ERRO", "Por Favor informe a sua mesa antes de atualizar o pedido", "OK");
             return false;
         }
 
@@ -92,12 +92,12 @@ namespace SelfService.Views {
         }
 
         private async void CancelOrder(object sender, EventArgs e) {
-            var cancel = await DisplayAlert("AVISO", "DESEJA MESMO CANCELAR O PEDIDO?", "SIM", "NÃO");
+            var cancel = await DisplayAlert("AVISO", "Deseja mesmo cancelar o pedido?", "SIM", "NÃO");
             if (cancel) {
                 ServicesDBOrder dbOrders = new ServicesDBOrder(App.DbPath);
                 bool Worked = dbOrders.Delete(Order);
                 if (Worked) {
-                    await DisplayAlert("SUCESSO", "PEDIDO CANCELADO COM SUCESSO", "OK");
+                    await DisplayAlert("SUCESSO", "Pedido cancelado com sucesso", "OK");
                     App.Current.MainPage = new NavigationPage(new Home(IdUser));
                 }
             }

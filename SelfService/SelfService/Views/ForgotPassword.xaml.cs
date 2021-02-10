@@ -24,9 +24,9 @@ namespace SelfService.Views {
 
         private async void SendEmail(object sender, EventArgs e) {
             if (String.IsNullOrEmpty(InputEmail.Text)) {
-                await DisplayAlert("MENSAGEM", "O CAMPO DO E-MAIL NÃO PODE ESTAR VAZIO", "OK");
+                await DisplayAlert("MENSAGEM", "O campo do E-mail não pode estar vazio", "OK");
             } else {
-                await DisplayAlert("MENSAGEM", "VOCÊ RECEBERÁ UM EMAIL DE INSTRUÇÕES", "OK");
+                await DisplayAlert("MENSAGEM", "Você receberá um email de instruções", "OK");
                 await Navigation.PopModalAsync();
             }
         }

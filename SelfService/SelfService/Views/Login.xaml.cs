@@ -31,7 +31,7 @@ namespace SelfService.Views {
             if (!tried) {
                 var availability = await CrossFingerprint.Current.IsAvailableAsync(true);
                 if (availability) {
-                    var authResult = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("POSICIONE O SEU DEDO NO LEITO BIOMETRICO PARA O LOGIN"));
+                    var authResult = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Posicione o seu dedo no leitor biometrico para o login"));
                     if (authResult.Authenticated) {
                         await Navigation.PushPopupAsync(new Loading());
                         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
@@ -62,14 +62,14 @@ namespace SelfService.Views {
 
         private async void EnterMenu(object sender, EventArgs e) {
             if (String.IsNullOrEmpty(LoginInput.Text) || String.IsNullOrEmpty(PasswordEntry.Text)) {
-                await DisplayAlert("ERRO", "PREENCHA O CAMPO DO LOGIN E DA SENHA PARA LOGAR", "OK");
+                await DisplayAlert("ERRO", "Preencha o campo do login e da senha para logar", "OK");
             } else {
                 await Navigation.PushPopupAsync(new Loading());
                 ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
                 if (dbUser.checkUserExist(LoginInput.Text, PasswordEntry.Text)) {
                     App.Current.MainPage = new NavigationPage(new Home(dbUser.IdUser));
                 } else {
-                    await DisplayAlert("ERRO", "LOGIN OU SENHA INCORRETO, REVISE OS CAMPOS", "OK");
+                    await DisplayAlert("ERRO", "Login ou Senha incorreto, Revise os campos", "OK");
                 }
                 await Navigation.PopAllPopupAsync();
             }

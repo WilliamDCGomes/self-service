@@ -70,12 +70,12 @@ namespace SelfService.Views {
                 Navigation.PushAsync(order);
                 RefreshList();
             } else {
-                DisplayAlert("AVISO", "O PRATO NÃO ESTÁ EM OFERTA. VERIFIQUE AS OFERTAS DE HOJE, OU VÁ ATÉ O INÍCIO PARA SOLICITAR ESSE PRATO", "OK");
+                DisplayAlert("AVISO", "O prato não está em oferta. Verifique as ofertas de hpje, ou vá até o início para solicitar esse prato", "OK");
             }
         }
 
         private async void DoLogout(object sender, EventArgs e) {
-            var logout = await DisplayAlert("LOGOUT", "DESEJA FAZER LOGOUT?", "SIM", "NÃO");
+            var logout = await DisplayAlert("LOGOUT", "Deseja fazer Logout?", "SIM", "NÃO");
             if (logout) {
                 App.Current.MainPage = new NavigationPage(new Login(true));
             }

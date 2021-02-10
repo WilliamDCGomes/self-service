@@ -59,7 +59,7 @@ namespace SelfService.Views {
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             bool Worked = dbUser.Insert(user);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "CADASTRO REALIZADO COM SUCESSO", "OK");
+                await DisplayAlert("SUCESSO", "Cadastro realizado com sucesso", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -73,20 +73,20 @@ namespace SelfService.Views {
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             if (InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
                 if (InputPassword.Text.Length < 6) {
-                    DisplayAlert("AVISO", "A SENHA DEVE CONTER NO MÍNIMO 6 DÍGITOS", "OK");
+                    DisplayAlert("AVISO", "A senha deve conter no mínimo 6 dígitos", "OK");
                 }
                 else if (dbUser.Locale(InputLogin.Text)) {
                     return true;
                 } 
                 else {
-                    DisplayAlert("AVISO", "O LOGIN QUE VOCÊ ESTÁ TENTANDO CADASTRAR JÁ ESTÁ EM USO", "OK");
+                    DisplayAlert("AVISO", "O Login que você está tentando cadastrar já está em uso", "OK");
                 }
             } 
             else if (!(InputPassword.Text == RepetPasswordEntry.Text)) {
-                DisplayAlert("AVISO", "AS SENHAS NÃO COINCIDEM", "OK");
+                DisplayAlert("AVISO", "As senhas não coincidem", "OK");
             }            
             else {
-                DisplayAlert("AVISO", "PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS PARA SE CADASTRAR", "OK");
+                DisplayAlert("AVISO", "Preencha todos os campos obrigatórios para se cadastrar", "OK");
             }
             return false;
         }
@@ -104,11 +104,11 @@ namespace SelfService.Views {
                         PickerStates.SelectedItem = data.uf;
                         await Navigation.PopAllPopupAsync();
                     } catch (Exception ex) {
-                        await DisplayAlert("ERRO", "CEP NÃO LOCALIZADO\n" + ex.Message, "OK");
+                        await DisplayAlert("ERRO", "Cep não localizado\n" + ex.Message, "OK");
                     }
                 } 
                 else {
-                        await DisplayAlert("ERRO", "O CEP DEVE TER 8 DIGÍTOS", "OK");
+                        await DisplayAlert("ERRO", "O Cep deve ter 8 digítos", "OK");
                 }
             }
         }

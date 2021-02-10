@@ -43,7 +43,7 @@ namespace SelfService.Views {
             ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
             bool Worked = dbProducts.Insert(modelProducts);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "PRATO CADASTRADO COM SUCESSO", "OK");
+                await DisplayAlert("SUCESSO", "Prato cadastrado com sucesso", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -58,7 +58,7 @@ namespace SelfService.Views {
             if (!String.IsNullOrEmpty(InputNameProduct.Text) && !String.IsNullOrEmpty(InputPrice.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "POR FAVOR PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS", "OK");
+            DisplayAlert("ERRO", "Por Favor preencha todos os campos obrigatórios", "OK");
             return false;
         }
 

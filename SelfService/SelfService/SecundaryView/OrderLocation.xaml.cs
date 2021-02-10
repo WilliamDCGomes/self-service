@@ -46,7 +46,7 @@ namespace SelfService.SecundaryView {
                     }
                     await Navigation.PopModalAsync();
                 } else {
-                    await DisplayAlert("ERRO", "O CÓDIGO DA MESA NÃO É VÁLIDO\nVERIFIQUE SE ESTÁ SCANEANDO O QR CODE CORRETO\nCASO O ERRO CONTINUE, COMUNIQUE ALGUM FUNCIONÁRIO PRÓXIMO!", "OK");
+                    await DisplayAlert("ERRO", "O código da mesa não é válido\nVerifique se está escaneando o QR Code correto\nCaso o erro continue, comunique algum funcionário próximo!", "OK");
                 }
             });
         }

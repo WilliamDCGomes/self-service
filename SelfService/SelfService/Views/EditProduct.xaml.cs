@@ -58,7 +58,7 @@ namespace SelfService.Views {
             ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
             bool Worked = dbProducts.Update(modelProducts);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "PRATO ATUALIZADO COM SUCESSO", "OK");
+                await DisplayAlert("SUCESSO", "Prato atualizado com sucesso", "OK");
                 App.Current.MainPage = new NavigationPage(new Home(IdUser));
             }
         }
@@ -73,7 +73,7 @@ namespace SelfService.Views {
             if (!String.IsNullOrEmpty(InputNameProduct.Text) && !String.IsNullOrEmpty(InputPrice.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "POR FAVOR PREENCHA TODOS OS CAMPOS OBRIGATÓRIOS", "OK");
+            DisplayAlert("ERRO", "Por Favor preencha todos os campos obrigatórios", "OK");
             return false;
         }
 
@@ -86,12 +86,12 @@ namespace SelfService.Views {
         }
 
         private async void DeleteProduct(object sender, EventArgs e) {
-            var cancel = await DisplayAlert("AVISO", "DESEJA MESMO EXCLUIR O PRATO?", "SIM", "NÃO");
+            var cancel = await DisplayAlert("AVISO", "Deseja mesmo excluir o prato?", "SIM", "NÃO");
             if (cancel) {
                 ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
                 bool Worked = dbProducts.Delete(Product);
                 if (Worked) {
-                    await DisplayAlert("SUCESSO", "PRATO EXCLUIDO COM SUCESSO", "OK");
+                    await DisplayAlert("SUCESSO", "Prato excluido com sucesso", "OK");
                     App.Current.MainPage = new NavigationPage(new Home(IdUser));
                 }
             }

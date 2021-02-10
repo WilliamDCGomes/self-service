@@ -57,18 +57,24 @@ namespace SelfService.Views {
         }
 
         private void ProductSelected(object sender, SelectedItemChangedEventArgs e) {
-            ModelProducts product = (ModelProducts) Products.SelectedItem;
-            Ordering order = new Ordering(product, IdUser);
+            var item = e.SelectedItem as ModelProducts;
+            if (item == null) {
+                return;
+            }
+            (sender as Xamarin.Forms.ListView).SelectedItem = null;
+            Ordering order = new Ordering(item, IdUser);
             Navigation.PushAsync(order);
-            RefreshList();
         }
 
         private void ProductPromotionSelected(object sender, SelectedItemChangedEventArgs e) {
-            ModelProducts product = (ModelProducts)PromotionProducts.SelectedItem;
-            if (DateTime.Now.ToString("dd/MM/yyyy").Equals(product.DateDescont)) {
-                Ordering order = new Ordering(product, IdUser);
+            var item = e.SelectedItem as ModelProducts;
+            if (item == null) {
+                return;
+            }
+            (sender as Xamarin.Forms.ListView).SelectedItem = null;
+            if (DateTime.Now.ToString("dd/MM/yyyy").Equals(item.DateDescont)) {
+                Ordering order = new Ordering(item, IdUser);
                 Navigation.PushAsync(order);
-                RefreshList();
             } else {
                 DisplayAlert("AVISO", "O prato não está em oferta. Verifique as ofertas de hpje, ou vá até o início para solicitar esse prato", "OK");
             }
@@ -90,10 +96,13 @@ namespace SelfService.Views {
         }
 
         private void OrderSelected(object sender, SelectedItemChangedEventArgs e) {
-            ModelOrder order = (ModelOrder)Orders.SelectedItem;
-            Ordering ordering = new Ordering(order);
+            var item = e.SelectedItem as ModelOrder;
+            if (item == null) {
+                return;
+            }
+            (sender as Xamarin.Forms.ListView).SelectedItem = null;
+            Ordering ordering = new Ordering(item);
             Navigation.PushAsync(ordering);
-            RefreshList();
         }
 
         private void DateSelectedOrder(object sender, DateChangedEventArgs e) {
@@ -105,9 +114,12 @@ namespace SelfService.Views {
         }
 
         private void ReservationSelected(object sender, SelectedItemChangedEventArgs e) {
-            ModelReservation reservation = (ModelReservation)Reservation.SelectedItem;
-            Navigation.PushAsync(new ReservationScreen(reservation));
-            RefreshList();
+            var item = e.SelectedItem as ModelReservation;
+            if (item == null) {
+                return;
+            }
+            (sender as Xamarin.Forms.ListView).SelectedItem = null;
+            Navigation.PushAsync(new ReservationScreen(item));
         }
 
         private void DateSelectedReservation(object sender, DateChangedEventArgs e) {

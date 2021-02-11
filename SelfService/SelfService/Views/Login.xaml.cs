@@ -11,15 +11,23 @@ using Plugin.Fingerprint.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.IO;
+using SelfService.Models;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage {
         bool tried = false;
         bool fromLogout = false;
+        ModelUser modelUser = null;
+        ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
         public Login() {
             InitializeComponent();
-            loginFingerPrint();
+            modelUser = dbUser.GetUser();
+            if (modelUser != null) {
+                LoginInput.Text = modelUser.Login;
+                PasswordEntry.Text = modelUser.Password;
+                loginFingerPrint();
+            }
         }
 
         public Login(bool validation) {
@@ -31,11 +39,11 @@ namespace SelfService.Views {
             if (!tried) {
                 var availability = await CrossFingerprint.Current.IsAvailableAsync(true);
                 if (availability) {
-                    var authResult = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Posicione o seu dedo no leitor biometrico para o login"));
+                    var authResult = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Autentificação", "Posicione o dedo no leitor de digitais para fazer o login"));
                     if (authResult.Authenticated) {
                         await Navigation.PushPopupAsync(new Loading());
                         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
-                        App.Current.MainPage = new NavigationPage(new Home(1));
+                        App.Current.MainPage = new NavigationPage(new Home(modelUser.Id));
                         await Navigation.PopAllPopupAsync();
                     }
                 }

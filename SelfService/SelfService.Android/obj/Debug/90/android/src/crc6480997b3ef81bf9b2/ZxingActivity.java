@@ -2,7 +2,7 @@ package crc6480997b3ef81bf9b2;
 
 
 public class ZxingActivity
-	extends android.support.v4.app.FragmentActivity
+	extends androidx.fragment.app.FragmentActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -25,6 +25,14 @@ public class ZxingActivity
 		super ();
 		if (getClass () == ZxingActivity.class)
 			mono.android.TypeManager.Activate ("ZXing.Mobile.ZxingActivity, ZXingNetMobile", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public ZxingActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == ZxingActivity.class)
+			mono.android.TypeManager.Activate ("ZXing.Mobile.ZxingActivity, ZXingNetMobile", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

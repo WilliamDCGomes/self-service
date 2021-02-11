@@ -14,6 +14,7 @@ namespace SelfService.Services {
             }
             connection = new SQLiteConnection(dbPath);
             connection.CreateTable<ModelUser>();
+
         }
         public bool Insert(ModelUser user) {
             if (user.Name != null && user.LastName != null && user.EmailAdress != null && user.Cep != null && user.Street != null && user.Neighborhood != null && user.HouseNumber != null && user.Login != null && user.Password != null) {
@@ -34,6 +35,18 @@ namespace SelfService.Services {
                 throw new Exception(e.Message);
             }
             return users;
+        }
+
+        public ModelUser GetUser() {
+            List<ModelUser> users = new List<ModelUser>();
+            var user = new ModelUser();
+            try {
+                users = connection.Table<ModelUser>().ToList();
+                user = users[0];
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return user;
         }
 
         public bool Update(ModelUser users) {
@@ -76,6 +89,7 @@ namespace SelfService.Services {
             }
             return user;
         }
+        
 
         public bool Locale(string login) {
             List<ModelUser> list = new List<ModelUser>();

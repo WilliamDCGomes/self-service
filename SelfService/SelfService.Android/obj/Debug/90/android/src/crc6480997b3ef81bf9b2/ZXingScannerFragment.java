@@ -2,7 +2,7 @@ package crc6480997b3ef81bf9b2;
 
 
 public class ZXingScannerFragment
-	extends android.support.v4.app.Fragment
+	extends androidx.fragment.app.Fragment
 	implements
 		mono.android.IGCUserPeer
 {
@@ -23,6 +23,14 @@ public class ZXingScannerFragment
 		super ();
 		if (getClass () == ZXingScannerFragment.class)
 			mono.android.TypeManager.Activate ("ZXing.Mobile.ZXingScannerFragment, ZXingNetMobile", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public ZXingScannerFragment (int p0)
+	{
+		super (p0);
+		if (getClass () == ZXingScannerFragment.class)
+			mono.android.TypeManager.Activate ("ZXing.Mobile.ZXingScannerFragment, ZXingNetMobile", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

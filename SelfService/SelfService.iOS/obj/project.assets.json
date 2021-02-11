@@ -14,15 +14,16 @@
           "lib/portable-net45+win/Correios.dll": {}
         }
       },
-      "Plugin.Fingerprint/1.4.9": {
+      "Plugin.Fingerprint/2.1.3": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         }
       },
       "Plugin.Permissions/3.0.0.12": {
@@ -296,7 +297,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Correios-Api": "1.1.1",
-          "Plugin.Fingerprint": "1.4.9",
+          "Plugin.Fingerprint": "2.1.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -326,15 +327,16 @@
           "lib/portable-net45+win/Correios.dll": {}
         }
       },
-      "Plugin.Fingerprint/1.4.9": {
+      "Plugin.Fingerprint/2.1.3": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         }
       },
       "Plugin.Permissions/3.0.0.12": {
@@ -608,7 +610,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Correios-Api": "1.1.1",
-          "Plugin.Fingerprint": "1.4.9",
+          "Plugin.Fingerprint": "2.1.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -638,15 +640,16 @@
           "lib/portable-net45+win/Correios.dll": {}
         }
       },
-      "Plugin.Fingerprint/1.4.9": {
+      "Plugin.Fingerprint/2.1.3": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         }
       },
       "Plugin.Permissions/3.0.0.12": {
@@ -920,7 +923,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Correios-Api": "1.1.1",
-          "Plugin.Fingerprint": "1.4.9",
+          "Plugin.Fingerprint": "2.1.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -950,15 +953,16 @@
           "lib/portable-net45+win/Correios.dll": {}
         }
       },
-      "Plugin.Fingerprint/1.4.9": {
+      "Plugin.Fingerprint/2.1.3": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
         }
       },
       "Plugin.Permissions/3.0.0.12": {
@@ -1232,7 +1236,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Correios-Api": "1.1.1",
-          "Plugin.Fingerprint": "1.4.9",
+          "Plugin.Fingerprint": "2.1.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -1270,66 +1274,45 @@
         "src/Service.cs"
       ]
     },
-    "Plugin.Fingerprint/1.4.9": {
-      "sha512": "J2IzXTorHra6GiQ0E5rQZUmra5ktqPXrgaOvpH47EmejUmEYKYy+g2SbKeJg5sUQ/j6eZl8hPe0tJI65LH0q/A==",
+    "Plugin.Fingerprint/2.1.3": {
+      "sha512": "aiBz9NObLDwyV2Ecq6ijcntzBGL4E3Y/NQKSys/V99l+lNuTCcMvnaq9IjwPsEhmBXnaTSt72gPO+jzPijpu7w==",
       "type": "package",
-      "path": "plugin.fingerprint/1.4.9",
+      "path": "plugin.fingerprint/2.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid/Plugin.Fingerprint.Abstractions.dll",
-        "lib/MonoAndroid/Plugin.Fingerprint.Abstractions.dll.mdb",
-        "lib/MonoAndroid/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/MonoAndroid/Plugin.Fingerprint.Android.Samsung.dll",
-        "lib/MonoAndroid/Plugin.Fingerprint.Android.Samsung.dll.mdb",
-        "lib/MonoAndroid/Plugin.Fingerprint.Android.Samsung.pdb",
-        "lib/MonoAndroid/Plugin.Fingerprint.dll",
-        "lib/MonoAndroid/Plugin.Fingerprint.dll.mdb",
-        "lib/MonoAndroid/Plugin.Fingerprint.pdb",
-        "lib/UAP10/Plugin.Fingerprint.Abstractions.dll",
-        "lib/UAP10/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/UAP10/Plugin.Fingerprint.dll",
-        "lib/UAP10/Plugin.Fingerprint.pdb",
-        "lib/UAP10/Plugin.Fingerprint.pri",
-        "lib/UAP10/Plugin.Fingerprint/Properties/Plugin.Fingerprint.UWP.rd.xml",
-        "lib/Xamarin.Mac20/Plugin.Fingerprint.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/Xamarin.Mac20/Plugin.Fingerprint.dll",
-        "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Fingerprint.dll",
-        "lib/net45/Plugin.Fingerprint.Abstractions.dll",
-        "lib/net45/Plugin.Fingerprint.Abstractions.pdb",
+        "lib/monoandroid90/Plugin.Fingerprint.dll",
+        "lib/monoandroid90/Plugin.Fingerprint.pdb",
+        "lib/monoandroid90/Plugin.Fingerprint.xml",
         "lib/net45/Plugin.Fingerprint.dll",
         "lib/net45/Plugin.Fingerprint.pdb",
-        "lib/netcore45/Plugin.Fingerprint.Abstractions.dll",
-        "lib/netcore45/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/netcore45/Plugin.Fingerprint.dll",
-        "lib/netcore45/Plugin.Fingerprint.pdb",
-        "lib/netstandard1.0/Plugin.Fingerprint.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Fingerprint.XML",
-        "lib/netstandard1.0/Plugin.Fingerprint.dll",
-        "lib/netstandard1.0/Plugin.Fingerprint.pdb",
-        "lib/portable-net45+win8+wpa81+wp8/Plugin.Fingerprint.Abstractions.dll",
-        "lib/portable-net45+win8+wpa81+wp8/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/portable-net45+win8+wpa81+wp8/Plugin.Fingerprint.XML",
-        "lib/portable-net45+win8+wpa81+wp8/Plugin.Fingerprint.dll",
-        "lib/portable-net45+win8+wpa81+wp8/Plugin.Fingerprint.pdb",
-        "lib/win81/Plugin.Fingerprint.Abstractions.dll",
-        "lib/win81/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/win81/Plugin.Fingerprint.dll",
-        "lib/win81/Plugin.Fingerprint.pdb",
-        "lib/wp8/Plugin.Fingerprint.Abstractions.dll",
-        "lib/wp8/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/wp8/Plugin.Fingerprint.dll",
-        "lib/wp8/Plugin.Fingerprint.pdb",
-        "lib/wpa81/Plugin.Fingerprint.Abstractions.dll",
-        "lib/wpa81/Plugin.Fingerprint.Abstractions.pdb",
-        "lib/wpa81/Plugin.Fingerprint.dll",
-        "lib/wpa81/Plugin.Fingerprint.pdb",
-        "plugin.fingerprint.1.4.9.nupkg.sha512",
-        "plugin.fingerprint.nuspec"
+        "lib/net45/Plugin.Fingerprint.xml",
+        "lib/netstandard2.0/Plugin.Fingerprint.dll",
+        "lib/netstandard2.0/Plugin.Fingerprint.pdb",
+        "lib/netstandard2.0/Plugin.Fingerprint.xml",
+        "lib/tizen40/Plugin.Fingerprint.dll",
+        "lib/tizen40/Plugin.Fingerprint.pdb",
+        "lib/tizen40/Plugin.Fingerprint.xml",
+        "lib/uap10.0.16299/Plugin.Fingerprint.dll",
+        "lib/uap10.0.16299/Plugin.Fingerprint.pdb",
+        "lib/uap10.0.16299/Plugin.Fingerprint.pri",
+        "lib/uap10.0.16299/Plugin.Fingerprint.xml",
+        "lib/xamarinios10/Plugin.Fingerprint.dll",
+        "lib/xamarinios10/Plugin.Fingerprint.pdb",
+        "lib/xamarinios10/Plugin.Fingerprint.xml",
+        "lib/xamarinmac20/Plugin.Fingerprint.dll",
+        "lib/xamarinmac20/Plugin.Fingerprint.pdb",
+        "lib/xamarinmac20/Plugin.Fingerprint.xml",
+        "lib/xamarintvos10/Plugin.Fingerprint.dll",
+        "lib/xamarintvos10/Plugin.Fingerprint.pdb",
+        "lib/xamarintvos10/Plugin.Fingerprint.xml",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.dll",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.pdb",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.xml",
+        "plugin.fingerprint.2.1.3.nupkg.sha512",
+        "plugin.fingerprint.nuspec",
+        "readme.txt",
+        "xamarin_fingerprint.png"
       ]
     },
     "Plugin.Permissions/3.0.0.12": {
@@ -2053,7 +2036,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "Correios-Api >= 1.1.1",
-      "Plugin.Fingerprint >= 1.4.9",
+      "Plugin.Fingerprint >= 2.1.3",
       "Rg.Plugins.Popup >= 1.2.0.223",
       "SelfService >= 1.0.0",
       "Xam.Plugin.Media >= 4.0.1.5",
@@ -2111,7 +2094,7 @@
           },
           "Plugin.Fingerprint": {
             "target": "Package",
-            "version": "[1.4.9, )"
+            "version": "[2.1.3, )"
           },
           "Rg.Plugins.Popup": {
             "target": "Package",

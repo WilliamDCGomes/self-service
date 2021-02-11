@@ -1,1 +1,0 @@
-C:\Users\willi\Desktop\SelfService\SelfService\SelfService.UWP\SelfService.UWP.csproj;x86

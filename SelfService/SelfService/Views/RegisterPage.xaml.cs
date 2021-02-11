@@ -116,10 +116,10 @@ namespace SelfService.Views {
                     if (file != null) {
                         ProductImage.Source = ImageSource.FromStream(() => {
                             var stream = file.GetStream();
+                            imagePath = file.Path.ToString();
                             file.Dispose();
                             return stream;
                         });
-                        imagePath = file.Path.ToString();
                     }
                 } else {
                     CrossPermissions.Current.OpenAppSettings();
@@ -149,10 +149,10 @@ namespace SelfService.Views {
                     }
                     ProductImage.Source = ImageSource.FromStream(() => {
                         var stream = file.GetStream();
+                        imagePath = file.Path.ToString();
                         file.Dispose();
                         return stream;
                     });
-                    imagePath = file.Path.ToString();
                 } 
                 else {
                     CrossPermissions.Current.OpenAppSettings();
@@ -161,22 +161,5 @@ namespace SelfService.Views {
                 await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
             }
         }
-
-
-
-
-        /*
-        //Pega foto dos arquivos
-        private async void GetPictureFromFiles(object sender, EventArgs e) {
-            FileResult pickResult = await FilePicker.PickAsync(new PickOptions {
-                FileTypes = FilePickerFileType.Images,
-                PickerTitle = "Selecione a Imagem que deseja"
-            });
-            if (pickResult != null) {
-                var stream = await pickResult.OpenReadAsync();
-                //resultImage.Source = ImageSource.FromStream(() => stream);
-            }
-        }
-        */
     }
 }

@@ -56,7 +56,7 @@
             },
             "Plugin.Fingerprint": {
               "target": "Package",
-              "version": "[1.4.9, )"
+              "version": "[2.1.3, )"
             },
             "Rg.Plugins.Popup": {
               "target": "Package",

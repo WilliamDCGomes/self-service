@@ -31,6 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="SecundaryView\GetPictureFromCameraOrFiles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="SecundaryView\Loading.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

@@ -20,6 +20,7 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage {
         string imagePath = null;
+        public int choose = 0;
         public RegisterPage() {
             InitializeComponent();
         }
@@ -76,8 +77,17 @@ namespace SelfService.Views {
             }
         }
 
-        private void GetPhoto(object sender, EventArgs e) {
-            GetPictureFromCamera(new object(), new EventArgs());
+        private async void GetPhoto(object sender, EventArgs e) {
+            await Navigation.PushModalAsync(new GetPictureFromCameraOrFiles(this));
+        }
+
+        public void SetPath() {
+            if (choose == 1) {
+                GetPictureFromCamera(new object(), new EventArgs());
+            } else if (choose == 2) {
+                GePictureFromFiles(new object(), new EventArgs());
+            }
+            choose = 0;
         }
 
         private async void GetPictureFromCamera(object sender, EventArgs e) {
@@ -111,6 +121,38 @@ namespace SelfService.Views {
                         });
                         imagePath = file.Path.ToString();
                     }
+                } else {
+                    CrossPermissions.Current.OpenAppSettings();
+                }
+            } catch (Exception ex) {
+                await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
+            }
+        }
+        private async void GePictureFromFiles(object sender, EventArgs e) {
+            try {
+                var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+                if (!storageStatus.ToString().Equals("Granted")) {
+                    var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
+                    storageStatus = results[Permission.Storage];
+                }
+                if (storageStatus.ToString().Equals("Granted")) {
+                    if (!CrossMedia.Current.IsPickPhotoSupported) {
+                        await DisplayAlert("ERRO", "Não suportado", "OK");
+                        return;
+                    }
+                    var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions {
+                        PhotoSize = PhotoSize.Full,
+                        SaveMetaData = true
+                    });
+                    if (file == null) {
+                        return;
+                    }
+                    ProductImage.Source = ImageSource.FromStream(() => {
+                        var stream = file.GetStream();
+                        file.Dispose();
+                        return stream;
+                    });
+                    imagePath = file.Path.ToString();
                 } 
                 else {
                     CrossPermissions.Current.OpenAppSettings();

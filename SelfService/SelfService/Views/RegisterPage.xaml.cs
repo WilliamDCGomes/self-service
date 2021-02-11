@@ -50,7 +50,7 @@ namespace SelfService.Views {
             ServicesDBProducts dbProducts = new ServicesDBProducts(App.DbPath);
             bool Worked = dbProducts.Insert(modelProducts);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "Prato cadastrado com sucesso", "OK");
+                await DisplayAlert("Sucesso", "Prato cadastrado com sucesso", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -65,7 +65,7 @@ namespace SelfService.Views {
             if (!String.IsNullOrEmpty(InputNameProduct.Text) && !String.IsNullOrEmpty(InputPrice.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "Por Favor preencha todos os campos obrigatórios", "OK");
+            DisplayAlert("Erro", "Por Favor preencha todos os campos obrigatórios", "OK");
             return false;
         }
 
@@ -93,7 +93,7 @@ namespace SelfService.Views {
         private async void GetPictureFromCamera(object sender, EventArgs e) {
             try {
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported) {
-                    await DisplayAlert("ERRO", "Sem acesso a câmera", "OK");
+                    await DisplayAlert("Erro", "Sem acesso a câmera", "OK");
                     return;
                 }
                 var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
@@ -125,7 +125,7 @@ namespace SelfService.Views {
                     CrossPermissions.Current.OpenAppSettings();
                 }
             } catch (Exception ex) {
-                await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
+                await DisplayAlert("Erro", "O sistema não tem os acessos necessários", "Ok");
             }
         }
         private async void GePictureFromFiles(object sender, EventArgs e) {
@@ -137,7 +137,7 @@ namespace SelfService.Views {
                 }
                 if (storageStatus.ToString().Equals("Granted")) {
                     if (!CrossMedia.Current.IsPickPhotoSupported) {
-                        await DisplayAlert("ERRO", "Não suportado", "OK");
+                        await DisplayAlert("Erro", "Não suportado", "OK");
                         return;
                     }
                     var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions {
@@ -158,7 +158,7 @@ namespace SelfService.Views {
                     CrossPermissions.Current.OpenAppSettings();
                 }
             } catch (Exception ex) {
-                await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
+                await DisplayAlert("Erro", "O sistema não tem os acessos necessários", "Ok");
             }
         }
     }

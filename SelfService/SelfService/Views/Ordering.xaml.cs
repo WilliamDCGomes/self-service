@@ -37,6 +37,7 @@ namespace SelfService.Views {
                 Price = product.Price;
             }
             OutputOrderDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            checkUser();
         }
         public Ordering(ModelOrderAux order) {
             InitializeComponent();
@@ -67,6 +68,14 @@ namespace SelfService.Views {
             InputLocation.IsVisible = false;
             EditProductImage.IsVisible = false;
             getImageProduct(order.IdProduct);
+        }
+
+        public void checkUser() {
+            ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
+            ModelUser user = dbUser.LocaleByID(IdUser);
+            if (!user.IsAdmin) {
+                EditProductImage.IsVisible = false;
+            }
         }
 
         private void getImageProduct(int id) {
@@ -100,7 +109,7 @@ namespace SelfService.Views {
             ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
             bool Worked = dbOrder.Insert(order);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "Pedido realizado com sucesso!\nPor Favor, aguarde. Logo você o receberá em sua mesa", "OK");
+                await DisplayAlert("Sucesso", "Pedido realizado com sucesso!\nPor Favor, aguarde. Logo você o receberá em sua mesa", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -114,7 +123,7 @@ namespace SelfService.Views {
                 if (DateTime.Now.ToString("dd/MM/yyyy").Equals(Order.OrderDate)) {
                     Navigation.PushAsync(new EditOrder(Order));
                 } else {
-                    DisplayAlert("ERRO", "Você não pode editar o pedido de outro dia!", "OK");
+                    DisplayAlert("Erro", "Você não pode editar o pedido de outro dia!", "OK");
                 }
             }
         }
@@ -123,7 +132,7 @@ namespace SelfService.Views {
             if (!String.IsNullOrEmpty(InputLocation.Text)) {
                 return true;
             }
-            DisplayAlert("ERRO", "Por Favor informe a dua mesa antes de finalizar o pedido", "OK");
+            DisplayAlert("Erro", "Por Favor informe a dua mesa antes de finalizar o pedido", "OK");
             return false;
         }
 

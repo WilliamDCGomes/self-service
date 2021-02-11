@@ -22,11 +22,14 @@ namespace SelfService.Views {
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
         public Login() {
             InitializeComponent();
-            modelUser = dbUser.GetUser();
-            if (modelUser != null) {
-                LoginInput.Text = modelUser.Login;
-                PasswordEntry.Text = modelUser.Password;
-                loginFingerPrint();
+            List<ModelUser> userSystem = dbUser.ListUsers();
+            if (userSystem.Count > 0) {
+                modelUser = dbUser.GetUser();
+                if (modelUser != null) {
+                    LoginInput.Text = modelUser.Login;
+                    PasswordEntry.Text = modelUser.Password;
+                    loginFingerPrint(modelUser.Id);
+                }
             }
         }
 
@@ -35,7 +38,7 @@ namespace SelfService.Views {
             fromLogout = validation;
         }
 
-        private async void loginFingerPrint() {
+        private async void loginFingerPrint(int id) {
             if (!tried) {
                 var availability = await CrossFingerprint.Current.IsAvailableAsync(true);
                 if (availability) {
@@ -43,7 +46,7 @@ namespace SelfService.Views {
                     if (authResult.Authenticated) {
                         await Navigation.PushPopupAsync(new Loading());
                         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
-                        App.Current.MainPage = new NavigationPage(new Home(modelUser.Id));
+                        App.Current.MainPage = new NavigationPage(new Home(id));
                         await Navigation.PopAllPopupAsync();
                     }
                 }
@@ -70,14 +73,14 @@ namespace SelfService.Views {
 
         private async void EnterMenu(object sender, EventArgs e) {
             if (String.IsNullOrEmpty(LoginInput.Text) || String.IsNullOrEmpty(PasswordEntry.Text)) {
-                await DisplayAlert("ERRO", "Preencha o campo do login e da senha para logar", "OK");
+                await DisplayAlert("Erro", "Preencha o campo do login e da senha para logar", "OK");
             } else {
                 await Navigation.PushPopupAsync(new Loading());
                 ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
                 if (dbUser.checkUserExist(LoginInput.Text, PasswordEntry.Text)) {
                     App.Current.MainPage = new NavigationPage(new Home(dbUser.IdUser));
                 } else {
-                    await DisplayAlert("ERRO", "Login ou Senha incorreto, Revise os campos", "OK");
+                    await DisplayAlert("Erro", "Login ou Senha incorreto, Revise os campos", "OK");
                 }
                 await Navigation.PopAllPopupAsync();
             }
@@ -90,7 +93,7 @@ namespace SelfService.Views {
                 if (User != null) {
                     LoginInput.Text = User.Login;
                     PasswordEntry.Text = User.Password;
-                    loginFingerPrint();
+                    loginFingerPrint(User.Id);
                 }
             }
         }

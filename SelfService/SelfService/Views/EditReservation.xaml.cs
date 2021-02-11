@@ -35,7 +35,7 @@ namespace SelfService.Views {
             ServicesDBReservation dbReservation = new ServicesDBReservation(App.DbPath);
             bool Worked = dbReservation.Update(reservation);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "Reserva atualizada com sucesso!", "OK");
+                await DisplayAlert("Sucesso", "Reserva atualizada com sucesso!", "OK");
                 App.Current.MainPage = new NavigationPage(new Home(Reservation.IdUser)); ;
             }
         }
@@ -76,7 +76,7 @@ namespace SelfService.Views {
             if (ReservationDate.Date != null && !String.IsNullOrEmpty(InputLocation.Text) && !String.IsNullOrEmpty(InputQuantityPeople.Text)) {
                 return true;
             } else {
-                DisplayAlert("AVISO", "Por Favor, Preencha todos os campos obrigatórios", "OK");
+                DisplayAlert("Aviso", "Por Favor, Preencha todos os campos obrigatórios", "OK");
             }
             return false;
         }
@@ -86,12 +86,12 @@ namespace SelfService.Views {
         }
 
         private async void DeleteReservation(object sender, EventArgs e) {
-            var cancel = await DisplayAlert("AVISO", "Deseja mesmo cancelar a reserva?", "SIM", "NÃO");
+            var cancel = await DisplayAlert("Aviso", "Deseja mesmo cancelar a reserva?", "SIM", "NÃO");
             if (cancel) {
                 ServicesDBReservation dbReservation = new ServicesDBReservation(App.DbPath);
                 bool Worked = dbReservation.Delete(Reservation);
                 if (Worked) {
-                    await DisplayAlert("SUCESSO", "Reserva cancelada com sucesso", "OK");
+                    await DisplayAlert("Sucesso", "Reserva cancelada com sucesso", "OK");
                     App.Current.MainPage = new NavigationPage(new Home(Reservation.IdUser));
                 }
             }

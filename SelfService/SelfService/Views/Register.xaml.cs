@@ -53,13 +53,18 @@ namespace SelfService.Views {
             user.State = PickerStates.SelectedItem.ToString();
             user.Login = InputLogin.Text;
             user.Password = InputPassword.Text;
-            if (InputLogin.Text.Equals("Admin")) {
+            string[] emailCheck = InputEmailAdress.Text.Split('@');
+            string[] emailCheckAux = emailCheck[1].Split('.');
+            if (emailCheckAux[0].Equals("selfservice")) {
                 user.IsAdmin = true;
+            } 
+            else {
+                user.IsAdmin = false;
             }
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             bool Worked = dbUser.Insert(user);
             if (Worked) {
-                await DisplayAlert("SUCESSO", "Cadastro realizado com sucesso", "OK");
+                await DisplayAlert("Sucesso", "Cadastro realizado com sucesso", "OK");
                 await Navigation.PopAsync();
             }
         }
@@ -73,20 +78,20 @@ namespace SelfService.Views {
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             if (InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
                 if (InputPassword.Text.Length < 6) {
-                    DisplayAlert("AVISO", "A senha deve conter no mínimo 6 dígitos", "OK");
+                    DisplayAlert("Aviso", "A senha deve conter no mínimo 6 dígitos", "OK");
                 }
                 else if (dbUser.Locale(InputLogin.Text)) {
                     return true;
                 } 
                 else {
-                    DisplayAlert("AVISO", "O Login que você está tentando cadastrar já está em uso", "OK");
+                    DisplayAlert("Aviso", "O Login que você está tentando cadastrar já está em uso", "OK");
                 }
             } 
             else if (!(InputPassword.Text == RepetPasswordEntry.Text)) {
-                DisplayAlert("AVISO", "As senhas não coincidem", "OK");
+                DisplayAlert("Aviso", "As senhas não coincidem", "OK");
             }            
             else {
-                DisplayAlert("AVISO", "Preencha todos os campos obrigatórios para se cadastrar", "OK");
+                DisplayAlert("Aviso", "Preencha todos os campos obrigatórios para se cadastrar", "OK");
             }
             return false;
         }
@@ -104,11 +109,11 @@ namespace SelfService.Views {
                         PickerStates.SelectedItem = data.uf;
                         await Navigation.PopAllPopupAsync();
                     } catch (Exception ex) {
-                        await DisplayAlert("ERRO", "Cep não localizado\n" + ex.Message, "OK");
+                        await DisplayAlert("Erro", "Cep não localizado\n" + ex.Message, "OK");
                     }
                 } 
                 else {
-                        await DisplayAlert("ERRO", "O Cep deve ter 8 digítos", "OK");
+                        await DisplayAlert("Erro", "O Cep deve ter 8 digítos", "OK");
                 }
             }
         }

@@ -80,6 +80,9 @@ namespace SelfService.Views {
 
         public void setUser() {
             ModelUser user = dbUser.LocaleByID(IdUser);
+            if (!user.IsAdmin) {
+                buttonNewProduct.IsVisible = false;
+            }
             OutputName.Text = user.Name;
             OutputLastName.Text = user.LastName;
             OutputEmailAdress.Text = user.EmailAdress;
@@ -113,12 +116,12 @@ namespace SelfService.Views {
                 Ordering order = new Ordering(item, IdUser);
                 Navigation.PushAsync(order);
             } else {
-                DisplayAlert("AVISO", "O prato não está em oferta. Verifique as ofertas de hpje, ou vá até o início para solicitar esse prato", "OK");
+                DisplayAlert("Aviso", "O prato não está em oferta. Verifique as ofertas de hpje, ou vá até o início para solicitar esse prato", "OK");
             }
         }
 
         private async void DoLogout(object sender, EventArgs e) {
-            var logout = await DisplayAlert("LOGOUT", "Deseja fazer Logout?", "SIM", "NÃO");
+            var logout = await DisplayAlert("Logout", "Deseja fazer Logout?", "SIM", "NÃO");
             if (logout) {
                 App.Current.MainPage = new NavigationPage(new Login(true));
             }

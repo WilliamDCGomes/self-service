@@ -412,9 +412,9 @@
                             </Frame>
                         </Grid>
                     </Grid>
-                    <Button Text="Add Produto" Clicked="AddProduct" Grid.Row="3" Grid.Column="0" TextColor="#B30000" BackgroundColor="#F0C33B"/>
-                    <Button Text="Logout" Clicked="DoLogout" Grid.Row="3" Grid.Column="1" TextColor="#B30000" BackgroundColor="#F0C33B"/>
-                    <Button Text="EDITAR CONTA" Clicked="EditAccount" Grid.Row="4" Grid.ColumnSpan="2" TextColor="#B30000" BackgroundColor="#F0C33B"/>
+                    <Button Text="EDITAR CONTA" Clicked="EditAccount" Grid.Row="3" Grid.Column="0" TextColor="#B30000" BackgroundColor="#F0C33B"/>
+                    <Button Text="LOGOUT" Clicked="DoLogout" Grid.Row="3" Grid.Column="1" TextColor="#B30000" BackgroundColor="#F0C33B"/>
+                    <Button x:Name="buttonNewProduct" Text="NOVO PRODUTO" Clicked="AddProduct" Grid.Row="4" Grid.ColumnSpan="2" TextColor="#B30000" BackgroundColor="#F0C33B"/>
                 </Grid>
             </ScrollView>
         </Grid>

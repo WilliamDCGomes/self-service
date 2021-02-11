@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Rg.Plugins.Popup.Extensions;
 using JobSearch.App.Utility.Load;
+using System.Text.RegularExpressions;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -74,11 +75,20 @@ namespace SelfService.Views {
                 InsertUser();
             } 
         }
+
+        public static bool IsValidEmailAddress(string s) {
+            var regex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+            return regex.IsMatch(s);
+        }
+
         private bool DataValidation() {
             ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
             if (InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
                 if (InputPassword.Text.Length < 6) {
                     DisplayAlert("Aviso", "A senha deve conter no mínimo 6 dígitos", "OK");
+                }
+                else if (!IsValidEmailAddress(InputEmailAdress.Text)) {
+                    DisplayAlert("Erro", "O E-mail que você digitou não é válido!", "OK");
                 }
                 else if (dbUser.Locale(InputLogin.Text)) {
                     return true;

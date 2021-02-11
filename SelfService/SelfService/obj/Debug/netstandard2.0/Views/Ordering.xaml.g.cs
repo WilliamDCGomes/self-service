@@ -29,6 +29,9 @@ namespace SelfService.Views {
         private global::SelfService.Formatting.CustomEntry OutputPrice;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SelfService.Formatting.CustomEditor OutputDescription;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::SelfService.Formatting.CustomEntry OutputStatus;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -62,6 +65,7 @@ namespace SelfService.Views {
             ImageProduct = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "ImageProduct");
             OutputNameProduct = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputNameProduct");
             OutputPrice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputPrice");
+            OutputDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEditor>(this, "OutputDescription");
             OutputStatus = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputStatus");
             OutputOrderDate = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SelfService.Formatting.CustomEntry>(this, "OutputOrderDate");
             LocationOutput = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LocationOutput");

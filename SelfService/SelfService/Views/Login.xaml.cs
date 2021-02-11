@@ -85,7 +85,13 @@ namespace SelfService.Views {
 
         private void TryLoginBiometric(object sender, FocusEventArgs e) {
             if (fromLogout) {
-                loginFingerPrint();
+                ModelUser User = null;
+                User = dbUser.GetUser();
+                if (User != null) {
+                    LoginInput.Text = User.Login;
+                    PasswordEntry.Text = User.Password;
+                    loginFingerPrint();
+                }
             }
         }
     }

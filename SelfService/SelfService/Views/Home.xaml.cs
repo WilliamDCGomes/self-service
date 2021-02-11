@@ -35,10 +35,47 @@ namespace SelfService.Views {
         }
 
         public void RefreshList() {
-            Products.ItemsSource = dbProducts.ListProducts(DateTime.Now.ToString("dd/MM/yyyy"));
-            PromotionProducts.ItemsSource = dbProducts.LocalePromotion(DPCalendar.Date);
-            Orders.ItemsSource = dbOrder.Locale(DPCalendarOrder.Date.ToString("dd/MM/yyyy"));
+            List<ModelProducts> products = dbProducts.ListProducts(DateTime.Now.ToString("dd/MM/yyyy"));
+            foreach(ModelProducts i in products) {
+                if (i.ImageAdress == null) {
+                    i.ImageAdress = "iconMenu";
+                }
+            }
+            Products.ItemsSource = products;
+            List<ModelProducts> promotionProducts = dbProducts.LocalePromotion(DPCalendar.Date);
+            foreach (ModelProducts i in promotionProducts) {
+                if (i.ImageAdress == null) {
+                    i.ImageAdress = "iconMenu";
+                }
+            }
+            PromotionProducts.ItemsSource = promotionProducts;
+            List<ModelOrderAux> orderedProducts = new List<ModelOrderAux>();
+            List<ModelOrder> orderedProduct = dbOrder.Locale(DPCalendarOrder.Date.ToString("dd/MM/yyyy"));
+            foreach (ModelOrder i in orderedProduct) {
+                ModelOrderAux aux = new ModelOrderAux();
+                aux.Id = i.Id;
+                aux.IdUser = i.IdUser;
+                aux.IdProduct = i.IdProduct;
+                aux.ProductName = i.ProductName;
+                aux.StatusOrder = i.StatusOrder;
+                aux.OrderDate = i.OrderDate;
+                aux.AlreadyPayed = i.AlreadyPayed;
+                aux.LocationClient = i.LocationClient;
+                aux.Price = i.Price;
+                aux.ImageAdress = getImageProduct(i.IdProduct);
+                orderedProducts.Add(aux);
+            }
+            Orders.ItemsSource = orderedProducts;
             Reservation.ItemsSource = dbReservation.LocalePerDate(DPCalendarReservation.Date.ToString("dd/MM/yyyy"));
+        }
+
+        private string getImageProduct(int id) {
+            ServicesDBProducts productGet = new ServicesDBProducts(App.DbPath);
+            ModelProducts product = productGet.GetProductById(id);
+            if (product.ImageAdress != null) {
+                return product.ImageAdress;
+            }
+            return "iconMenu";
         }
 
         public void setUser() {
@@ -96,7 +133,7 @@ namespace SelfService.Views {
         }
 
         private void OrderSelected(object sender, SelectedItemChangedEventArgs e) {
-            var item = e.SelectedItem as ModelOrder;
+            var item = e.SelectedItem as ModelOrderAux;
             if (item == null) {
                 return;
             }

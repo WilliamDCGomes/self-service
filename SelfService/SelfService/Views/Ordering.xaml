@@ -31,7 +31,7 @@
                 <ScrollView>
                     <Grid Margin="30, 30, 30, 30" RowSpacing="7">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="305"/>
+                            <RowDefinition Height="auto"/>
                             <RowDefinition Height="160"/>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="20"/>
@@ -41,6 +41,7 @@
                                 <RowDefinition Height="23"/>
                                 <RowDefinition Height="68"/>
                                 <RowDefinition Height="68"/>
+                                <RowDefinition Height="auto"/>
                                 <RowDefinition Height="68"/>
                                 <RowDefinition Height="68"/>
                             </Grid.RowDefinitions>
@@ -75,6 +76,16 @@
                             <Grid Grid.Row="3" RowSpacing="2" VerticalOptions="End" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="20"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Descrição" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
+                                <Frame StyleClass="EntryFrame" Grid.Row="1" BorderColor="LightGray">
+                                    <Controls:CustomEditor x:Name="OutputDescription" IsEnabled="False" Grid.Row="1" AutoSize="TextChanges" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>
                                 </Grid.RowDefinitions>
                                 <Label Text="Status" FontSize="11" TextColor="#FFFFFF" Grid.Row="0" VerticalOptions="End"/>
@@ -82,7 +93,7 @@
                                     <Controls:CustomEntry x:Name="OutputStatus" Text="Solicitando" IsEnabled="False" HorizontalOptions="FillAndExpand" TextColor="Black"/>
                                 </Frame>
                             </Grid>
-                            <Grid Grid.Row="4" RowSpacing="2" VerticalOptions="End" >
+                            <Grid Grid.Row="5" RowSpacing="2" VerticalOptions="End" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="45"/>

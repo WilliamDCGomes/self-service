@@ -11,10 +11,15 @@ using Xamarin.Forms.Xaml;
 namespace SelfService.SecundaryView {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GetPictureFromCameraOrFiles : ContentPage {
-        RegisterPage NewProduct;
+        RegisterPage NewProduct = null;
+        EditProduct EditProduct = null;
         public GetPictureFromCameraOrFiles(RegisterPage newProduct) {
             InitializeComponent();
             NewProduct = newProduct;
+        }
+        public GetPictureFromCameraOrFiles(EditProduct editProduct) {
+            InitializeComponent();
+            EditProduct = editProduct;
         }
 
         private void CloseForgotPassword(object sender, EventArgs e) {
@@ -22,14 +27,26 @@ namespace SelfService.SecundaryView {
         }
 
         private async void GetPictureFromCamera(object sender, EventArgs e) {
-            NewProduct.choose = 1;
-            NewProduct.SetPath();
+            if (NewProduct != null) {
+                NewProduct.choose = 1;
+                NewProduct.SetPath();
+            } 
+            else {
+                EditProduct.choose = 1;
+                EditProduct.SetPath();
+            }
             await Navigation.PopModalAsync();
         }
 
         private async void GetPictureFromFiles(object sender, EventArgs e) {
-            NewProduct.choose = 2;
-            NewProduct.SetPath();
+            if (NewProduct != null) {
+                NewProduct.choose = 2;
+                NewProduct.SetPath();
+            } 
+            else {
+                EditProduct.choose = 2;
+                EditProduct.SetPath();
+            }
             await Navigation.PopModalAsync();
         }
 

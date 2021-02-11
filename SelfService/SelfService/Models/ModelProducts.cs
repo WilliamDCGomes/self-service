@@ -31,6 +31,7 @@ namespace SelfService.Models {
             InDescont = false;
             DescontPercent = 0;
             NewValue = 0;
+            ImageAdress = "iconMenu";
         }
     }
 }

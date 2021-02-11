@@ -1,4 +1,9 @@
-﻿using SelfService.Models;
+﻿using Plugin.Media;
+using Plugin.Media.Abstractions;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
+using SelfService.Models;
+using SelfService.SecundaryView;
 using SelfService.Services;
 using System;
 using System.Collections.Generic;
@@ -14,6 +19,8 @@ namespace SelfService.Views {
     public partial class EditProduct : ContentPage {
         ModelProducts Product;
         private int IdUser;
+        string imagePath = null;
+        public int choose = 0;
         public EditProduct(ModelProducts product, int idUser) {
             InitializeComponent();
             IdUser = idUser;
@@ -21,6 +28,10 @@ namespace SelfService.Views {
             InputNameProduct.Text = product.Title;
             InputPrice.Text = product.Price.ToString().Replace(".", ",");
             InputDescription.Text = product.Description;
+            if (product.ImageAdress != null) {
+                ProductImage.Source = product.ImageAdress;
+                imagePath = product.ImageAdress;
+            }
             if (product.DescontPercent != 0) {
                 InputDescont.Text = product.DescontPercent.ToString().Replace(".", ",");
             }
@@ -43,6 +54,9 @@ namespace SelfService.Views {
             modelProducts.Title = InputNameProduct.Text;
             modelProducts.Price = Double.Parse(InputPrice.Text.Replace(",", "."));
             modelProducts.Description = InputDescription.Text;
+            if(imagePath != null) {
+                modelProducts.ImageAdress = imagePath;
+            }
             if (String.IsNullOrEmpty(InputDescont.Text) || double.Parse(InputDescont.Text) <= 0.0) {
                 modelProducts.InDescont = false;
                 modelProducts.DescontPercent = 0;
@@ -94,6 +108,90 @@ namespace SelfService.Views {
                     await DisplayAlert("SUCESSO", "Prato excluido com sucesso", "OK");
                     App.Current.MainPage = new NavigationPage(new Home(IdUser));
                 }
+            }
+        }
+
+        private async void GetPhoto(object sender, EventArgs e) {
+            await Navigation.PushModalAsync(new GetPictureFromCameraOrFiles(this));
+        }
+
+        public void SetPath() {
+            if (choose == 1) {
+                GetPictureFromCamera(new object(), new EventArgs());
+            } else if (choose == 2) {
+                GePictureFromFiles(new object(), new EventArgs());
+            }
+            choose = 0;
+        }
+
+        private async void GetPictureFromCamera(object sender, EventArgs e) {
+            try {
+                if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported) {
+                    await DisplayAlert("ERRO", "Sem acesso a câmera", "OK");
+                    return;
+                }
+                var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
+                var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+                if (!cameraStatus.ToString().Equals("Granted") || !storageStatus.ToString().Equals("Granted")) {
+                    var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
+                    cameraStatus = results[Permission.Camera];
+                    storageStatus = results[Permission.Storage];
+                }
+                if (cameraStatus.ToString().Equals("Granted") && storageStatus.ToString().Equals("Granted")) {
+                    var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions {
+                        SaveToAlbum = true,
+                        Directory = "SelfServicePictures",
+                        CompressionQuality = 75,
+                        CustomPhotoSize = 50,
+                        PhotoSize = PhotoSize.MaxWidthHeight,
+                        MaxWidthHeight = 2000,
+                        DefaultCamera = CameraDevice.Front
+                    });
+                    if (file != null) {
+                        ProductImage.Source = ImageSource.FromStream(() => {
+                            var stream = file.GetStream();
+                            imagePath = file.Path.ToString();
+                            file.Dispose();
+                            return stream;
+                        });
+                    }
+                } else {
+                    CrossPermissions.Current.OpenAppSettings();
+                }
+            } catch (Exception ex) {
+                await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
+            }
+        }
+        private async void GePictureFromFiles(object sender, EventArgs e) {
+            try {
+                var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+                if (!storageStatus.ToString().Equals("Granted")) {
+                    var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
+                    storageStatus = results[Permission.Storage];
+                }
+                if (storageStatus.ToString().Equals("Granted")) {
+                    if (!CrossMedia.Current.IsPickPhotoSupported) {
+                        await DisplayAlert("ERRO", "Não suportado", "OK");
+                        return;
+                    }
+                    var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions {
+                        PhotoSize = PhotoSize.Full,
+                        SaveMetaData = true
+                    });
+                    if (file == null) {
+                        return;
+                    }
+                    ProductImage.Source = ImageSource.FromStream(() => {
+                        var stream = file.GetStream();
+                        imagePath = file.Path.ToString();
+                        file.Dispose();
+                        return stream;
+                    });
+                } else {
+                    CrossPermissions.Current.OpenAppSettings();
+                }
+            } catch (Exception ex) {
+                await DisplayAlert("ERRO", "O sistema não tem os acessos necessários", "Ok");
             }
         }
     }

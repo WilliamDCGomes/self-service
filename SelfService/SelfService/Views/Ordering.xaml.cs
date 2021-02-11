@@ -25,7 +25,8 @@ namespace SelfService.Views {
             Product = product;
             IdUser = idUser;
             OutputNameProduct.Text = product.Title;
-            if(product.ImageAdress != null) {
+            OutputDescription.Text = product.Description;
+            if (product.ImageAdress != null) {
                 ImageProduct.Source = product.ImageAdress;
             }
             if (product.InDescont) {
@@ -37,11 +38,22 @@ namespace SelfService.Views {
             }
             OutputOrderDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
-        public Ordering(ModelOrder order) {
+        public Ordering(ModelOrderAux order) {
             InitializeComponent();
-            Order = order;
+            ModelOrder OrderAux = new ModelOrder();
+            OrderAux.Id = order.Id;
+            OrderAux.IdUser = order.IdUser;
+            OrderAux.IdProduct = order.IdProduct;
+            OrderAux.ProductName = order.ProductName;
+            OrderAux.StatusOrder = order.StatusOrder;
+            OrderAux.OrderDate = order.OrderDate;
+            OrderAux.AlreadyPayed = order.AlreadyPayed;
+            OrderAux.LocationClient = order.LocationClient;
+            OrderAux.Price = order.Price;
+            Order = OrderAux;
             OutputNameProduct.Text = order.ProductName;
             OutputPrice.Text = order.Price.ToString("F").Replace(".", ",");
+            OutputDescription.Text = getDescriptionProduct(order.IdProduct);
             OutputOrderDate.Text = order.OrderDate;
             OutputStatus.Text = order.StatusOrder;
             Picker.IsEnabled = false;
@@ -63,6 +75,12 @@ namespace SelfService.Views {
             if (product.ImageAdress != null) {
                 ImageProduct.Source = product.ImageAdress;
             }
+        }
+
+        private string getDescriptionProduct(int id) {
+            ServicesDBProducts productGet = new ServicesDBProducts(App.DbPath);
+            ModelProducts product = productGet.GetProductById(id);
+            return product.Description;
         }
 
         private void BackHome(object sender, EventArgs e) {
@@ -102,7 +120,7 @@ namespace SelfService.Views {
         }
 
         private bool DataValidation() {
-            if(!String.IsNullOrEmpty(InputLocation.Text)) {
+            if (!String.IsNullOrEmpty(InputLocation.Text)) {
                 return true;
             }
             DisplayAlert("ERRO", "Por Favor informe a dua mesa antes de finalizar o pedido", "OK");
@@ -113,8 +131,7 @@ namespace SelfService.Views {
             if (Picker.SelectedIndex == 0) {
                 InputLocation.IsEnabled = false;
                 Navigation.PushModalAsync(new ScannerPlaces(this));
-            }
-            else if(Picker.SelectedIndex == 1) {
+            } else if (Picker.SelectedIndex == 1) {
                 InputLocation.IsEnabled = true;
                 InputLocation.Focus();
             }
@@ -127,8 +144,7 @@ namespace SelfService.Views {
         private void ClickedPicker(object sender, FocusEventArgs e) {
             if (Picker.SelectedIndex == 0) {
                 Picker.SelectedIndex = -1;
-            }
-            else if (Picker.SelectedIndex == 1) {
+            } else if (Picker.SelectedIndex == 1) {
                 Picker.SelectedIndex = -1;
             }
         }

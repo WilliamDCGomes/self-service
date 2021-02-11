@@ -23,14 +23,16 @@
                         <Grid RowSpacing="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="2" />
-                                <RowDefinition Height="*" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
                                 <RowDefinition Height="30" />
-                                <RowDefinition Height="*" />
                                 <RowDefinition Height="10" />
                             </Grid.RowDefinitions>
                             <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0"/>
-                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1"/>
-                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
+                            <Image x:Name="ProductImage" Grid.Row="2" Source="{Binding ImageAdress}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="3"/>
+                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="4" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Text="R$ " />
@@ -38,7 +40,6 @@
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
-                            <Label x:Name="DescriptionProduct" Text="{Binding Description}" TextColor="White" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -65,14 +66,16 @@
                         <Grid RowSpacing="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="2" />
-                                <RowDefinition Height="*" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
                                 <RowDefinition Height="30" />
-                                <RowDefinition Height="*" />
                                 <RowDefinition Height="10" />
                             </Grid.RowDefinitions>
                             <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0"/>
-                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1"/>
-                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
+                            <Image Grid.Row="2" Source="{Binding ImageAdress}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label x:Name="NameProduct" Text="{Binding Title}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="3"/>
+                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="4" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Text="De "/>
@@ -83,7 +86,6 @@
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
-                            <Label x:Name="DescriptionProduct" Text="{Binding Description}" TextColor="White" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -115,9 +117,13 @@
                                 <RowDefinition Height="30" />
                                 <RowDefinition Height="10" />
                             </Grid.RowDefinitions>
-                            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0"/>
-                            <Label x:Name="NameProduct" Text="{Binding ProductName}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1"/>
-                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="#F0C33B" Grid.Row="0" Grid.ColumnSpan="2"/>
+                            <Label x:Name="NameProduct" Text="{Binding ProductName}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White" Grid.Row="1" Grid.Column="0"/>
+                            <Label x:Name="PriceProduct" FontAttributes="Italic" TextColor="White" Grid.Row="2" Grid.Column="0" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Text="R$ " />
@@ -125,7 +131,7 @@
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
-                            <Label x:Name="Status" TextColor="White" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <Label x:Name="Status" TextColor="White" Grid.Row="3" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Text="Status " />
@@ -133,6 +139,7 @@
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
+                            <Image Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Source="{Binding ImageAdress}" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

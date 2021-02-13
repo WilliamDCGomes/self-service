@@ -7,7 +7,7 @@ using SQLite;
 namespace SelfService.Services {
     public class ServicesDBUser {
         SQLiteConnection connection;
-        public int IdUser { get; set; }
+        public long IdUser { get; set; }
         public ServicesDBUser(string dbPath) {
             if (dbPath == null) {
                 dbPath = App.DbPath;
@@ -17,12 +17,10 @@ namespace SelfService.Services {
 
         }
         public bool Insert(ModelUser user) {
-            if (user.Name != null && user.LastName != null && user.EmailAdress != null && user.Cep != null && user.Street != null && user.Neighborhood != null && user.HouseNumber != null && user.Login != null && user.Password != null) {
-                int result = 0;
-                result = connection.Insert(user);
-                if(result != 0) {
-                    return true;
-                }
+            int result = 0;
+            result = connection.Insert(user);
+            if (result != 0) {
+                return true;
             }
             return false;
         }
@@ -75,13 +73,13 @@ namespace SelfService.Services {
             return false;
         }
 
-        public ModelUser LocaleByID(int id) {
+        public ModelUser LocaleByID(long id) {
             List<ModelUser> list = new List<ModelUser>();
             ModelUser user = new ModelUser();
             try {
                 var data = from p in connection.Table<ModelUser>() where p.Id == id select p;
                 list = data.ToList();
-                foreach(ModelUser i in list) {
+                foreach (ModelUser i in list) {
                     user = i;
                 }
             } catch (Exception e) {
@@ -89,14 +87,30 @@ namespace SelfService.Services {
             }
             return user;
         }
-        
+
+
+        public ModelUser LocaleByLogin(string login) {
+            List<ModelUser> list = new List<ModelUser>();
+            ModelUser user = new ModelUser();
+            try {
+                var data = from p in connection.Table<ModelUser>() where p.Login.ToLower().Contains(login.ToLower()) select p;
+                list = data.ToList();
+                foreach (ModelUser i in list) {
+                    user = i;
+                }
+            } catch (Exception e) {
+                throw new Exception(e.Message);
+            }
+            return user;
+        }
+
 
         public bool Locale(string login) {
             List<ModelUser> list = new List<ModelUser>();
             try {
                 var data = from p in connection.Table<ModelUser>() where p.Login.ToLower().Contains(login.ToLower()) select p;
                 list = data.ToList();
-                if(list.Count == 0) {
+                if (list.Count == 0) {
                     return true;
                 }
             } catch (Exception e) {

@@ -13,14 +13,14 @@ using Xamarin.Forms.Xaml;
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Ordering : ContentPage {
-        public int IdUser { get; set; }
+        public long IdUser { get; set; }
         public double Price { get; set; }
         ModelProducts Product;
         ModelOrder Order;
         public Ordering() {
             InitializeComponent();
         }
-        public Ordering(ModelProducts product, int idUser) {
+        public Ordering(ModelProducts product, long idUser) {
             InitializeComponent();
             Product = product;
             IdUser = idUser;

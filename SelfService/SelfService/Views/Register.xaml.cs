@@ -86,15 +86,15 @@ namespace SelfService.Views {
             if (InputName.Text != null && InputLastName.Text != null && InputEmailAdress.Text != null && InputCEP.Text != null && InputStreet.Text != null && InputNeighborhood.Text != null && InputHouseNumber.Text != null && InputLogin.Text != null && InputPassword.Text != null && RepetPasswordEntry.Text != null && InputPassword.Text.Equals(RepetPasswordEntry.Text)) {
                 if (InputPassword.Text.Length < 6) {
                     DisplayAlert("Aviso", "A senha deve conter no mínimo 6 dígitos", "OK");
-                }
+                } 
+                else if (!dbUser.Locale(InputLogin.Text)) {
+                    DisplayAlert("Aviso", "O Login que você está tentando cadastrar já está em uso", "OK");
+                } 
                 else if (!IsValidEmailAddress(InputEmailAdress.Text)) {
                     DisplayAlert("Aviso", "O E-mail que você digitou não é válido!", "OK");
                 }
-                else if (dbUser.Locale(InputLogin.Text)) {
-                    return true;
-                } 
                 else {
-                    DisplayAlert("Aviso", "O Login que você está tentando cadastrar já está em uso", "OK");
+                    return true;
                 }
             } 
             else if (!(InputPassword.Text == RepetPasswordEntry.Text)) {

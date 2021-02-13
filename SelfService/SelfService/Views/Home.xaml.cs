@@ -18,12 +18,15 @@ namespace SelfService.Views {
         ServicesDBOrder dbOrder = new ServicesDBOrder(App.DbPath);
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
         ServicesDBReservation dbReservation = new ServicesDBReservation(App.DbPath);
-        public int IdUser { get; private set; }
-        public Home(int idUser) {
+        public long IdUser { get; private set; }
+        public Home(long idUser) {
             InitializeComponent();
             RefreshList();
             IdUser = idUser;
             setUser();
+        }
+
+        public Home() {
         }
 
         private void RefreshEvent(object sender, EventArgs e) {

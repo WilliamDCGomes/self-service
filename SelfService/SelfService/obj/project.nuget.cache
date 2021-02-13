@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hEtaELSpxDu2q25hdC3SL+5WMv7L6uoX82166JdcfzR5u7HvH+ceS5abupgElm9qsyHR2dui5BV7GsHRo8CPOw==",
+  "dgSpecHash": "/WnTXyfN/y8eZ/AFPiGPcvWqFPEh43Gi23kazT53vQLNP82nw/nG4NwaT3eLlEBvJu5c3YHlL5SkAKcsYXssQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\correios-api\\1.1.1\\correios-api.1.1.1.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\plugin.facebookclient\\2.2.1\\plugin.facebookclient.2.2.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\plugin.fingerprint\\2.1.3\\plugin.fingerprint.2.1.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",

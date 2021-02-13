@@ -35,7 +35,7 @@
                             <ColumnDefinition Width="93*"/>
                         </Grid.ColumnDefinitions>
                         <Image HorizontalOptions="Start" Source="loginIcon" Grid.Column="0"/>
-                        <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black" Focused="TryLoginBiometric"/>
+                        <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black"/>
                     </Grid>
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="1" Grid.ColumnSpan="3" CornerRadius="25">
@@ -57,10 +57,10 @@
                 </Label>
                 <Button Margin="0, 5, 0, 5" Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderColor="White" BorderWidth=".5" BackgroundColor="Transparent" TextColor="White" Grid.Row="3" Grid.ColumnSpan="3" Clicked="EnterMenu"/>
                 <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="4" Grid.ColumnSpan="3" Clicked="NewUser"/>
-                <Button Text="ENTRAR COM GOOGLE" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#d34836" TextColor="White" Grid.Row="5" Grid.ColumnSpan="3" Clicked="SingInWithGoogle"/>
-                <ImageButton Source="googleLogo" HorizontalOptions="End" HeightRequest="27.5" WidthRequest="27.5" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1" Clicked="SingInWithGoogle" />
-                <Button Text="ENTRAR COM FACEBOOK" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#425E9C" TextColor="White" Grid.Row="6" Grid.ColumnSpan="3" Clicked="NewUser"/>
-                <ImageButton Source="faceLogo" HorizontalOptions="End" BackgroundColor="Transparent" HeightRequest="29" WidthRequest="29" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Clicked="NewUser" />
+                <Button Text="ENTRAR COM GOOGLE" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#d34836" TextColor="White" Grid.Row="6" Grid.ColumnSpan="3" Clicked="SingInWithGoogle"/>
+                <ImageButton Source="googleLogo" HorizontalOptions="End" HeightRequest="27.5" WidthRequest="27.5" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="1" Clicked="SingInWithGoogle" />
+                <Button Text="ENTRAR COM FACEBOOK" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#425E9C" TextColor="White" Grid.Row="5" Grid.ColumnSpan="3" Clicked="SingInWithFacebook"/>
+                <ImageButton Source="faceLogo" HorizontalOptions="End" BackgroundColor="Transparent" HeightRequest="29" WidthRequest="29" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Clicked="SingInWithFacebook" />
             </Grid>
             <Label Grid.Row="2" FontSize="12" FontAttributes="Bold" Text="Versão 1.1" TextColor="White" VerticalOptions="FillAndExpand" VerticalTextAlignment="End" HorizontalTextAlignment="Center"/>
         </Grid>

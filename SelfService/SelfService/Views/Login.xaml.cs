@@ -15,8 +15,8 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage {
         bool tried = false;
-        bool fromLogout = false;
         ModelUser modelUser = null;
+        string logintemp = null;
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
         public Login() {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace SelfService.Views {
                 modelUser = dbUser.GetUser();
                 if (modelUser != null) {
                     LoginInput.Text = modelUser.Login;
-                    PasswordEntry.Text = modelUser.Password;
+                    logintemp = modelUser.Login;
                     loginFingerPrint(modelUser.Id);
                 }
             }
@@ -33,10 +33,17 @@ namespace SelfService.Views {
 
         public Login(bool validation) {
             InitializeComponent();
-            fromLogout = validation;
+            List<ModelUser> userSystem = dbUser.ListUsers();
+            if (userSystem.Count > 0) {
+                modelUser = dbUser.GetUser();
+                if (modelUser != null) {
+                    LoginInput.Text = modelUser.Login;
+                    logintemp = modelUser.Login;
+                }
+            }
         }
 
-        private async void loginFingerPrint(int id) {
+        private async void loginFingerPrint(long id) {
             if (!tried) {
                 var availability = await CrossFingerprint.Current.IsAvailableAsync(true);
                 if (availability) {
@@ -85,20 +92,19 @@ namespace SelfService.Views {
         }
 
         private void TryLoginBiometric(object sender, FocusEventArgs e) {
-            if (fromLogout) {
-                ModelUser User = null;
-                User = dbUser.GetUser();
-                if (User != null) {
-                    LoginInput.Text = User.Login;
-                    PasswordEntry.Text = User.Password;
-                    loginFingerPrint(User.Id);
+            if (LoginInput.Text.Equals(logintemp)) {
+                if (modelUser != null) {
+                    loginFingerPrint(modelUser.Id);
                 }
             }
         }
 
-        private async void SingInWithGoogle(object sender, EventArgs e) {
-            
+        private void SingInWithGoogle(object sender, EventArgs e) {
+
         }
 
+        private async void SingInWithFacebook(object sender, EventArgs e) {
+            App.Current.MainPage = new NavigationPage(new Views.LoginFacebook());
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace SelfService.Models {
         public int Id { get; set; }
 
         [NotNull]
-        public int IdUser { get; set; }
+        public long IdUser { get; set; }
         
         [NotNull]
         public string NameUser { get; set; }

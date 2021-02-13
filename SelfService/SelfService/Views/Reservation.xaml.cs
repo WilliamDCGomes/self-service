@@ -14,7 +14,7 @@ using Xamarin.Forms.Xaml;
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Reservation : ContentPage {
-        private int IdUser;
+        private long IdUser;
         public Reservation(ModelUser user) {
             InitializeComponent();
             OutputNameUser.Text = user.Name;

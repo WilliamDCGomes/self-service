@@ -18,7 +18,7 @@ namespace SelfService.Views {
     public partial class EditAccount : ContentPage {
         ModelUser User;
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
-        public EditAccount(int idUser) {
+        public EditAccount(long idUser) {
             InitializeComponent();
             User = dbUser.LocaleByID(idUser);
             InputName.Text = User.Name;

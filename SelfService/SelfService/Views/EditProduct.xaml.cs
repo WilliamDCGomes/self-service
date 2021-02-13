@@ -18,10 +18,10 @@ namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditProduct : ContentPage {
         ModelProducts Product;
-        private int IdUser;
+        private long IdUser;
         string imagePath = null;
         public int choose = 0;
-        public EditProduct(ModelProducts product, int idUser) {
+        public EditProduct(ModelProducts product, long idUser) {
             InitializeComponent();
             IdUser = idUser;
             Product = product;

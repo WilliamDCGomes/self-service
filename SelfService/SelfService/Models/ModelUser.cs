@@ -7,15 +7,16 @@ namespace SelfService.Models {
     [Table("Client")]
     public class ModelUser {
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [NotNull]
         public string Name { get; set; }
 
         public string LastName { get; set; }
 
-        [NotNull]
         public string EmailAdress { get; set; }
+
+        public string BirthDay { get; set; }
 
         public string Phone { get; set; }
 
@@ -34,7 +35,6 @@ namespace SelfService.Models {
         [NotNull]
         public string Login { get; set; }
 
-        [NotNull]
         public string Password { get; set; }
 
         public bool IsAdmin { get; set; }

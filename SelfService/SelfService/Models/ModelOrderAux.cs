@@ -5,7 +5,7 @@ using System.Text;
 namespace SelfService.Models {
     public class ModelOrderAux{
         public int Id { get; set; }
-        public int IdUser { get; set; }
+        public long IdUser { get; set; }
         public int IdProduct { get; set; }
         public string ProductName { get; set; }
         public string StatusOrder { get; set; }

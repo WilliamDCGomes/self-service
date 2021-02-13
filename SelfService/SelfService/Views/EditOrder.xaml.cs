@@ -13,7 +13,7 @@ using Xamarin.Forms.Xaml;
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditOrder : ContentPage {
-        public int IdUser { get; set; }
+        public long IdUser { get; set; }
         public double Price { get; set; }
         ModelOrder Order;
         public EditOrder(ModelOrder order) {

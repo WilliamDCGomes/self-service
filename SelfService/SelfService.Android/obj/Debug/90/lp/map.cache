@@ -53,6 +53,7 @@ Xamarin.AndroidX.VectorDrawable
 Xamarin.AndroidX.VersionedParcelable
 Xamarin.AndroidX.ViewPager
 Xamarin.AndroidX.ViewPager2
+Xamarin.Auth
 Xamarin.Essentials
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
@@ -99,3 +100,15 @@ androidx.legacy.legacy-support-core-ui
 androidx.legacy.legacy-support-v4
 androidx.browser.browser
 androidx.biometric.biometric
+Bolts.AppLinks
+Bolts.Tasks
+Google.ZXing.Core
+Plugin.FacebookClient
+Xamarin.Facebook.Android
+Xamarin.Facebook.AppLinks.Android
+Xamarin.Facebook.Common.Android
+Xamarin.Facebook.Core.Android
+Xamarin.Facebook.Login.Android
+Xamarin.Facebook.Messenger.Android
+Xamarin.Facebook.Places.Android
+Xamarin.Facebook.Share.Android

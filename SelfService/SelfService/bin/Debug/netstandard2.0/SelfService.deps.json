@@ -15,6 +15,7 @@
           "Rg.Plugins.Popup": "1.2.0.223",
           "System.ServiceModel.Primitives": "4.8.1",
           "Xam.Plugin.Media": "4.0.1.5",
+          "Xamarin.Auth": "1.7.0",
           "Xamarin.Essentials": "1.6.0-rc1",
           "Xamarin.Forms": "4.8.0.1451",
           "ZXing.Net.Mobile.Forms": "3.0.0-beta5",
@@ -252,6 +253,14 @@
           }
         }
       },
+      "Xamarin.Auth/1.7.0": {
+        "runtime": {
+          "lib/netstandard1.6/Xamarin.Auth.dll": {
+            "assemblyVersion": "1.6.0.1",
+            "fileVersion": "1.6.0.1"
+          }
+        }
+      },
       "Xamarin.Essentials/1.6.0-rc1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -475,6 +484,13 @@
       "sha512": "sha512-a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "path": "xam.plugin.media/4.0.1.5",
       "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
+    },
+    "Xamarin.Auth/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F5yMDdHmcBRochGOeeyIRJ2fangsCEodSbOwg4TQT5kJnsT/CjP6ieXbFfFF9ccni66EgbQ7NTTjvajUlD3IGQ==",
+      "path": "xamarin.auth/1.7.0",
+      "hashPath": "xamarin.auth.1.7.0.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.0-rc1": {
       "type": "package",

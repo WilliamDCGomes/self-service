@@ -3,15 +3,13 @@ using Rg.Plugins.Popup.Extensions;
 using SelfService.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.IO;
 using SelfService.Models;
+using Xamarin.Essentials;
+using Xamarin.Auth;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -97,5 +95,10 @@ namespace SelfService.Views {
                 }
             }
         }
+
+        private async void SingInWithGoogle(object sender, EventArgs e) {
+            
+        }
+
     }
 }

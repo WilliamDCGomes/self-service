@@ -20,8 +20,15 @@
                     <RowDefinition Height="15"/>
                     <RowDefinition Height="48"/>
                     <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
                 </Grid.RowDefinitions>
-                <Frame StyleClass="EntryFrame" Grid.Row="0" CornerRadius="25">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="85*"/>
+                </Grid.ColumnDefinitions>
+                <Frame StyleClass="EntryFrame" Grid.Row="0" Grid.ColumnSpan="3" CornerRadius="25">
                     <Grid ColumnSpacing="15">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="7*"/>
@@ -31,7 +38,7 @@
                         <Controls:CustomEntry x:Name="LoginInput" Placeholder="Login" Grid.Column="1" HorizontalOptions="FillAndExpand" PlaceholderColor="LightGray" TextColor="Black" Focused="TryLoginBiometric"/>
                     </Grid>
                 </Frame>
-                <Frame StyleClass="EntryFrame" Grid.Row="1" CornerRadius="25">
+                <Frame StyleClass="EntryFrame" Grid.Row="1" Grid.ColumnSpan="3" CornerRadius="25">
                     <Grid ColumnSpacing="18">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="6*"/>
@@ -43,15 +50,19 @@
                         <ImageButton x:Name="ImagePasswordHideShow" HorizontalOptions="Start" Source="PasswordTrue" Grid.Column="2" BackgroundColor="Transparent" Clicked="ShowAndHidePassword"/>
                     </Grid>
                 </Frame>
-                <Label Text="Esqueci a Senha" TextColor="White" FontSize="13" Grid.Row="2" HorizontalOptions="EndAndExpand">
+                <Label Text="Esqueci a Senha" TextColor="White" FontSize="13" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="EndAndExpand">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="DoForgetPassword" />
                     </Label.GestureRecognizers>
                 </Label>
-                <Button Margin="0, 5, 0, 5" Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderColor="White" BorderWidth=".5" BackgroundColor="Transparent" TextColor="White" Grid.Row="3" Clicked="EnterMenu"/>
-                <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="4" Clicked="NewUser"/>
+                <Button Margin="0, 5, 0, 5" Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderColor="White" BorderWidth=".5" BackgroundColor="Transparent" TextColor="White" Grid.Row="3" Grid.ColumnSpan="3" Clicked="EnterMenu"/>
+                <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="4" Grid.ColumnSpan="3" Clicked="NewUser"/>
+                <Button Text="ENTRAR COM GOOGLE" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#d34836" TextColor="White" Grid.Row="5" Grid.ColumnSpan="3" Clicked="SingInWithGoogle"/>
+                <ImageButton Source="googleLogo" HorizontalOptions="End" HeightRequest="27.5" WidthRequest="27.5" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1" Clicked="SingInWithGoogle" />
+                <Button Text="ENTRAR COM FACEBOOK" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="#425E9C" TextColor="White" Grid.Row="6" Grid.ColumnSpan="3" Clicked="NewUser"/>
+                <ImageButton Source="faceLogo" HorizontalOptions="End" BackgroundColor="Transparent" HeightRequest="29" WidthRequest="29" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Clicked="NewUser" />
             </Grid>
-            <Label Grid.Row="2" FontSize="12" FontAttributes="Bold" Text="Versão 1.0" TextColor="White" VerticalOptions="FillAndExpand" VerticalTextAlignment="End" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="2" FontSize="12" FontAttributes="Bold" Text="Versão 1.1" TextColor="White" VerticalOptions="FillAndExpand" VerticalTextAlignment="End" HorizontalTextAlignment="Center"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

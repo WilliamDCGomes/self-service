@@ -88,7 +88,7 @@ namespace SelfService.Views {
                     DisplayAlert("Aviso", "A senha deve conter no mínimo 6 dígitos", "OK");
                 }
                 else if (!IsValidEmailAddress(InputEmailAdress.Text)) {
-                    DisplayAlert("Erro", "O E-mail que você digitou não é válido!", "OK");
+                    DisplayAlert("Aviso", "O E-mail que você digitou não é válido!", "OK");
                 }
                 else if (dbUser.Locale(InputLogin.Text)) {
                     return true;

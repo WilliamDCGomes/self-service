@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JbcFxypFuZleAay953VMTRgYjhqi9L6RMFI5sLEVeRSlX0VIhSPPSG+heQQmlKWyHc5W7onu+tAn0FEbGyCoiw==",
+  "dgSpecHash": "hEtaELSpxDu2q25hdC3SL+5WMv7L6uoX82166JdcfzR5u7HvH+ceS5abupgElm9qsyHR2dui5BV7GsHRo8CPOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\correios-api\\1.1.1\\correios-api.1.1.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\plugin.facebookclient\\2.2.1\\plugin.facebookclient.2.2.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\plugin.fingerprint\\2.1.3\\plugin.fingerprint.2.1.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
@@ -27,6 +28,7 @@
     "C:\\Users\\willi\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.servicemodel.primitives\\4.8.1\\system.servicemodel.primitives.4.8.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xam.plugin.media\\4.0.1.5\\xam.plugin.media.4.0.1.5.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\xamarin.auth\\1.7.0\\xamarin.auth.1.7.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.6.0-rc1\\xamarin.essentials.1.6.0-rc1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\zxing.net.mobile\\3.0.0-beta5\\zxing.net.mobile.3.0.0-beta5.nupkg.sha512",

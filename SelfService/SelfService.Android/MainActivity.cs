@@ -19,7 +19,6 @@ namespace SelfService.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             await CrossMedia.Current.Initialize();
             base.OnCreate(savedInstanceState);
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             CrossFingerprint.SetCurrentActivityResolver(() => Xamarin.Essentials.Platform.CurrentActivity);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

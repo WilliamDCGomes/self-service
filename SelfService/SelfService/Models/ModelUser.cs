@@ -12,7 +12,6 @@ namespace SelfService.Models {
         [NotNull]
         public string Name { get; set; }
 
-        [NotNull]
         public string LastName { get; set; }
 
         [NotNull]
@@ -20,16 +19,12 @@ namespace SelfService.Models {
 
         public string Phone { get; set; }
 
-        [NotNull]
         public string Cep { get; set; }
 
-        [NotNull]
         public string Street { get; set; }
 
-        [NotNull]
         public string Neighborhood { get; set; }
 
-        [NotNull]
         public string HouseNumber { get; set; }
 
         public string City { get; set; }

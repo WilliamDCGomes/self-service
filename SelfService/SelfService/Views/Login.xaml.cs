@@ -8,19 +8,17 @@ using Plugin.Fingerprint.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SelfService.Models;
-using Xamarin.Essentials;
-using Xamarin.Auth;
-using SelfService.Droid.Masks;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage {
-        bool tried = false;
+        public bool tried = false;
         ModelUser modelUser = null;
         string logintemp = null;
         ServicesDBUser dbUser = new ServicesDBUser(App.DbPath);
-        public Login() {
+        public Login(bool aux) {
             InitializeComponent();
+            tried = aux;
             List<ModelUser> userSystem = dbUser.ListUsers();
             if (userSystem.Count > 0) {
                 modelUser = dbUser.GetUser();
@@ -28,18 +26,6 @@ namespace SelfService.Views {
                     LoginInput.Text = modelUser.Login;
                     logintemp = modelUser.Login;
                     loginFingerPrint(modelUser.Id);
-                }
-            }
-        }
-
-        public Login(bool validation) {
-            InitializeComponent();
-            List<ModelUser> userSystem = dbUser.ListUsers();
-            if (userSystem.Count > 0) {
-                modelUser = dbUser.GetUser();
-                if (modelUser != null) {
-                    LoginInput.Text = modelUser.Login;
-                    logintemp = modelUser.Login;
                 }
             }
         }
@@ -90,23 +76,6 @@ namespace SelfService.Views {
                 }
                 await Navigation.PopAllPopupAsync();
             }
-        }
-
-        private void TryLoginBiometric(object sender, FocusEventArgs e) {
-            if (LoginInput.Text.Equals(logintemp)) {
-                if (modelUser != null) {
-                    loginFingerPrint(modelUser.Id);
-                }
-            }
-        }
-
-        private void SingInWithGoogle(object sender, EventArgs e) {
-            LoginGoogle loginGoogle = new LoginGoogle();
-            loginGoogle.TryLogin();
-        }
-
-        private async void SingInWithFacebook(object sender, EventArgs e) {
-            App.Current.MainPage = new NavigationPage(new Views.LoginFacebook());
         }
     }
 }

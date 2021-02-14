@@ -158,7 +158,7 @@ namespace SelfService.Views {
                 bool Worked = dbUser.Delete(User);
                 if (Worked) {
                     await DisplayAlert("Sucesso", "Conta excluida com sucesso", "OK");
-                    App.Current.MainPage = new NavigationPage(new Login());
+                    App.Current.MainPage = new NavigationPage(new LoginPage());
                 }
             }
         }

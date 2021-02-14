@@ -28,3 +28,4 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\ref\SelfService.dll
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\SelfService.pdb
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\SelfService.csprojAssemblyReference.cache
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs

@@ -19,7 +19,7 @@ namespace SelfService.Views {
             InitializeComponent();
         }
         private void BackLogin(object sender, EventArgs e) {
-            App.Current.MainPage = new NavigationPage(new Login());
+            Navigation.PopAsync();
         }
 
         private void ShowAndHidePassword(object sender, EventArgs e) {
@@ -123,7 +123,7 @@ namespace SelfService.Views {
                     }
                 } 
                 else {
-                        await DisplayAlert("Erro", "O Cep deve ter 8 digítos", "OK");
+                    await DisplayAlert("Erro", "O Cep deve ter 8 digítos", "OK");
                 }
             }
         }

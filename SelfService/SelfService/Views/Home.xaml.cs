@@ -126,7 +126,7 @@ namespace SelfService.Views {
         private async void DoLogout(object sender, EventArgs e) {
             var logout = await DisplayAlert("Logout", "Deseja fazer Logout?", "SIM", "NÃO");
             if (logout) {
-                App.Current.MainPage = new NavigationPage(new Login(true));
+                App.Current.MainPage = new NavigationPage(new LoginPage());
             }
         }
 

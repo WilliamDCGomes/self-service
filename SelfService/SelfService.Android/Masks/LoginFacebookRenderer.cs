@@ -72,7 +72,7 @@ namespace SelfService.Droid.Masks {
                     App.Current.MainPage = new NavigationPage(new Home(user.Id));
                 } 
                 else {
-                    App.Current.MainPage = new NavigationPage(new Login(true));
+                    App.Current.MainPage = new NavigationPage(new LoginPage());
                 }
             };
             var activity = this.Context as Activity;

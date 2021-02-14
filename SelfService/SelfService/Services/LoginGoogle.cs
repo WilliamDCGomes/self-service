@@ -81,8 +81,8 @@ namespace SelfService.Droid.Masks {
 				}
 			} 
 			else {
-
-            }
+				App.Current.MainPage = new NavigationPage(new LoginPage());
+			}
 		}
 
 		private void OnAuthError(object sender, AuthenticatorErrorEventArgs e) {
@@ -91,7 +91,7 @@ namespace SelfService.Droid.Masks {
 				authenticator.Completed -= OnAuthCompleted;
 				authenticator.Error -= OnAuthError;
 			}
-			//App.Current.MainPage = new NavigationPage(new Login());
+			//App.Current.MainPage = new NavigationPage(new LoginPage());
 		}
 	}
 }

@@ -16,6 +16,15 @@
     <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.SelfService.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
+    <activity android:label="CustomUrlSchemeInterceptorActivity" android:launchMode="singleTop" android:noHistory="true" android:name="crc646b74bfe0a0a6fc72.CustomUrlSchemeInterceptorActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:path="/oauth2redirect" />
+        <data android:scheme="com.googleusercontent.apps.806383440072-ppo06ni35et5gtksrabsq11a3mh89ek1" />
+      </intent-filter>
+    </activity>
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/MyTheme.Base" android:name="crc646b74bfe0a0a6fc72.MainActivity" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Self-Service" android:theme="@style/MainTheme.Splash" android:name="crc646b74bfe0a0a6fc72.SplashActivity">
       <intent-filter>

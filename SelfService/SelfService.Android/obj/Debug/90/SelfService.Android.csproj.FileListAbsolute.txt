@@ -851,3 +851,4 @@ C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\androidx\proguard\de7516a8-54f6-48cc-988c-9c3478d7b70e.txt
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\androidx\proguard\f6e2de2d-974d-4630-a987-69e601e125ca.txt
 C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\androidx\proguard\fd85a686-5bbe-4d0c-93bd-0ed30a0ac3fa.txt
+C:\Users\willi\Desktop\SelfService\SelfService\SelfService.Android\obj\Debug\90\android\src\crc646b74bfe0a0a6fc72\CustomUrlSchemeInterceptorActivity.java

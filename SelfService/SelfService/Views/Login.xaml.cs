@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using SelfService.Models;
 using Xamarin.Essentials;
 using Xamarin.Auth;
+using SelfService.Droid.Masks;
 
 namespace SelfService.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -100,7 +101,8 @@ namespace SelfService.Views {
         }
 
         private void SingInWithGoogle(object sender, EventArgs e) {
-
+            LoginGoogle loginGoogle = new LoginGoogle();
+            loginGoogle.TryLogin();
         }
 
         private async void SingInWithFacebook(object sender, EventArgs e) {

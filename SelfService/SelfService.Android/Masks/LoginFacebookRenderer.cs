@@ -70,6 +70,9 @@ namespace SelfService.Droid.Masks {
                         user.Id = dbUser.LocaleByLogin(user.Login).Id;
                     }
                     App.Current.MainPage = new NavigationPage(new Home(user.Id));
+                } 
+                else {
+                    App.Current.MainPage = new NavigationPage(new Login(true));
                 }
             };
             var activity = this.Context as Activity;

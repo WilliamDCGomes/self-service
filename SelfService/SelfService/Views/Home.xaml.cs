@@ -119,7 +119,7 @@ namespace SelfService.Views {
                 Ordering order = new Ordering(item, IdUser);
                 Navigation.PushAsync(order);
             } else {
-                DisplayAlert("Aviso", "O prato não está em oferta. Verifique as ofertas de hpje, ou vá até o início para solicitar esse prato", "OK");
+                DisplayAlert("Aviso", "O prato não está em oferta. Verifique as ofertas de hoje, ou vá até o início para solicitar esse prato", "OK");
             }
         }
 

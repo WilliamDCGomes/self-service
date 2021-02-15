@@ -62,11 +62,6 @@ namespace SelfService.Views {
             App.Current.MainPage = new NavigationPage(new Views.LoginFacebook());
         }
 
-        private async void SingInWithTwitter(object sender, EventArgs e) {
-            await frameTwitter.FadeTo(0.5, 100, Easing.BounceIn);
-            await frameTwitter.FadeTo(1, 100, Easing.BounceOut);
-        }
-
         private void NewUser(object sender, EventArgs e) {
             Navigation.PushAsync(new Register());
         }

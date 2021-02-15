@@ -26,7 +26,6 @@
                     <RowDefinition Height="45" />
                     <RowDefinition Height="45" />
                     <RowDefinition Height="45" />
-                    <RowDefinition Height="45" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"/>
@@ -67,25 +66,8 @@
                         <TapGestureRecognizer Tapped="SingInWithFacebook" />
                     </Frame.GestureRecognizers>
                 </Frame>
-                <Frame x:Name="frameTwitter" StyleClass="EntryFrame" BackgroundColor="#38A8E0" Grid.Row="2" CornerRadius="25" HorizontalOptions="FillAndExpand" Grid.ColumnSpan="3">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="10*"/>
-                            <ColumnDefinition Width="80*"/>
-                        </Grid.ColumnDefinitions>
-                        <ImageButton TranslationX="8" Source="logoTwitter" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="60" WidthRequest="60" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Clicked="SingInWithTwitter" />
-                        <Label Text="ENTRAR COM TWITTER" FontSize="13" FontAttributes="Bold" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Grid.ColumnSpan="2" >
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="SingInWithTwitter"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                    </Grid>
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="SingInWithTwitter" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-                <Button Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderWidth=".5" BackgroundColor="#B30000" TextColor="White" Grid.Row="3" Grid.ColumnSpan="3" Clicked="EnterLogin"/>
-                <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="4" Grid.ColumnSpan="3" Clicked="NewUser"/>
+                <Button Text="ACESSAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BorderWidth=".5" BackgroundColor="#B30000" TextColor="White" Grid.Row="2" Grid.ColumnSpan="3" Clicked="EnterLogin"/>
+                <Button Text="CADASTRAR" CornerRadius="25" FontSize="13" FontAttributes="Bold" BackgroundColor="White" TextColor="#B30000" Grid.Row="3" Grid.ColumnSpan="3" Clicked="NewUser"/>
             </Grid>
             <Label FontSize="12" TranslationY="-10" Grid.Row="4" FontAttributes="Bold" Text="Versão 1.1" TextColor="White" VerticalOptions="EndAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         </Grid>

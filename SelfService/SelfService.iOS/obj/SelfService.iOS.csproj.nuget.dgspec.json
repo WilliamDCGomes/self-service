@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj": {}
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj": {}
   },
   "projects": {
-    "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj": {
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
         "projectName": "SelfService.iOS",
-        "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
+        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\obj\\",
+        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
-                "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
+              "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+                "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
               }
             }
           }
@@ -105,14 +105,14 @@
         }
       }
     },
-    "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "projectName": "SelfService",
-        "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\obj\\",
+        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

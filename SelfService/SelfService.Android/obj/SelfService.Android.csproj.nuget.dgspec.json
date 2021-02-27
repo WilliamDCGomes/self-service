@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programing\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {}
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {}
   },
   "projects": {
-    "D:\\Programing\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
+        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
         "projectName": "SelfService.Android",
-        "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
+        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\SelfService\\SelfService\\SelfService.Android\\obj\\",
+        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -23,24 +23,24 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid90"
+          "monoandroid10.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid90": {
+          "monoandroid10.0": {
             "projectReferences": {
-              "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
-                "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
+              "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+                "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "monoandroid90": {
+        "monoandroid10.0": {
           "dependencies": {
             "Correios-Api": {
               "target": "Package",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "projectName": "SelfService",
-        "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\obj\\",
+        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

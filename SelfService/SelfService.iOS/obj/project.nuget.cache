@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jt2PYC7nzlqudXTHCc/G4Y1UVqrxxKyebJvqZmZR32EEjWlCPZRSWVvSdedaVOolSW6VcqjNa8KH4Fcbr2ym6Q==",
+  "dgSpecHash": "UmQOGEFowA1/glZUSV2cjr8JtUgoEcg8nAwGMIBUi4Jdpbui3Li4bpi+Z5MosO5JcP3oSM61bOOU3m1V4JkrGQ==",
   "success": true,
-  "projectFilePath": "D:\\Programing\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
+  "projectFilePath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\correios-api\\1.1.1\\correios-api.1.1.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

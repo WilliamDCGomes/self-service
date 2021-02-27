@@ -1887,11 +1887,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+      "projectUniqueName": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
       "projectName": "SelfService",
-      "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+      "projectPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
       "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\obj\\",
+      "outputPath": "D:\\Programing\\SelfService\\SelfService\\SelfService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

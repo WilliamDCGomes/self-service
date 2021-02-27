@@ -1902,6 +1902,7 @@ namespace SelfService.Droid
 			global::Xamarin.Auth.Resource.Styleable.GradientColorItem_android_color = global::SelfService.Droid.Resource.Styleable.GradientColorItem_android_color;
 			global::Xamarin.Auth.Resource.Styleable.GradientColorItem_android_offset = global::SelfService.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::SelfService.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::SelfService.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::SelfService.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::SelfService.Droid.Resource.Attribute.fontProviderAuthority;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderCerts = global::SelfService.Droid.Resource.Attribute.fontProviderCerts;
@@ -1912,15 +1913,23 @@ namespace SelfService.Droid
 			global::Xamarin.Essentials.Resource.Attribute.fontStyle = global::SelfService.Droid.Resource.Attribute.fontStyle;
 			global::Xamarin.Essentials.Resource.Attribute.fontVariationSettings = global::SelfService.Droid.Resource.Attribute.fontVariationSettings;
 			global::Xamarin.Essentials.Resource.Attribute.fontWeight = global::SelfService.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Essentials.Resource.Attribute.keylines = global::SelfService.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchor = global::SelfService.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchorGravity = global::SelfService.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Attribute.layout_behavior = global::SelfService.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Essentials.Resource.Attribute.layout_dodgeInsetEdges = global::SelfService.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Attribute.layout_insetEdge = global::SelfService.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Attribute.layout_keyline = global::SelfService.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Essentials.Resource.Attribute.statusBarBackground = global::SelfService.Droid.Resource.Attribute.statusBarBackground;
 			global::Xamarin.Essentials.Resource.Attribute.ttcIndex = global::SelfService.Droid.Resource.Attribute.ttcIndex;
-			global::Xamarin.Essentials.Resource.Color.androidx_core_ripple_material_light = global::SelfService.Droid.Resource.Color.androidx_core_ripple_material_light;
-			global::Xamarin.Essentials.Resource.Color.androidx_core_secondary_text_default_material_light = global::SelfService.Droid.Resource.Color.androidx_core_secondary_text_default_material_light;
 			global::Xamarin.Essentials.Resource.Color.browser_actions_bg_grey = global::SelfService.Droid.Resource.Color.browser_actions_bg_grey;
 			global::Xamarin.Essentials.Resource.Color.browser_actions_divider_color = global::SelfService.Droid.Resource.Color.browser_actions_divider_color;
 			global::Xamarin.Essentials.Resource.Color.browser_actions_text_color = global::SelfService.Droid.Resource.Color.browser_actions_text_color;
 			global::Xamarin.Essentials.Resource.Color.browser_actions_title_color = global::SelfService.Droid.Resource.Color.browser_actions_title_color;
 			global::Xamarin.Essentials.Resource.Color.notification_action_color_filter = global::SelfService.Droid.Resource.Color.notification_action_color_filter;
 			global::Xamarin.Essentials.Resource.Color.notification_icon_bg_color = global::SelfService.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Essentials.Resource.Color.ripple_material_light = global::SelfService.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Essentials.Resource.Color.secondary_text_default_material_light = global::SelfService.Droid.Resource.Color.secondary_text_default_material_light;
 			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_max_width = global::SelfService.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
 			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_min_padding = global::SelfService.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
 			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_horizontal_material = global::SelfService.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
@@ -1957,71 +1966,47 @@ namespace SelfService.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::SelfService.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::SelfService.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::SelfService.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarin.Essentials.Resource.Id.accessibility_action_clickable_span = global::SelfService.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_0 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_0;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_1 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_1;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_10 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_10;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_11 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_11;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_12 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_12;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_13 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_13;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_14 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_14;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_15 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_15;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_16 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_16;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_17 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_17;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_18 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_18;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_19 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_19;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_2 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_2;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_20 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_20;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_21 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_21;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_22 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_22;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_23 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_23;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_24 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_24;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_25 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_25;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_26 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_26;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_27 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_27;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_28 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_28;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_29 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_29;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_3 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_3;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_30 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_30;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_31 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_31;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_4 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_4;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_5 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_5;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_6 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_6;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_7 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_7;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_8 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_8;
-			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_9 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Essentials.Resource.Id.actions = global::SelfService.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::SelfService.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::SelfService.Droid.Resource.Id.action_divider;
 			global::Xamarin.Essentials.Resource.Id.action_image = global::SelfService.Droid.Resource.Id.action_image;
 			global::Xamarin.Essentials.Resource.Id.action_text = global::SelfService.Droid.Resource.Id.action_text;
+			global::Xamarin.Essentials.Resource.Id.all = global::SelfService.Droid.Resource.Id.all;
 			global::Xamarin.Essentials.Resource.Id.async = global::SelfService.Droid.Resource.Id.async;
 			global::Xamarin.Essentials.Resource.Id.blocking = global::SelfService.Droid.Resource.Id.blocking;
+			global::Xamarin.Essentials.Resource.Id.bottom = global::SelfService.Droid.Resource.Id.bottom;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::SelfService.Droid.Resource.Id.browser_actions_header_text;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::SelfService.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::SelfService.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::SelfService.Droid.Resource.Id.browser_actions_menu_item_text;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::SelfService.Droid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Essentials.Resource.Id.center = global::SelfService.Droid.Resource.Id.center;
+			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::SelfService.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Essentials.Resource.Id.center_vertical = global::SelfService.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Essentials.Resource.Id.chronometer = global::SelfService.Droid.Resource.Id.chronometer;
-			global::Xamarin.Essentials.Resource.Id.dialog_button = global::SelfService.Droid.Resource.Id.dialog_button;
+			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::SelfService.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::SelfService.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.end = global::SelfService.Droid.Resource.Id.end;
+			global::Xamarin.Essentials.Resource.Id.fill = global::SelfService.Droid.Resource.Id.fill;
+			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::SelfService.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Essentials.Resource.Id.fill_vertical = global::SelfService.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Essentials.Resource.Id.forever = global::SelfService.Droid.Resource.Id.forever;
 			global::Xamarin.Essentials.Resource.Id.icon = global::SelfService.Droid.Resource.Id.icon;
 			global::Xamarin.Essentials.Resource.Id.icon_group = global::SelfService.Droid.Resource.Id.icon_group;
 			global::Xamarin.Essentials.Resource.Id.info = global::SelfService.Droid.Resource.Id.info;
 			global::Xamarin.Essentials.Resource.Id.italic = global::SelfService.Droid.Resource.Id.italic;
+			global::Xamarin.Essentials.Resource.Id.left = global::SelfService.Droid.Resource.Id.left;
 			global::Xamarin.Essentials.Resource.Id.line1 = global::SelfService.Droid.Resource.Id.line1;
 			global::Xamarin.Essentials.Resource.Id.line3 = global::SelfService.Droid.Resource.Id.line3;
+			global::Xamarin.Essentials.Resource.Id.none = global::SelfService.Droid.Resource.Id.none;
 			global::Xamarin.Essentials.Resource.Id.normal = global::SelfService.Droid.Resource.Id.normal;
 			global::Xamarin.Essentials.Resource.Id.notification_background = global::SelfService.Droid.Resource.Id.notification_background;
 			global::Xamarin.Essentials.Resource.Id.notification_main_column = global::SelfService.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Essentials.Resource.Id.notification_main_column_container = global::SelfService.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Essentials.Resource.Id.right = global::SelfService.Droid.Resource.Id.right;
 			global::Xamarin.Essentials.Resource.Id.right_icon = global::SelfService.Droid.Resource.Id.right_icon;
 			global::Xamarin.Essentials.Resource.Id.right_side = global::SelfService.Droid.Resource.Id.right_side;
-			global::Xamarin.Essentials.Resource.Id.tag_accessibility_actions = global::SelfService.Droid.Resource.Id.tag_accessibility_actions;
-			global::Xamarin.Essentials.Resource.Id.tag_accessibility_clickable_spans = global::SelfService.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::Xamarin.Essentials.Resource.Id.tag_accessibility_heading = global::SelfService.Droid.Resource.Id.tag_accessibility_heading;
-			global::Xamarin.Essentials.Resource.Id.tag_accessibility_pane_title = global::SelfService.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::Xamarin.Essentials.Resource.Id.tag_screen_reader_focusable = global::SelfService.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::Xamarin.Essentials.Resource.Id.start = global::SelfService.Droid.Resource.Id.start;
 			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::SelfService.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::SelfService.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::SelfService.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -2029,20 +2014,16 @@ namespace SelfService.Droid
 			global::Xamarin.Essentials.Resource.Id.text2 = global::SelfService.Droid.Resource.Id.text2;
 			global::Xamarin.Essentials.Resource.Id.time = global::SelfService.Droid.Resource.Id.time;
 			global::Xamarin.Essentials.Resource.Id.title = global::SelfService.Droid.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.top = global::SelfService.Droid.Resource.Id.top;
 			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::SelfService.Droid.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_row;
-			global::Xamarin.Essentials.Resource.Layout.custom_dialog = global::SelfService.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Essentials.Resource.Layout.notification_action = global::SelfService.Droid.Resource.Layout.notification_action;
 			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::SelfService.Droid.Resource.Layout.notification_action_tombstone;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::SelfService.Droid.Resource.Layout.notification_template_custom_big;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_icon_group = global::SelfService.Droid.Resource.Layout.notification_template_icon_group;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_part_chronometer = global::SelfService.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_part_time = global::SelfService.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Essentials.Resource.String.copy_toast_msg = global::SelfService.Droid.Resource.String.copy_toast_msg;
-			global::Xamarin.Essentials.Resource.String.fallback_menu_item_copy_link = global::SelfService.Droid.Resource.String.fallback_menu_item_copy_link;
-			global::Xamarin.Essentials.Resource.String.fallback_menu_item_open_in_browser = global::SelfService.Droid.Resource.String.fallback_menu_item_open_in_browser;
-			global::Xamarin.Essentials.Resource.String.fallback_menu_item_share_link = global::SelfService.Droid.Resource.String.fallback_menu_item_share_link;
 			global::Xamarin.Essentials.Resource.String.status_bar_notification_info_overflow = global::SelfService.Droid.Resource.String.status_bar_notification_info_overflow;
 			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification = global::SelfService.Droid.Resource.Style.TextAppearance_Compat_Notification;
 			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Info = global::SelfService.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
@@ -2051,10 +2032,22 @@ namespace SelfService.Droid
 			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::SelfService.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::SelfService.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::SelfService.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::SelfService.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::SelfService.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::SelfService.Droid.Resource.Styleable.FontFamily;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::SelfService.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::SelfService.Droid.Resource.Styleable.FontFamilyFont_android_font;
@@ -2089,7 +2082,6 @@ namespace SelfService.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::SelfService.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::SelfService.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::SelfService.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Essentials.Resource.Xml.image_share_filepaths = global::SelfService.Droid.Resource.Xml.image_share_filepaths;
 			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::SelfService.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::SelfService.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::SelfService.Droid.Resource.Animation.abc_fade_out;
@@ -2103,18 +2095,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::SelfService.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_enter = global::SelfService.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_exit = global::SelfService.Droid.Resource.Animation.abc_tooltip_exit;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::SelfService.Droid.Resource.Animation.design_snackbar_in;
@@ -2214,7 +2194,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::SelfService.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonCompat = global::SelfService.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::SelfService.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonIconDimen = global::SelfService.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::SelfService.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -2309,15 +2288,7 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::SelfService.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::SelfService.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::SelfService.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableBottomCompat = global::SelfService.Droid.Resource.Attribute.drawableBottomCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableEndCompat = global::SelfService.Droid.Resource.Attribute.drawableEndCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableLeftCompat = global::SelfService.Droid.Resource.Attribute.drawableLeftCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableRightCompat = global::SelfService.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::SelfService.Droid.Resource.Attribute.drawableSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableStartCompat = global::SelfService.Droid.Resource.Attribute.drawableStartCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTint = global::SelfService.Droid.Resource.Attribute.drawableTint;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTintMode = global::SelfService.Droid.Resource.Attribute.drawableTintMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTopCompat = global::SelfService.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::SelfService.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::SelfService.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -2424,8 +2395,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineHeight = global::SelfService.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineSpacing = global::SelfService.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::SelfService.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::SelfService.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::SelfService.Droid.Resource.Attribute.listLayout;
@@ -2434,10 +2403,8 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::SelfService.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::SelfService.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.materialButtonStyle = global::SelfService.Droid.Resource.Attribute.materialButtonStyle;
@@ -2479,7 +2446,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::SelfService.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::SelfService.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::SelfService.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.recyclerViewStyle = global::SelfService.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::SelfService.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::SelfService.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::SelfService.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -2581,7 +2547,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::SelfService.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textEndPadding = global::SelfService.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textInputStyle = global::SelfService.Droid.Resource.Attribute.textInputStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textLocale = global::SelfService.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textStartPadding = global::SelfService.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::SelfService.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::SelfService.Droid.Resource.Attribute.thickness;
@@ -2804,9 +2769,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::SelfService.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_large_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_large_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_small_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::SelfService.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::SelfService.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -2976,13 +2938,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::SelfService.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::SelfService.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::SelfService.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::SelfService.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::SelfService.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -3060,14 +3020,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::SelfService.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::SelfService.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::SelfService.Droid.Resource.Drawable.avd_show_password;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_off_mtrl;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_on_mtrl;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::SelfService.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::SelfService.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::SelfService.Droid.Resource.Drawable.design_ic_visibility;
@@ -3093,39 +3045,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::SelfService.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::SelfService.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::SelfService.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_action_clickable_span = global::SelfService.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_0 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_0;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_1 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_1;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_10 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_10;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_11 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_11;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_12 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_12;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_13 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_13;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_14 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_14;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_15 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_15;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_16 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_16;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_17 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_17;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_18 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_18;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_19 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_19;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_2 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_2;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_20 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_20;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_21 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_21;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_22 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_22;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_23 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_23;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_24 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_24;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_25 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_25;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_26 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_26;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_27 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_27;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_28 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_28;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_29 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_29;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_3 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_3;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_30 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_30;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_31 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_31;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_4 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_4;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_5 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_5;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_6 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_6;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_7 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_7;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_8 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_8;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_9 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::SelfService.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::SelfService.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::SelfService.Droid.Resource.Id.action_bar;
@@ -3164,7 +3083,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::SelfService.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::SelfService.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::SelfService.Droid.Resource.Id.checkbox;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.@checked = global::SelfService.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::SelfService.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::SelfService.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::SelfService.Droid.Resource.Id.clip_vertical;
@@ -3183,7 +3101,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::SelfService.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::SelfService.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::SelfService.Droid.Resource.Id.design_navigation_view;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.dialog_button = global::SelfService.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::SelfService.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::SelfService.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::SelfService.Droid.Resource.Id.end;
@@ -3203,7 +3120,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::SelfService.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::SelfService.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::SelfService.Droid.Resource.Id.ghost_view;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view_holder = global::SelfService.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.group_divider = global::SelfService.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::SelfService.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::SelfService.Droid.Resource.Id.homeAsUp;
@@ -3241,8 +3157,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::SelfService.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::SelfService.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::SelfService.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.off = global::SelfService.Droid.Resource.Id.off;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.on = global::SelfService.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.outline = global::SelfService.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::SelfService.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::SelfService.Droid.Resource.Id.parentPanel;
@@ -3255,7 +3169,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::SelfService.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::SelfService.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::SelfService.Droid.Resource.Id.save_non_transition_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.save_overlay_view = global::SelfService.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::SelfService.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::SelfService.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::SelfService.Droid.Resource.Id.scrollable;
@@ -3281,7 +3194,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::SelfService.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::SelfService.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::SelfService.Droid.Resource.Id.showTitle;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.sliding_tabs = global::SelfService.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::SelfService.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::SelfService.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::SelfService.Droid.Resource.Id.snackbar_text;
@@ -3299,11 +3211,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::SelfService.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::SelfService.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::SelfService.Droid.Resource.Id.tabMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_actions = global::SelfService.Droid.Resource.Id.tag_accessibility_actions;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_clickable_spans = global::SelfService.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_heading = global::SelfService.Droid.Resource.Id.tag_accessibility_heading;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_pane_title = global::SelfService.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_screen_reader_focusable = global::SelfService.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::SelfService.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_event_manager = global::SelfService.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_listeners = global::SelfService.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -3319,7 +3226,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::SelfService.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::SelfService.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::SelfService.Droid.Resource.Id.title_template;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.toolbar = global::SelfService.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::SelfService.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::SelfService.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::SelfService.Droid.Resource.Id.touch_outside;
@@ -3328,7 +3234,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::SelfService.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::SelfService.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::SelfService.Droid.Resource.Id.transition_transform;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.@unchecked = global::SelfService.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::SelfService.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.unlabeled = global::SelfService.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::SelfService.Droid.Resource.Id.up;
@@ -3352,13 +3257,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::SelfService.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::SelfService.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::SelfService.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_linear_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_linear = global::SelfService.Droid.Resource.Interpolator.mtrl_linear;
@@ -3392,7 +3290,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::SelfService.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::SelfService.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::SelfService.Droid.Resource.Layout.BottomTabLayout;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.custom_dialog = global::SelfService.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::SelfService.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::SelfService.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::SelfService.Droid.Resource.Layout.design_layout_snackbar;
@@ -3406,8 +3303,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::SelfService.Droid.Resource.Layout.design_navigation_item_subheader;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::SelfService.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::SelfService.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackTabbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackToolbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::SelfService.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar_include = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -3432,8 +3327,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::SelfService.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::SelfService.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::SelfService.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.Tabbar = global::SelfService.Droid.Resource.Layout.Tabbar;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.Toolbar = global::SelfService.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::SelfService.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::SelfService.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::SelfService.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -3665,7 +3558,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -3799,8 +3691,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -3933,7 +3823,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -4095,21 +3984,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTint = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTintMode = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textLocale = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -4183,18 +4062,14 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -4343,7 +4218,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::SelfService.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::SelfService.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonCompat = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout;
@@ -4527,7 +4401,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::SelfService.Droid.Resource.Styleable.RecyclerView;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_clipToPadding = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::SelfService.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -4639,14 +4512,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textFontWeight = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::SelfService.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textLocale = global::SelfService.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::SelfService.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -4695,7 +4565,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::SelfService.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::SelfService.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_menu = global::SelfService.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::SelfService.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -4737,18 +4606,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_out_top = global::SelfService.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_enter = global::SelfService.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_exit = global::SelfService.Droid.Resource.Animation.abc_tooltip_exit;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_in = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::SelfService.Droid.Resource.Animation.design_snackbar_in;
@@ -4848,7 +4705,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarNeutralButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarPositiveButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarStyle = global::SelfService.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonCompat = global::SelfService.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonGravity = global::SelfService.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonIconDimen = global::SelfService.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonPanelSideLayout = global::SelfService.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -4943,15 +4799,7 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerHorizontal = global::SelfService.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerPadding = global::SelfService.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerVertical = global::SelfService.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableBottomCompat = global::SelfService.Droid.Resource.Attribute.drawableBottomCompat;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableEndCompat = global::SelfService.Droid.Resource.Attribute.drawableEndCompat;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableLeftCompat = global::SelfService.Droid.Resource.Attribute.drawableLeftCompat;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableRightCompat = global::SelfService.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawableSize = global::SelfService.Droid.Resource.Attribute.drawableSize;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableStartCompat = global::SelfService.Droid.Resource.Attribute.drawableStartCompat;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTint = global::SelfService.Droid.Resource.Attribute.drawableTint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTintMode = global::SelfService.Droid.Resource.Attribute.drawableTintMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTopCompat = global::SelfService.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawerArrowStyle = global::SelfService.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropdownListPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropDownListViewStyle = global::SelfService.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -5058,8 +4906,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineHeight = global::SelfService.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineSpacing = global::SelfService.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listDividerAlertDialog = global::SelfService.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listItemLayout = global::SelfService.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listLayout = global::SelfService.Droid.Resource.Attribute.listLayout;
@@ -5068,10 +4914,8 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logo = global::SelfService.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logoDescription = global::SelfService.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Attribute.materialButtonStyle = global::SelfService.Droid.Resource.Attribute.materialButtonStyle;
@@ -5113,7 +4957,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyle = global::SelfService.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleIndicator = global::SelfService.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleSmall = global::SelfService.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Xamarin.Forms.Platform.Resource.Attribute.recyclerViewStyle = global::SelfService.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.reverseLayout = global::SelfService.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.rippleColor = global::SelfService.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimAnimationDuration = global::SelfService.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -5215,7 +5058,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.textColorSearchUrl = global::SelfService.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textEndPadding = global::SelfService.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textInputStyle = global::SelfService.Droid.Resource.Attribute.textInputStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textLocale = global::SelfService.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textStartPadding = global::SelfService.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.theme = global::SelfService.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Resource.Attribute.thickness = global::SelfService.Droid.Resource.Attribute.thickness;
@@ -5438,9 +5280,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_top_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_floating_window_z = global::SelfService.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_large_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_large_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_small_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_padding_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_panel_menu_list_width = global::SelfService.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_progress_bar_height_material = global::SelfService.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -5610,13 +5449,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_action_bar_item_background_material = global::SelfService.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_borderless_material = global::SelfService.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_colored_material = global::SelfService.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_default_mtrl_shape = global::SelfService.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::SelfService.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -5694,14 +5531,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_vector_test = global::SelfService.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_hide_password = global::SelfService.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_show_password = global::SelfService.Droid.Resource.Drawable.avd_show_password;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_off_mtrl;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_on_mtrl;
-			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_bottom_navigation_item_background = global::SelfService.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_fab_background = global::SelfService.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_ic_visibility = global::SelfService.Droid.Resource.Drawable.design_ic_visibility;
@@ -5727,39 +5556,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.notify_panel_notification_icon_bg = global::SelfService.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_dark = global::SelfService.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_light = global::SelfService.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_action_clickable_span = global::SelfService.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_0 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_0;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_1 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_1;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_10 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_10;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_11 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_11;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_12 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_12;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_13 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_13;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_14 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_14;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_15 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_15;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_16 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_16;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_17 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_17;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_18 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_18;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_19 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_19;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_2 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_2;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_20 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_20;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_21 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_21;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_22 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_22;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_23 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_23;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_24 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_24;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_25 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_25;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_26 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_26;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_27 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_27;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_28 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_28;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_29 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_29;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_3 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_3;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_30 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_30;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_31 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_31;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_4 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_4;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_5 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_5;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_6 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_6;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_7 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_7;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_8 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_8;
-			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_9 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Resource.Id.action0 = global::SelfService.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Resource.Id.actions = global::SelfService.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Resource.Id.action_bar = global::SelfService.Droid.Resource.Id.action_bar;
@@ -5798,7 +5594,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.center_horizontal = global::SelfService.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.center_vertical = global::SelfService.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Resource.Id.checkbox = global::SelfService.Droid.Resource.Id.checkbox;
-			global::Xamarin.Forms.Platform.Resource.Id.@checked = global::SelfService.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Resource.Id.chronometer = global::SelfService.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_horizontal = global::SelfService.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_vertical = global::SelfService.Droid.Resource.Id.clip_vertical;
@@ -5817,7 +5612,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_action_area_stub = global::SelfService.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_text = global::SelfService.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Resource.Id.design_navigation_view = global::SelfService.Droid.Resource.Id.design_navigation_view;
-			global::Xamarin.Forms.Platform.Resource.Id.dialog_button = global::SelfService.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Resource.Id.disableHome = global::SelfService.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Resource.Id.edit_query = global::SelfService.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Resource.Id.end = global::SelfService.Droid.Resource.Id.end;
@@ -5837,7 +5631,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.forever = global::SelfService.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Resource.Id.FUNCTION = global::SelfService.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Resource.Id.ghost_view = global::SelfService.Droid.Resource.Id.ghost_view;
-			global::Xamarin.Forms.Platform.Resource.Id.ghost_view_holder = global::SelfService.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Resource.Id.group_divider = global::SelfService.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Resource.Id.home = global::SelfService.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Resource.Id.homeAsUp = global::SelfService.Droid.Resource.Id.homeAsUp;
@@ -5875,8 +5668,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.notification_background = global::SelfService.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column = global::SelfService.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column_container = global::SelfService.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Forms.Platform.Resource.Id.off = global::SelfService.Droid.Resource.Id.off;
-			global::Xamarin.Forms.Platform.Resource.Id.on = global::SelfService.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Resource.Id.outline = global::SelfService.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Resource.Id.parallax = global::SelfService.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Resource.Id.parentPanel = global::SelfService.Droid.Resource.Id.parentPanel;
@@ -5889,7 +5680,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.right_icon = global::SelfService.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Resource.Id.right_side = global::SelfService.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Resource.Id.save_non_transition_alpha = global::SelfService.Droid.Resource.Id.save_non_transition_alpha;
-			global::Xamarin.Forms.Platform.Resource.Id.save_overlay_view = global::SelfService.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Resource.Id.screen = global::SelfService.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Resource.Id.scroll = global::SelfService.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Resource.Id.scrollable = global::SelfService.Droid.Resource.Id.scrollable;
@@ -5915,7 +5705,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.showCustom = global::SelfService.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.showHome = global::SelfService.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Resource.Id.showTitle = global::SelfService.Droid.Resource.Id.showTitle;
-			global::Xamarin.Forms.Platform.Resource.Id.sliding_tabs = global::SelfService.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Resource.Id.smallLabel = global::SelfService.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_action = global::SelfService.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_text = global::SelfService.Droid.Resource.Id.snackbar_text;
@@ -5933,11 +5722,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.submit_area = global::SelfService.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Resource.Id.SYM = global::SelfService.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Resource.Id.tabMode = global::SelfService.Droid.Resource.Id.tabMode;
-			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_actions = global::SelfService.Droid.Resource.Id.tag_accessibility_actions;
-			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_clickable_spans = global::SelfService.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_heading = global::SelfService.Droid.Resource.Id.tag_accessibility_heading;
-			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_pane_title = global::SelfService.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::Xamarin.Forms.Platform.Resource.Id.tag_screen_reader_focusable = global::SelfService.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_transition_group = global::SelfService.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_event_manager = global::SelfService.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_listeners = global::SelfService.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -5953,7 +5737,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.title = global::SelfService.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Resource.Id.titleDividerNoCustom = global::SelfService.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.title_template = global::SelfService.Droid.Resource.Id.title_template;
-			global::Xamarin.Forms.Platform.Resource.Id.toolbar = global::SelfService.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Resource.Id.top = global::SelfService.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Resource.Id.topPanel = global::SelfService.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Resource.Id.touch_outside = global::SelfService.Droid.Resource.Id.touch_outside;
@@ -5962,7 +5745,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.transition_position = global::SelfService.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_scene_layoutid_cache = global::SelfService.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_transform = global::SelfService.Droid.Resource.Id.transition_transform;
-			global::Xamarin.Forms.Platform.Resource.Id.@unchecked = global::SelfService.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Resource.Id.uniform = global::SelfService.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Resource.Id.unlabeled = global::SelfService.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Resource.Id.up = global::SelfService.Droid.Resource.Id.up;
@@ -5986,13 +5768,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::SelfService.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Resource.Integer.show_password_duration = global::SelfService.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Resource.Integer.status_bar_notification_info_maxnum = global::SelfService.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Platform.Resource.Interpolator.fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_linear_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_linear = global::SelfService.Droid.Resource.Interpolator.mtrl_linear;
@@ -6026,7 +5801,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::SelfService.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::SelfService.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::SelfService.Droid.Resource.Layout.BottomTabLayout;
-			global::Xamarin.Forms.Platform.Resource.Layout.custom_dialog = global::SelfService.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::SelfService.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::SelfService.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::SelfService.Droid.Resource.Layout.design_layout_snackbar;
@@ -6040,8 +5814,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item_subheader = global::SelfService.Droid.Resource.Layout.design_navigation_item_subheader;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::SelfService.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::SelfService.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.FallbackTabbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::Xamarin.Forms.Platform.Resource.Layout.FallbackToolbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::SelfService.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar_include = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -6066,8 +5838,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::SelfService.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::SelfService.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::SelfService.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.Tabbar = global::SelfService.Droid.Resource.Layout.Tabbar;
-			global::Xamarin.Forms.Platform.Resource.Layout.Toolbar = global::SelfService.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::SelfService.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::SelfService.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_menu_overflow_description = global::SelfService.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -6299,7 +6069,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -6433,8 +6202,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Light = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -6567,7 +6334,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -6729,21 +6495,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTint = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTintMode = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontFamily = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lineHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textAllCaps = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textLocale = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarDivider = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -6817,18 +6573,14 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -6977,7 +6729,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ColorStateListItem_android_color = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton = global::SelfService.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_android_button = global::SelfService.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonCompat = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTint = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTintMode = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout;
@@ -7161,7 +6912,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView = global::SelfService.Droid.Resource.Styleable.RecyclerView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_clipToPadding = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_descendantFocusability = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_orientation = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_fastScrollEnabled = global::SelfService.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -7273,14 +7023,11 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColor = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorLink = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textFontWeight = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textSize = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textStyle = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_typeface = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontFamily = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textAllCaps = global::SelfService.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textLocale = global::SelfService.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout = global::SelfService.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_hint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -7329,7 +7076,6 @@ namespace SelfService.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logo = global::SelfService.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logoDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_maxButtonHeight = global::SelfService.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_menu = global::SelfService.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationContentDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationIcon = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_popupTheme = global::SelfService.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -7371,18 +7117,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_slide_out_top = global::SelfService.Droid.Resource.Animation.abc_slide_out_top;
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_tooltip_enter = global::SelfService.Droid.Resource.Animation.abc_tooltip_enter;
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_tooltip_exit = global::SelfService.Droid.Resource.Animation.abc_tooltip_exit;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_bottom_sheet_slide_in = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_bottom_sheet_slide_out = global::SelfService.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_snackbar_in = global::SelfService.Droid.Resource.Animation.design_snackbar_in;
@@ -7482,7 +7216,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarNeutralButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarPositiveButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarStyle = global::SelfService.Droid.Resource.Attribute.buttonBarStyle;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonCompat = global::SelfService.Droid.Resource.Attribute.buttonCompat;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonGravity = global::SelfService.Droid.Resource.Attribute.buttonGravity;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonIconDimen = global::SelfService.Droid.Resource.Attribute.buttonIconDimen;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonPanelSideLayout = global::SelfService.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -7576,15 +7309,7 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerHorizontal = global::SelfService.Droid.Resource.Attribute.dividerHorizontal;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerPadding = global::SelfService.Droid.Resource.Attribute.dividerPadding;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerVertical = global::SelfService.Droid.Resource.Attribute.dividerVertical;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableBottomCompat = global::SelfService.Droid.Resource.Attribute.drawableBottomCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableEndCompat = global::SelfService.Droid.Resource.Attribute.drawableEndCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableLeftCompat = global::SelfService.Droid.Resource.Attribute.drawableLeftCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableRightCompat = global::SelfService.Droid.Resource.Attribute.drawableRightCompat;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableSize = global::SelfService.Droid.Resource.Attribute.drawableSize;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableStartCompat = global::SelfService.Droid.Resource.Attribute.drawableStartCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTint = global::SelfService.Droid.Resource.Attribute.drawableTint;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTintMode = global::SelfService.Droid.Resource.Attribute.drawableTintMode;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTopCompat = global::SelfService.Droid.Resource.Attribute.drawableTopCompat;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawerArrowStyle = global::SelfService.Droid.Resource.Attribute.drawerArrowStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dropdownListPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dropDownListViewStyle = global::SelfService.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -7691,8 +7416,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.lineHeight = global::SelfService.Droid.Resource.Attribute.lineHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.lineSpacing = global::SelfService.Droid.Resource.Attribute.lineSpacing;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listDividerAlertDialog = global::SelfService.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listItemLayout = global::SelfService.Droid.Resource.Attribute.listItemLayout;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listLayout = global::SelfService.Droid.Resource.Attribute.listLayout;
@@ -7701,10 +7424,8 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.logo = global::SelfService.Droid.Resource.Attribute.logo;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.logoDescription = global::SelfService.Droid.Resource.Attribute.logoDescription;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.materialButtonStyle = global::SelfService.Droid.Resource.Attribute.materialButtonStyle;
@@ -7746,7 +7467,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyle = global::SelfService.Droid.Resource.Attribute.ratingBarStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyleIndicator = global::SelfService.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyleSmall = global::SelfService.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.recyclerViewStyle = global::SelfService.Droid.Resource.Attribute.recyclerViewStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.reverseLayout = global::SelfService.Droid.Resource.Attribute.reverseLayout;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.rippleColor = global::SelfService.Droid.Resource.Attribute.rippleColor;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.scrimAnimationDuration = global::SelfService.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -7847,7 +7567,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textColorSearchUrl = global::SelfService.Droid.Resource.Attribute.textColorSearchUrl;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textEndPadding = global::SelfService.Droid.Resource.Attribute.textEndPadding;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textInputStyle = global::SelfService.Droid.Resource.Attribute.textInputStyle;
-			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textLocale = global::SelfService.Droid.Resource.Attribute.textLocale;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textStartPadding = global::SelfService.Droid.Resource.Attribute.textStartPadding;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.theme = global::SelfService.Droid.Resource.Attribute.theme;
 			global::ZXing.Net.Mobile.Forms.Resource.Attribute.thickness = global::SelfService.Droid.Resource.Attribute.thickness;
@@ -8074,9 +7793,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_edit_text_inset_top_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_floating_window_z = global::SelfService.Droid.Resource.Dimension.abc_floating_window_z;
-			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_large_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_large_material;
-			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_material;
-			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_small_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_panel_menu_list_width = global::SelfService.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_progress_bar_height_material = global::SelfService.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -8248,13 +7964,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_action_bar_item_background_material = global::SelfService.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_borderless_material = global::SelfService.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_material = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_colored_material = global::SelfService.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_default_mtrl_shape = global::SelfService.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_material = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::SelfService.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -8332,14 +8046,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_vector_test = global::SelfService.Droid.Resource.Drawable.abc_vector_test;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.avd_hide_password = global::SelfService.Droid.Resource.Drawable.avd_hide_password;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.avd_show_password = global::SelfService.Droid.Resource.Drawable.avd_show_password;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_checked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_off_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_off_mtrl;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_on_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_on_mtrl;
-			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_bottom_navigation_item_background = global::SelfService.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_fab_background = global::SelfService.Droid.Resource.Drawable.design_fab_background;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_ic_visibility = global::SelfService.Droid.Resource.Drawable.design_ic_visibility;
@@ -8365,39 +8071,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notify_panel_notification_icon_bg = global::SelfService.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.tooltip_frame_dark = global::SelfService.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::ZXing.Net.Mobile.Forms.Resource.Drawable.tooltip_frame_light = global::SelfService.Droid.Resource.Drawable.tooltip_frame_light;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_action_clickable_span = global::SelfService.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_0 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_0;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_1 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_1;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_10 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_10;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_11 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_11;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_12 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_12;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_13 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_13;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_14 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_14;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_15 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_15;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_16 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_16;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_17 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_17;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_18 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_18;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_19 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_19;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_2 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_2;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_20 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_20;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_21 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_21;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_22 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_22;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_23 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_23;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_24 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_24;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_25 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_25;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_26 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_26;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_27 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_27;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_28 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_28;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_29 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_29;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_3 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_3;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_30 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_30;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_31 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_31;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_4 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_4;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_5 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_5;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_6 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_6;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_7 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_7;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_8 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_8;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_9 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_9;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.action0 = global::SelfService.Droid.Resource.Id.action0;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.actions = global::SelfService.Droid.Resource.Id.actions;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar = global::SelfService.Droid.Resource.Id.action_bar;
@@ -8441,7 +8114,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.center_horizontal = global::SelfService.Droid.Resource.Id.center_horizontal;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.center_vertical = global::SelfService.Droid.Resource.Id.center_vertical;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.checkbox = global::SelfService.Droid.Resource.Id.checkbox;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.@checked = global::SelfService.Droid.Resource.Id.@checked;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.chronometer = global::SelfService.Droid.Resource.Id.chronometer;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.clip_horizontal = global::SelfService.Droid.Resource.Id.clip_horizontal;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.clip_vertical = global::SelfService.Droid.Resource.Id.clip_vertical;
@@ -8461,7 +8133,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.design_menu_item_action_area_stub = global::SelfService.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.design_menu_item_text = global::SelfService.Droid.Resource.Id.design_menu_item_text;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.design_navigation_view = global::SelfService.Droid.Resource.Id.design_navigation_view;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.dialog_button = global::SelfService.Droid.Resource.Id.dialog_button;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.disableHome = global::SelfService.Droid.Resource.Id.disableHome;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.edit_query = global::SelfService.Droid.Resource.Id.edit_query;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.end = global::SelfService.Droid.Resource.Id.end;
@@ -8481,7 +8152,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.forever = global::SelfService.Droid.Resource.Id.forever;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.FUNCTION = global::SelfService.Droid.Resource.Id.FUNCTION;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.ghost_view = global::SelfService.Droid.Resource.Id.ghost_view;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.ghost_view_holder = global::SelfService.Droid.Resource.Id.ghost_view_holder;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.group_divider = global::SelfService.Droid.Resource.Id.group_divider;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.home = global::SelfService.Droid.Resource.Id.home;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.homeAsUp = global::SelfService.Droid.Resource.Id.homeAsUp;
@@ -8519,8 +8189,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_background = global::SelfService.Droid.Resource.Id.notification_background;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_main_column = global::SelfService.Droid.Resource.Id.notification_main_column;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_main_column_container = global::SelfService.Droid.Resource.Id.notification_main_column_container;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.off = global::SelfService.Droid.Resource.Id.off;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.on = global::SelfService.Droid.Resource.Id.on;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.outline = global::SelfService.Droid.Resource.Id.outline;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.parallax = global::SelfService.Droid.Resource.Id.parallax;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.parentPanel = global::SelfService.Droid.Resource.Id.parentPanel;
@@ -8533,7 +8201,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.right_icon = global::SelfService.Droid.Resource.Id.right_icon;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.right_side = global::SelfService.Droid.Resource.Id.right_side;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.save_non_transition_alpha = global::SelfService.Droid.Resource.Id.save_non_transition_alpha;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.save_overlay_view = global::SelfService.Droid.Resource.Id.save_overlay_view;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.screen = global::SelfService.Droid.Resource.Id.screen;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.scroll = global::SelfService.Droid.Resource.Id.scroll;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.scrollable = global::SelfService.Droid.Resource.Id.scrollable;
@@ -8559,7 +8226,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.showCustom = global::SelfService.Droid.Resource.Id.showCustom;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.showHome = global::SelfService.Droid.Resource.Id.showHome;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.showTitle = global::SelfService.Droid.Resource.Id.showTitle;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.sliding_tabs = global::SelfService.Droid.Resource.Id.sliding_tabs;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.smallLabel = global::SelfService.Droid.Resource.Id.smallLabel;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.snackbar_action = global::SelfService.Droid.Resource.Id.snackbar_action;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.snackbar_text = global::SelfService.Droid.Resource.Id.snackbar_text;
@@ -8577,11 +8243,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.submit_area = global::SelfService.Droid.Resource.Id.submit_area;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.SYM = global::SelfService.Droid.Resource.Id.SYM;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.tabMode = global::SelfService.Droid.Resource.Id.tabMode;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_actions = global::SelfService.Droid.Resource.Id.tag_accessibility_actions;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_clickable_spans = global::SelfService.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_heading = global::SelfService.Droid.Resource.Id.tag_accessibility_heading;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_pane_title = global::SelfService.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_screen_reader_focusable = global::SelfService.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_transition_group = global::SelfService.Droid.Resource.Id.tag_transition_group;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_unhandled_key_event_manager = global::SelfService.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_unhandled_key_listeners = global::SelfService.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -8597,7 +8258,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.title = global::SelfService.Droid.Resource.Id.title;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.titleDividerNoCustom = global::SelfService.Droid.Resource.Id.titleDividerNoCustom;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.title_template = global::SelfService.Droid.Resource.Id.title_template;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.toolbar = global::SelfService.Droid.Resource.Id.toolbar;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.top = global::SelfService.Droid.Resource.Id.top;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.topPanel = global::SelfService.Droid.Resource.Id.topPanel;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.touch_outside = global::SelfService.Droid.Resource.Id.touch_outside;
@@ -8606,7 +8266,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_position = global::SelfService.Droid.Resource.Id.transition_position;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_scene_layoutid_cache = global::SelfService.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_transform = global::SelfService.Droid.Resource.Id.transition_transform;
-			global::ZXing.Net.Mobile.Forms.Resource.Id.@unchecked = global::SelfService.Droid.Resource.Id.@unchecked;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.uniform = global::SelfService.Droid.Resource.Id.uniform;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.unlabeled = global::SelfService.Droid.Resource.Id.unlabeled;
 			global::ZXing.Net.Mobile.Forms.Resource.Id.up = global::SelfService.Droid.Resource.Id.up;
@@ -8630,13 +8289,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::SelfService.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::ZXing.Net.Mobile.Forms.Resource.Integer.show_password_duration = global::SelfService.Droid.Resource.Integer.show_password_duration;
 			global::ZXing.Net.Mobile.Forms.Resource.Integer.status_bar_notification_info_maxnum = global::SelfService.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_fast_out_linear_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_linear = global::SelfService.Droid.Resource.Interpolator.mtrl_linear;
@@ -8672,7 +8324,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.BottomTabLayout = global::SelfService.Droid.Resource.Layout.BottomTabLayout;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.browser_actions_context_menu_page = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.browser_actions_context_menu_row = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_row;
-			global::ZXing.Net.Mobile.Forms.Resource.Layout.custom_dialog = global::SelfService.Droid.Resource.Layout.custom_dialog;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_bottom_navigation_item = global::SelfService.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_bottom_sheet_dialog = global::SelfService.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_layout_snackbar = global::SelfService.Droid.Resource.Layout.design_layout_snackbar;
@@ -8686,8 +8337,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_item_subheader = global::SelfService.Droid.Resource.Layout.design_navigation_item_subheader;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_menu = global::SelfService.Droid.Resource.Layout.design_navigation_menu;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_menu_item = global::SelfService.Droid.Resource.Layout.design_navigation_menu_item;
-			global::ZXing.Net.Mobile.Forms.Resource.Layout.FallbackTabbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::ZXing.Net.Mobile.Forms.Resource.Layout.FallbackToolbarDoNotUse = global::SelfService.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.FlyoutContent = global::SelfService.Droid.Resource.Layout.FlyoutContent;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.mtrl_layout_snackbar = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.mtrl_layout_snackbar_include = global::SelfService.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -8712,8 +8361,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.select_dialog_singlechoice_material = global::SelfService.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.ShellContent = global::SelfService.Droid.Resource.Layout.ShellContent;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.support_simple_spinner_dropdown_item = global::SelfService.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::ZXing.Net.Mobile.Forms.Resource.Layout.Tabbar = global::SelfService.Droid.Resource.Layout.Tabbar;
-			global::ZXing.Net.Mobile.Forms.Resource.Layout.Toolbar = global::SelfService.Droid.Resource.Layout.Toolbar;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.zxingscanneractivitylayout = global::SelfService.Droid.Resource.Layout.zxingscanneractivitylayout;
 			global::ZXing.Net.Mobile.Forms.Resource.Layout.zxingscannerfragmentlayout = global::SelfService.Droid.Resource.Layout.zxingscannerfragmentlayout;
 			global::ZXing.Net.Mobile.Forms.Resource.String.abc_action_bar_home_description = global::SelfService.Droid.Resource.String.abc_action_bar_home_description;
@@ -8945,7 +8592,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Spinner = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -9074,8 +8720,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
-			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Light = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -9208,7 +8852,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -9370,21 +9013,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTint = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTintMode = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_fontFamily = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_lineHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_textAllCaps = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_textLocale = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarDivider = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -9458,18 +9091,14 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -9618,7 +9247,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ColorStateListItem_android_color = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton = global::SelfService.Droid.Resource.Styleable.CompoundButton;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_android_button = global::SelfService.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonCompat = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonTint = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonTintMode = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout;
@@ -9800,7 +9428,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::SelfService.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView = global::SelfService.Droid.Resource.Styleable.RecyclerView;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_clipToPadding = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_descendantFocusability = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_orientation = global::SelfService.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollEnabled = global::SelfService.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -9910,14 +9537,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColor = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColorLink = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textFontWeight = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textSize = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textStyle = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_typeface = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_fontFamily = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_textAllCaps = global::SelfService.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_textLocale = global::SelfService.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout = global::SelfService.Droid.Resource.Styleable.TextInputLayout;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_android_hint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -9966,7 +9590,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_logo = global::SelfService.Droid.Resource.Styleable.Toolbar_logo;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_logoDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_maxButtonHeight = global::SelfService.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_menu = global::SelfService.Droid.Resource.Styleable.Toolbar_menu;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_navigationContentDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_navigationIcon = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_popupTheme = global::SelfService.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -10009,18 +9632,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Animation.abc_slide_out_top = global::SelfService.Droid.Resource.Animation.abc_slide_out_top;
 			global::ZXing.Net.Mobile.Resource.Animation.abc_tooltip_enter = global::SelfService.Droid.Resource.Animation.abc_tooltip_enter;
 			global::ZXing.Net.Mobile.Resource.Animation.abc_tooltip_exit = global::SelfService.Droid.Resource.Animation.abc_tooltip_exit;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::SelfService.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
-			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::SelfService.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::ZXing.Net.Mobile.Resource.Attribute.actionBarDivider = global::SelfService.Droid.Resource.Attribute.actionBarDivider;
 			global::ZXing.Net.Mobile.Resource.Attribute.actionBarItemBackground = global::SelfService.Droid.Resource.Attribute.actionBarItemBackground;
 			global::ZXing.Net.Mobile.Resource.Attribute.actionBarPopupTheme = global::SelfService.Droid.Resource.Attribute.actionBarPopupTheme;
@@ -10082,7 +9693,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarNeutralButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarPositiveButtonStyle = global::SelfService.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarStyle = global::SelfService.Droid.Resource.Attribute.buttonBarStyle;
-			global::ZXing.Net.Mobile.Resource.Attribute.buttonCompat = global::SelfService.Droid.Resource.Attribute.buttonCompat;
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonGravity = global::SelfService.Droid.Resource.Attribute.buttonGravity;
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonIconDimen = global::SelfService.Droid.Resource.Attribute.buttonIconDimen;
 			global::ZXing.Net.Mobile.Resource.Attribute.buttonPanelSideLayout = global::SelfService.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -10127,15 +9737,7 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Attribute.dividerHorizontal = global::SelfService.Droid.Resource.Attribute.dividerHorizontal;
 			global::ZXing.Net.Mobile.Resource.Attribute.dividerPadding = global::SelfService.Droid.Resource.Attribute.dividerPadding;
 			global::ZXing.Net.Mobile.Resource.Attribute.dividerVertical = global::SelfService.Droid.Resource.Attribute.dividerVertical;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableBottomCompat = global::SelfService.Droid.Resource.Attribute.drawableBottomCompat;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableEndCompat = global::SelfService.Droid.Resource.Attribute.drawableEndCompat;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableLeftCompat = global::SelfService.Droid.Resource.Attribute.drawableLeftCompat;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableRightCompat = global::SelfService.Droid.Resource.Attribute.drawableRightCompat;
 			global::ZXing.Net.Mobile.Resource.Attribute.drawableSize = global::SelfService.Droid.Resource.Attribute.drawableSize;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableStartCompat = global::SelfService.Droid.Resource.Attribute.drawableStartCompat;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableTint = global::SelfService.Droid.Resource.Attribute.drawableTint;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableTintMode = global::SelfService.Droid.Resource.Attribute.drawableTintMode;
-			global::ZXing.Net.Mobile.Resource.Attribute.drawableTopCompat = global::SelfService.Droid.Resource.Attribute.drawableTopCompat;
 			global::ZXing.Net.Mobile.Resource.Attribute.drawerArrowStyle = global::SelfService.Droid.Resource.Attribute.drawerArrowStyle;
 			global::ZXing.Net.Mobile.Resource.Attribute.dropdownListPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::ZXing.Net.Mobile.Resource.Attribute.dropDownListViewStyle = global::SelfService.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -10182,8 +9784,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Attribute.layout_keyline = global::SelfService.Droid.Resource.Attribute.layout_keyline;
 			global::ZXing.Net.Mobile.Resource.Attribute.lineHeight = global::SelfService.Droid.Resource.Attribute.lineHeight;
 			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
-			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::ZXing.Net.Mobile.Resource.Attribute.listDividerAlertDialog = global::SelfService.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::ZXing.Net.Mobile.Resource.Attribute.listItemLayout = global::SelfService.Droid.Resource.Attribute.listItemLayout;
 			global::ZXing.Net.Mobile.Resource.Attribute.listLayout = global::SelfService.Droid.Resource.Attribute.listLayout;
@@ -10192,15 +9792,12 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeight = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::ZXing.Net.Mobile.Resource.Attribute.logo = global::SelfService.Droid.Resource.Attribute.logo;
 			global::ZXing.Net.Mobile.Resource.Attribute.logoDescription = global::SelfService.Droid.Resource.Attribute.logoDescription;
 			global::ZXing.Net.Mobile.Resource.Attribute.maxButtonHeight = global::SelfService.Droid.Resource.Attribute.maxButtonHeight;
 			global::ZXing.Net.Mobile.Resource.Attribute.measureWithLargestChild = global::SelfService.Droid.Resource.Attribute.measureWithLargestChild;
-			global::ZXing.Net.Mobile.Resource.Attribute.menu = global::SelfService.Droid.Resource.Attribute.menu;
 			global::ZXing.Net.Mobile.Resource.Attribute.multiChoiceItemLayout = global::SelfService.Droid.Resource.Attribute.multiChoiceItemLayout;
 			global::ZXing.Net.Mobile.Resource.Attribute.navigationContentDescription = global::SelfService.Droid.Resource.Attribute.navigationContentDescription;
 			global::ZXing.Net.Mobile.Resource.Attribute.navigationIcon = global::SelfService.Droid.Resource.Attribute.navigationIcon;
@@ -10266,7 +9863,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceSmallPopupMenu = global::SelfService.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::ZXing.Net.Mobile.Resource.Attribute.textColorAlertDialogListItem = global::SelfService.Droid.Resource.Attribute.textColorAlertDialogListItem;
 			global::ZXing.Net.Mobile.Resource.Attribute.textColorSearchUrl = global::SelfService.Droid.Resource.Attribute.textColorSearchUrl;
-			global::ZXing.Net.Mobile.Resource.Attribute.textLocale = global::SelfService.Droid.Resource.Attribute.textLocale;
 			global::ZXing.Net.Mobile.Resource.Attribute.theme = global::SelfService.Droid.Resource.Attribute.theme;
 			global::ZXing.Net.Mobile.Resource.Attribute.thickness = global::SelfService.Droid.Resource.Attribute.thickness;
 			global::ZXing.Net.Mobile.Resource.Attribute.thumbTextPadding = global::SelfService.Droid.Resource.Attribute.thumbTextPadding;
@@ -10446,9 +10042,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_edit_text_inset_top_material = global::SelfService.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_floating_window_z = global::SelfService.Droid.Resource.Dimension.abc_floating_window_z;
-			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_large_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_large_material;
-			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_material;
-			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_small_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_padding_horizontal_material = global::SelfService.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_panel_menu_list_width = global::SelfService.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::ZXing.Net.Mobile.Resource.Dimension.abc_progress_bar_height_material = global::SelfService.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -10521,13 +10114,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_action_bar_item_background_material = global::SelfService.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_borderless_material = global::SelfService.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_material = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material;
-			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_colored_material = global::SelfService.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_default_mtrl_shape = global::SelfService.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_material = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_material_anim = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::SelfService.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::SelfService.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -10603,14 +10194,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::SelfService.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::SelfService.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
 			global::ZXing.Net.Mobile.Resource.Drawable.abc_vector_test = global::SelfService.Droid.Resource.Drawable.abc_vector_test;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_checked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_off_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_off_mtrl;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_on_mtrl = global::SelfService.Droid.Resource.Drawable.btn_radio_on_mtrl;
-			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::SelfService.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::ZXing.Net.Mobile.Resource.Drawable.notification_action_background = global::SelfService.Droid.Resource.Drawable.notification_action_background;
 			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg = global::SelfService.Droid.Resource.Drawable.notification_bg;
 			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_low = global::SelfService.Droid.Resource.Drawable.notification_bg_low;
@@ -10625,39 +10208,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Drawable.notify_panel_notification_icon_bg = global::SelfService.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::ZXing.Net.Mobile.Resource.Drawable.tooltip_frame_dark = global::SelfService.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::ZXing.Net.Mobile.Resource.Drawable.tooltip_frame_light = global::SelfService.Droid.Resource.Drawable.tooltip_frame_light;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_action_clickable_span = global::SelfService.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_0 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_0;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_1 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_1;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_10 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_10;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_11 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_11;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_12 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_12;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_13 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_13;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_14 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_14;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_15 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_15;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_16 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_16;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_17 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_17;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_18 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_18;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_19 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_19;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_2 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_2;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_20 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_20;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_21 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_21;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_22 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_22;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_23 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_23;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_24 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_24;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_25 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_25;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_26 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_26;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_27 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_27;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_28 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_28;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_29 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_29;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_3 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_3;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_30 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_30;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_31 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_31;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_4 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_4;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_5 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_5;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_6 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_6;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_7 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_7;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_8 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_8;
-			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_9 = global::SelfService.Droid.Resource.Id.accessibility_custom_action_9;
 			global::ZXing.Net.Mobile.Resource.Id.actions = global::SelfService.Droid.Resource.Id.actions;
 			global::ZXing.Net.Mobile.Resource.Id.action_bar = global::SelfService.Droid.Resource.Id.action_bar;
 			global::ZXing.Net.Mobile.Resource.Id.action_bar_activity_content = global::SelfService.Droid.Resource.Id.action_bar_activity_content;
@@ -10696,7 +10246,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Id.center_horizontal = global::SelfService.Droid.Resource.Id.center_horizontal;
 			global::ZXing.Net.Mobile.Resource.Id.center_vertical = global::SelfService.Droid.Resource.Id.center_vertical;
 			global::ZXing.Net.Mobile.Resource.Id.checkbox = global::SelfService.Droid.Resource.Id.checkbox;
-			global::ZXing.Net.Mobile.Resource.Id.@checked = global::SelfService.Droid.Resource.Id.@checked;
 			global::ZXing.Net.Mobile.Resource.Id.chronometer = global::SelfService.Droid.Resource.Id.chronometer;
 			global::ZXing.Net.Mobile.Resource.Id.clip_horizontal = global::SelfService.Droid.Resource.Id.clip_horizontal;
 			global::ZXing.Net.Mobile.Resource.Id.clip_vertical = global::SelfService.Droid.Resource.Id.clip_vertical;
@@ -10709,7 +10258,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Id.customPanel = global::SelfService.Droid.Resource.Id.customPanel;
 			global::ZXing.Net.Mobile.Resource.Id.decor_content_parent = global::SelfService.Droid.Resource.Id.decor_content_parent;
 			global::ZXing.Net.Mobile.Resource.Id.default_activity_button = global::SelfService.Droid.Resource.Id.default_activity_button;
-			global::ZXing.Net.Mobile.Resource.Id.dialog_button = global::SelfService.Droid.Resource.Id.dialog_button;
 			global::ZXing.Net.Mobile.Resource.Id.disableHome = global::SelfService.Droid.Resource.Id.disableHome;
 			global::ZXing.Net.Mobile.Resource.Id.edit_query = global::SelfService.Droid.Resource.Id.edit_query;
 			global::ZXing.Net.Mobile.Resource.Id.end = global::SelfService.Droid.Resource.Id.end;
@@ -10744,8 +10292,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Id.notification_background = global::SelfService.Droid.Resource.Id.notification_background;
 			global::ZXing.Net.Mobile.Resource.Id.notification_main_column = global::SelfService.Droid.Resource.Id.notification_main_column;
 			global::ZXing.Net.Mobile.Resource.Id.notification_main_column_container = global::SelfService.Droid.Resource.Id.notification_main_column_container;
-			global::ZXing.Net.Mobile.Resource.Id.off = global::SelfService.Droid.Resource.Id.off;
-			global::ZXing.Net.Mobile.Resource.Id.on = global::SelfService.Droid.Resource.Id.on;
 			global::ZXing.Net.Mobile.Resource.Id.parentPanel = global::SelfService.Droid.Resource.Id.parentPanel;
 			global::ZXing.Net.Mobile.Resource.Id.progress_circular = global::SelfService.Droid.Resource.Id.progress_circular;
 			global::ZXing.Net.Mobile.Resource.Id.progress_horizontal = global::SelfService.Droid.Resource.Id.progress_horizontal;
@@ -10783,11 +10329,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Id.submit_area = global::SelfService.Droid.Resource.Id.submit_area;
 			global::ZXing.Net.Mobile.Resource.Id.SYM = global::SelfService.Droid.Resource.Id.SYM;
 			global::ZXing.Net.Mobile.Resource.Id.tabMode = global::SelfService.Droid.Resource.Id.tabMode;
-			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_actions = global::SelfService.Droid.Resource.Id.tag_accessibility_actions;
-			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_clickable_spans = global::SelfService.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_heading = global::SelfService.Droid.Resource.Id.tag_accessibility_heading;
-			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_pane_title = global::SelfService.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::ZXing.Net.Mobile.Resource.Id.tag_screen_reader_focusable = global::SelfService.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::ZXing.Net.Mobile.Resource.Id.tag_transition_group = global::SelfService.Droid.Resource.Id.tag_transition_group;
 			global::ZXing.Net.Mobile.Resource.Id.tag_unhandled_key_event_manager = global::SelfService.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::ZXing.Net.Mobile.Resource.Id.tag_unhandled_key_listeners = global::SelfService.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -10801,7 +10342,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Id.title_template = global::SelfService.Droid.Resource.Id.title_template;
 			global::ZXing.Net.Mobile.Resource.Id.top = global::SelfService.Droid.Resource.Id.top;
 			global::ZXing.Net.Mobile.Resource.Id.topPanel = global::SelfService.Droid.Resource.Id.topPanel;
-			global::ZXing.Net.Mobile.Resource.Id.@unchecked = global::SelfService.Droid.Resource.Id.@unchecked;
 			global::ZXing.Net.Mobile.Resource.Id.uniform = global::SelfService.Droid.Resource.Id.uniform;
 			global::ZXing.Net.Mobile.Resource.Id.up = global::SelfService.Droid.Resource.Id.up;
 			global::ZXing.Net.Mobile.Resource.Id.useLogo = global::SelfService.Droid.Resource.Id.useLogo;
@@ -10812,13 +10352,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Integer.cancel_button_image_alpha = global::SelfService.Droid.Resource.Integer.cancel_button_image_alpha;
 			global::ZXing.Net.Mobile.Resource.Integer.config_tooltipAnimTime = global::SelfService.Droid.Resource.Integer.config_tooltipAnimTime;
 			global::ZXing.Net.Mobile.Resource.Integer.status_bar_notification_info_maxnum = global::SelfService.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::SelfService.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::SelfService.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
-			global::ZXing.Net.Mobile.Resource.Interpolator.fast_out_slow_in = global::SelfService.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::ZXing.Net.Mobile.Resource.Layout.abc_action_bar_title_item = global::SelfService.Droid.Resource.Layout.abc_action_bar_title_item;
 			global::ZXing.Net.Mobile.Resource.Layout.abc_action_bar_up_container = global::SelfService.Droid.Resource.Layout.abc_action_bar_up_container;
 			global::ZXing.Net.Mobile.Resource.Layout.abc_action_menu_item_layout = global::SelfService.Droid.Resource.Layout.abc_action_menu_item_layout;
@@ -10849,7 +10382,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Layout.abc_tooltip = global::SelfService.Droid.Resource.Layout.abc_tooltip;
 			global::ZXing.Net.Mobile.Resource.Layout.browser_actions_context_menu_page = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::ZXing.Net.Mobile.Resource.Layout.browser_actions_context_menu_row = global::SelfService.Droid.Resource.Layout.browser_actions_context_menu_row;
-			global::ZXing.Net.Mobile.Resource.Layout.custom_dialog = global::SelfService.Droid.Resource.Layout.custom_dialog;
 			global::ZXing.Net.Mobile.Resource.Layout.notification_action = global::SelfService.Droid.Resource.Layout.notification_action;
 			global::ZXing.Net.Mobile.Resource.Layout.notification_action_tombstone = global::SelfService.Droid.Resource.Layout.notification_action_tombstone;
 			global::ZXing.Net.Mobile.Resource.Layout.notification_template_custom_big = global::SelfService.Droid.Resource.Layout.notification_template_custom_big;
@@ -11048,7 +10580,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Spinner = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -11139,8 +10670,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dark = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
-			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Light = global::SelfService.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -11234,7 +10763,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_TextView = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::SelfService.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Toolbar = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::SelfService.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -11335,21 +10863,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTint = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTintMode = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_fontFamily = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_lineHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_textAllCaps = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_textLocale = global::SelfService.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarDivider = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -11423,18 +10941,14 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelBackground = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::SelfService.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -11484,7 +10998,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Styleable.ColorStateListItem_android_color = global::SelfService.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton = global::SelfService.Droid.Resource.Styleable.CompoundButton;
 			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_android_button = global::SelfService.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonCompat = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonTint = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonTintMode = global::SelfService.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout = global::SelfService.Droid.Resource.Styleable.CoordinatorLayout;
@@ -11666,14 +11179,11 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColor = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColorHint = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColorLink = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textFontWeight = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textSize = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textStyle = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_typeface = global::SelfService.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_fontFamily = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_fontVariationSettings = global::SelfService.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_textAllCaps = global::SelfService.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_textLocale = global::SelfService.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar = global::SelfService.Droid.Resource.Styleable.Toolbar;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_android_gravity = global::SelfService.Droid.Resource.Styleable.Toolbar_android_gravity;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_android_minHeight = global::SelfService.Droid.Resource.Styleable.Toolbar_android_minHeight;
@@ -11689,7 +11199,6 @@ namespace SelfService.Droid
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_logo = global::SelfService.Droid.Resource.Styleable.Toolbar_logo;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_logoDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_maxButtonHeight = global::SelfService.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_menu = global::SelfService.Droid.Resource.Styleable.Toolbar_menu;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_navigationContentDescription = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_navigationIcon = global::SelfService.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_popupTheme = global::SelfService.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -17524,229 +17033,223 @@ namespace SelfService.Droid
 			public const int device_credential_handler_activity = 2131492917;
 			
 			// aapt resource value: 0x7F0C0036
-			public const int FallbackTabbarDoNotUse = 2131492918;
+			public const int fingerprint_dialog_layout = 2131492918;
 			
 			// aapt resource value: 0x7F0C0037
-			public const int FallbackToolbarDoNotUse = 2131492919;
+			public const int FlyoutContent = 2131492919;
 			
 			// aapt resource value: 0x7F0C0038
-			public const int fingerprint_dialog_layout = 2131492920;
+			public const int messenger_button_send_blue_large = 2131492920;
 			
 			// aapt resource value: 0x7F0C0039
-			public const int FlyoutContent = 2131492921;
+			public const int messenger_button_send_blue_round = 2131492921;
 			
 			// aapt resource value: 0x7F0C003A
-			public const int messenger_button_send_blue_large = 2131492922;
+			public const int messenger_button_send_blue_small = 2131492922;
 			
 			// aapt resource value: 0x7F0C003B
-			public const int messenger_button_send_blue_round = 2131492923;
+			public const int messenger_button_send_white_large = 2131492923;
 			
 			// aapt resource value: 0x7F0C003C
-			public const int messenger_button_send_blue_small = 2131492924;
+			public const int messenger_button_send_white_round = 2131492924;
 			
 			// aapt resource value: 0x7F0C003D
-			public const int messenger_button_send_white_large = 2131492925;
+			public const int messenger_button_send_white_small = 2131492925;
 			
 			// aapt resource value: 0x7F0C003E
-			public const int messenger_button_send_white_round = 2131492926;
+			public const int mtrl_alert_dialog = 2131492926;
 			
 			// aapt resource value: 0x7F0C003F
-			public const int messenger_button_send_white_small = 2131492927;
+			public const int mtrl_alert_dialog_actions = 2131492927;
 			
 			// aapt resource value: 0x7F0C0040
-			public const int mtrl_alert_dialog = 2131492928;
+			public const int mtrl_alert_dialog_title = 2131492928;
 			
 			// aapt resource value: 0x7F0C0041
-			public const int mtrl_alert_dialog_actions = 2131492929;
+			public const int mtrl_alert_select_dialog_item = 2131492929;
 			
 			// aapt resource value: 0x7F0C0042
-			public const int mtrl_alert_dialog_title = 2131492930;
+			public const int mtrl_alert_select_dialog_multichoice = 2131492930;
 			
 			// aapt resource value: 0x7F0C0043
-			public const int mtrl_alert_select_dialog_item = 2131492931;
+			public const int mtrl_alert_select_dialog_singlechoice = 2131492931;
 			
 			// aapt resource value: 0x7F0C0044
-			public const int mtrl_alert_select_dialog_multichoice = 2131492932;
-			
-			// aapt resource value: 0x7F0C0045
-			public const int mtrl_alert_select_dialog_singlechoice = 2131492933;
+			public const int mtrl_calendar_day = 2131492932;
 			
 			// aapt resource value: 0x7F0C0046
-			public const int mtrl_calendar_day = 2131492934;
+			public const int mtrl_calendar_days_of_week = 2131492934;
 			
-			// aapt resource value: 0x7F0C0048
-			public const int mtrl_calendar_days_of_week = 2131492936;
+			// aapt resource value: 0x7F0C0045
+			public const int mtrl_calendar_day_of_week = 2131492933;
 			
 			// aapt resource value: 0x7F0C0047
-			public const int mtrl_calendar_day_of_week = 2131492935;
+			public const int mtrl_calendar_horizontal = 2131492935;
 			
-			// aapt resource value: 0x7F0C0049
-			public const int mtrl_calendar_horizontal = 2131492937;
-			
-			// aapt resource value: 0x7F0C004A
-			public const int mtrl_calendar_month = 2131492938;
-			
-			// aapt resource value: 0x7F0C004D
-			public const int mtrl_calendar_months = 2131492941;
+			// aapt resource value: 0x7F0C0048
+			public const int mtrl_calendar_month = 2131492936;
 			
 			// aapt resource value: 0x7F0C004B
-			public const int mtrl_calendar_month_labeled = 2131492939;
+			public const int mtrl_calendar_months = 2131492939;
+			
+			// aapt resource value: 0x7F0C0049
+			public const int mtrl_calendar_month_labeled = 2131492937;
+			
+			// aapt resource value: 0x7F0C004A
+			public const int mtrl_calendar_month_navigation = 2131492938;
 			
 			// aapt resource value: 0x7F0C004C
-			public const int mtrl_calendar_month_navigation = 2131492940;
+			public const int mtrl_calendar_vertical = 2131492940;
+			
+			// aapt resource value: 0x7F0C004D
+			public const int mtrl_calendar_year = 2131492941;
 			
 			// aapt resource value: 0x7F0C004E
-			public const int mtrl_calendar_vertical = 2131492942;
+			public const int mtrl_layout_snackbar = 2131492942;
 			
 			// aapt resource value: 0x7F0C004F
-			public const int mtrl_calendar_year = 2131492943;
+			public const int mtrl_layout_snackbar_include = 2131492943;
 			
 			// aapt resource value: 0x7F0C0050
-			public const int mtrl_layout_snackbar = 2131492944;
+			public const int mtrl_picker_actions = 2131492944;
 			
 			// aapt resource value: 0x7F0C0051
-			public const int mtrl_layout_snackbar_include = 2131492945;
+			public const int mtrl_picker_dialog = 2131492945;
 			
 			// aapt resource value: 0x7F0C0052
-			public const int mtrl_picker_actions = 2131492946;
+			public const int mtrl_picker_fullscreen = 2131492946;
 			
 			// aapt resource value: 0x7F0C0053
-			public const int mtrl_picker_dialog = 2131492947;
+			public const int mtrl_picker_header_dialog = 2131492947;
 			
 			// aapt resource value: 0x7F0C0054
-			public const int mtrl_picker_fullscreen = 2131492948;
+			public const int mtrl_picker_header_fullscreen = 2131492948;
 			
 			// aapt resource value: 0x7F0C0055
-			public const int mtrl_picker_header_dialog = 2131492949;
+			public const int mtrl_picker_header_selection_text = 2131492949;
 			
 			// aapt resource value: 0x7F0C0056
-			public const int mtrl_picker_header_fullscreen = 2131492950;
+			public const int mtrl_picker_header_title_text = 2131492950;
 			
 			// aapt resource value: 0x7F0C0057
-			public const int mtrl_picker_header_selection_text = 2131492951;
+			public const int mtrl_picker_header_toggle = 2131492951;
 			
 			// aapt resource value: 0x7F0C0058
-			public const int mtrl_picker_header_title_text = 2131492952;
+			public const int mtrl_picker_text_input_date = 2131492952;
 			
 			// aapt resource value: 0x7F0C0059
-			public const int mtrl_picker_header_toggle = 2131492953;
+			public const int mtrl_picker_text_input_date_range = 2131492953;
 			
 			// aapt resource value: 0x7F0C005A
-			public const int mtrl_picker_text_input_date = 2131492954;
+			public const int notification_action = 2131492954;
 			
 			// aapt resource value: 0x7F0C005B
-			public const int mtrl_picker_text_input_date_range = 2131492955;
+			public const int notification_action_tombstone = 2131492955;
 			
 			// aapt resource value: 0x7F0C005C
-			public const int notification_action = 2131492956;
+			public const int notification_media_action = 2131492956;
 			
 			// aapt resource value: 0x7F0C005D
-			public const int notification_action_tombstone = 2131492957;
+			public const int notification_media_cancel_action = 2131492957;
 			
 			// aapt resource value: 0x7F0C005E
-			public const int notification_media_action = 2131492958;
+			public const int notification_template_big_media = 2131492958;
 			
 			// aapt resource value: 0x7F0C005F
-			public const int notification_media_cancel_action = 2131492959;
+			public const int notification_template_big_media_custom = 2131492959;
 			
 			// aapt resource value: 0x7F0C0060
-			public const int notification_template_big_media = 2131492960;
+			public const int notification_template_big_media_narrow = 2131492960;
 			
 			// aapt resource value: 0x7F0C0061
-			public const int notification_template_big_media_custom = 2131492961;
+			public const int notification_template_big_media_narrow_custom = 2131492961;
 			
 			// aapt resource value: 0x7F0C0062
-			public const int notification_template_big_media_narrow = 2131492962;
+			public const int notification_template_custom_big = 2131492962;
 			
 			// aapt resource value: 0x7F0C0063
-			public const int notification_template_big_media_narrow_custom = 2131492963;
+			public const int notification_template_icon_group = 2131492963;
 			
 			// aapt resource value: 0x7F0C0064
-			public const int notification_template_custom_big = 2131492964;
+			public const int notification_template_lines_media = 2131492964;
 			
 			// aapt resource value: 0x7F0C0065
-			public const int notification_template_icon_group = 2131492965;
+			public const int notification_template_media = 2131492965;
 			
 			// aapt resource value: 0x7F0C0066
-			public const int notification_template_lines_media = 2131492966;
+			public const int notification_template_media_custom = 2131492966;
 			
 			// aapt resource value: 0x7F0C0067
-			public const int notification_template_media = 2131492967;
+			public const int notification_template_part_chronometer = 2131492967;
 			
 			// aapt resource value: 0x7F0C0068
-			public const int notification_template_media_custom = 2131492968;
+			public const int notification_template_part_time = 2131492968;
 			
 			// aapt resource value: 0x7F0C0069
-			public const int notification_template_part_chronometer = 2131492969;
+			public const int RootLayout = 2131492969;
 			
 			// aapt resource value: 0x7F0C006A
-			public const int notification_template_part_time = 2131492970;
+			public const int select_dialog_item_material = 2131492970;
 			
 			// aapt resource value: 0x7F0C006B
-			public const int RootLayout = 2131492971;
+			public const int select_dialog_multichoice_material = 2131492971;
 			
 			// aapt resource value: 0x7F0C006C
-			public const int select_dialog_item_material = 2131492972;
+			public const int select_dialog_singlechoice_material = 2131492972;
 			
 			// aapt resource value: 0x7F0C006D
-			public const int select_dialog_multichoice_material = 2131492973;
+			public const int ShellContent = 2131492973;
 			
 			// aapt resource value: 0x7F0C006E
-			public const int select_dialog_singlechoice_material = 2131492974;
+			public const int support_simple_spinner_dropdown_item = 2131492974;
 			
 			// aapt resource value: 0x7F0C006F
-			public const int ShellContent = 2131492975;
+			public const int Tabbar = 2131492975;
 			
 			// aapt resource value: 0x7F0C0070
-			public const int support_simple_spinner_dropdown_item = 2131492976;
+			public const int test_action_chip = 2131492976;
 			
 			// aapt resource value: 0x7F0C0071
-			public const int Tabbar = 2131492977;
+			public const int test_design_checkbox = 2131492977;
 			
 			// aapt resource value: 0x7F0C0072
-			public const int test_action_chip = 2131492978;
+			public const int test_reflow_chipgroup = 2131492978;
 			
 			// aapt resource value: 0x7F0C0073
-			public const int test_design_checkbox = 2131492979;
+			public const int test_toolbar = 2131492979;
 			
 			// aapt resource value: 0x7F0C0074
-			public const int test_reflow_chipgroup = 2131492980;
+			public const int test_toolbar_custom_background = 2131492980;
 			
 			// aapt resource value: 0x7F0C0075
-			public const int test_toolbar = 2131492981;
+			public const int test_toolbar_elevation = 2131492981;
 			
 			// aapt resource value: 0x7F0C0076
-			public const int test_toolbar_custom_background = 2131492982;
-			
-			// aapt resource value: 0x7F0C0077
-			public const int test_toolbar_elevation = 2131492983;
-			
-			// aapt resource value: 0x7F0C0078
-			public const int test_toolbar_surface = 2131492984;
-			
-			// aapt resource value: 0x7F0C007D
-			public const int text_view_without_line_height = 2131492989;
-			
-			// aapt resource value: 0x7F0C0079
-			public const int text_view_with_line_height_from_appearance = 2131492985;
-			
-			// aapt resource value: 0x7F0C007A
-			public const int text_view_with_line_height_from_layout = 2131492986;
+			public const int test_toolbar_surface = 2131492982;
 			
 			// aapt resource value: 0x7F0C007B
-			public const int text_view_with_line_height_from_style = 2131492987;
+			public const int text_view_without_line_height = 2131492987;
+			
+			// aapt resource value: 0x7F0C0077
+			public const int text_view_with_line_height_from_appearance = 2131492983;
+			
+			// aapt resource value: 0x7F0C0078
+			public const int text_view_with_line_height_from_layout = 2131492984;
+			
+			// aapt resource value: 0x7F0C0079
+			public const int text_view_with_line_height_from_style = 2131492985;
+			
+			// aapt resource value: 0x7F0C007A
+			public const int text_view_with_theme_line_height = 2131492986;
 			
 			// aapt resource value: 0x7F0C007C
-			public const int text_view_with_theme_line_height = 2131492988;
+			public const int Toolbar = 2131492988;
+			
+			// aapt resource value: 0x7F0C007D
+			public const int zxingscanneractivitylayout = 2131492989;
 			
 			// aapt resource value: 0x7F0C007E
-			public const int Toolbar = 2131492990;
-			
-			// aapt resource value: 0x7F0C007F
-			public const int zxingscanneractivitylayout = 2131492991;
-			
-			// aapt resource value: 0x7F0C0080
-			public const int zxingscannerfragmentlayout = 2131492992;
+			public const int zxingscannerfragmentlayout = 2131492990;
 			
 			static Layout()
 			{

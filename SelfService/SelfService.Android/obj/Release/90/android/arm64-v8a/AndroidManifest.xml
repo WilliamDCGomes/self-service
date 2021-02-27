@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.SelfService" android:allowBackup="true" android:installLocation="auto" android:versionCode="400001" android:versionName="1.1">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+  <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+  <uses-permission android:name="android.permission.READ_PROFILE" />
+  <uses-permission android:name="android.permission.WRITE_PROFILE" />
+  <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="SelfService" android:supportsRtl="true" android:theme="@style/MainTheme">
+    <provider android:name="androidx.core.content.FileProvider" android:authorities="com.SelfService.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+    </provider>
+    <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
+    <activity android:name="crc646957603ea1820544.MediaPickerActivity" android:configChanges="orientation|screenSize" />
+    <activity android:name="crc64f98dd38067c0c88b.WebAuthenticatorActivity" android:label="Web Authenticator" />
+    <activity android:name="crc64f98dd38067c0c88b.WebViewActivity" android:label="@string/title_activity_webview" android:theme="@android:style/Theme.DeviceDefault" />
+    <activity android:name="crc64f98dd38067c0c88b.WebAuthenticatorNativeBrowserActivity" android:label="Web Authenticator Native Browser" android:launchMode="singleTop" />
+    <receiver android:name="crc64f98dd38067c0c88b.CustomTabsActionsBroadcastReceiver" />
+    <receiver android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" android:enabled="true" android:exported="false" />
+    <activity android:name="crc646b74bfe0a0a6fc72.CustomUrlSchemeInterceptorActivity" android:label="CustomUrlSchemeInterceptorActivity" android:launchMode="singleTop" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:path="/oauth2redirect" />
+        <data android:scheme="com.googleusercontent.apps.806383440072-ppo06ni35et5gtksrabsq11a3mh89ek1" />
+      </intent-filter>
+    </activity>
+    <activity android:name="crc646b74bfe0a0a6fc72.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/MyTheme.Base" />
+    <activity android:name="crc646b74bfe0a0a6fc72.SplashActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Self-Service" android:theme="@style/MainTheme.Splash">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.SelfService.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
+    <activity android:name="androidx.biometric.DeviceCredentialHandlerActivity" android:exported="true" android:theme="@style/DeviceCredentialHandlerTheme" />
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@style/com_facebook_activity_theme" />
+    <activity android:name="com.facebook.CustomTabMainActivity" />
+    <activity android:name="com.facebook.CustomTabActivity" />
+    <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+    <provider android:name="com.facebook.internal.FacebookInitProvider" android:authorities="com.SelfService.FacebookInitProvider" android:exported="false" />
+    <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.facebook.CampaignTrackingReceiver" android:exported="true" android:permission="android.permission.INSTALL_PACKAGES">
+      <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

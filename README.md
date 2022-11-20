@@ -6,25 +6,25 @@
 
 #### A primeira do aplicativo é uma tela de introdução, onde o usuário possui algumas maneiras de se autenticar no aplicativo.
 
-![Tela de Introdução 1](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Tela%20de%20Introdu%C3%A7%C3%A3o.jpg)
+![Tela de Introdução](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Tela%20de%20Introdu%C3%A7%C3%A3o.jpg)
 
 ### Tela de Login
 
 #### Logo em seguida temos a tela de Login, onde o usuário irá se autenticar no aplicativo.
 
-![Tela de Login](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Tela%20de%20Login.jpg)
+![Tela de Login](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Tela%20de%20Login.jpg)
 
 ### Tela de Cadastro
 
 #### Caso seja o primeiro acesso, o usuário pode solicitar um cadastro, conseguindo assim logar no aplicativo.
 
-![Tela de Cadastro](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Cadastro%20de%20Usu%C3%A1rio.jpg)
+![Tela de Cadastro](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Cadastro%20de%20Usu%C3%A1rio.jpg)
 
 ### Redefinir Senha
 
 #### Existe também a possibilidade do usuário redefinir a sua senha, caso o mesmo não se lembre da senha cadastrada.
 
-![Redefinir Senha](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Tela%20de%20Redefinir%20Senha.jpg)
+![Redefinir Senha](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Tela%20de%20Redefinir%20Senha.jpg)
 
 ### Lista de Produtos
 
@@ -32,21 +32,21 @@
 
 ##### Produtos em Geral
 
-![Produtos em Geral](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Lista%20de%20Produtos.jpg)
+![Produtos em Geral](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Lista%20de%20Produtos.jpg)
 
 ##### Produtos em Promoção
 
-![Produtos em Promoção](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Lista%20de%20Produtos%20em%20Oferta.jpg)
+![Produtos em Promoção](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Lista%20de%20Produtos%20em%20Oferta.jpg)
 
 #### Para realizar um pedido, basta clicar em um dos produtos, que irá para tela de detalhes do mesmo.
 
-![Fazendo Pedido](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Visualizando%20Produto.jpg)
+![Fazendo Pedido](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Visualizando%20Produto.jpg)
 
 ### Pedidos
 
 #### Na terceira aba do aplicativo é mostrado uma lista contendo todos os pedidos que você já realizou, onde você pode acompanhar o status dele.
 
-![Pedidos](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Lista%20de%20Pedidos.jpg)
+![Pedidos](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Lista%20de%20Pedidos.jpg)
 
 ### Reservas de Mesas
 
@@ -54,11 +54,11 @@
 
 ##### Lista de Reservas
 
-![Lista de Reservas](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Visualizando%20Reservas.jpg)
+![Lista de Reservas](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Visualizando%20Reservas.jpg)
 
 ##### Fazendo uma Reserva
 
-![Fazendo uma Reserva](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Fazendo%20uma%20Reserva.jpg)
+![Fazendo uma Reserva](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Fazendo%20uma%20Reserva.jpg)
 
 ### Perfil
 
@@ -66,8 +66,8 @@
 
 ##### Tela de Perfil
 
-![Tela de Perfil](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Perfil%20do%20Usu%C3%A1rio.jpg)
+![Tela de Perfil](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Perfil%20do%20Usu%C3%A1rio.jpg)
 
 ##### Cadastro de Produtos
 
-![Cadastro de Produtos](https://github.com/WilliamDCGomes/self-service/blob/master/SelfService/ReadmeFiles/Cadastro%20de%20Produto.jpg)
+![Cadastro de Produtos](https://github.com/WilliamDCGomes/self-service/blob/master/ReadmeFiles/Cadastro%20de%20Produto.jpg)

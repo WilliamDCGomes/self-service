@@ -1,7 +1,6 @@
 # SelfService
 
-## Esse aplicativo foi feito na intenção de facilitar e agilizar pedidos de comidas em restaurantes. 
-Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir o que você quer comer direto pelo aplicativo, assim como reservar mesas.
+## Esse aplicativo foi feito na intenção de facilitar e agilizar pedidos de comidas em restaurantes. Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir o que você quer comer direto pelo aplicativo, assim como reservar mesas.
 
 ### Tela de Introdução
 
@@ -51,8 +50,7 @@ Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir 
 
 ### Reservas de Mesas
 
-#### Na quarta aba, é onde ficam as mesas que você reservou no restaurante, contendo o número da mesa e quantas cadeiras. Vale dizer que é possível fazer outras
-#### reservas na mesma tela e para outros dias também.
+#### Na quarta aba, é onde ficam as mesas que você reservou no restaurante, contendo o número da mesa e quantas cadeiras. Vale dizer que é possível fazer outras reservas na mesma tela e para outros dias também.
 
 ##### Lista de Reservas
 
@@ -64,9 +62,7 @@ Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir 
 
 ### Perfil
 
-#### Na última aba, é onde se encontra informações do cadastro do usuário, onde ele pode alterar caso queira. Vale ressaltar que caso o usuário logado
-#### seja um administrador, um botão para adicionar novos produtos irá aparecer para ele no aplicativo, possibilitando que ele adicione, edite ou remova
-#### seus produtos da maneira que desejar.
+#### Na última aba, é onde se encontra informações do cadastro do usuário, onde ele pode alterar caso queira. Vale ressaltar que caso o usuário logado seja um administrador, um botão para adicionar novos produtos irá aparecer para ele no aplicativo, possibilitando que ele adicione, edite ou remova seus produtos da maneira que desejar.
 
 ##### Tela de Perfil
 

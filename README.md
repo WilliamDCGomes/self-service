@@ -1,8 +1,7 @@
 # SelfService
 
-## Esse aplicativo foi feito na intenção de facilitar e agilizar pedidos de comidas em restaurantes.
-## Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir o que você quer comer direto pelo aplicativo,
-## assim como reservar mesas.
+## Esse aplicativo foi feito na intenção de facilitar e agilizar pedidos de comidas em restaurantes. 
+Ele tem o próposito de substituir o papel de um garçom, sendo possível pedir o que você quer comer direto pelo aplicativo, assim como reservar mesas.
 
 ### Tela de Introdução
 

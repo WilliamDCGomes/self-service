@@ -20,8 +20,9 @@ public class WebDialog_OnCompleteListenerImplementor
 	public WebDialog_OnCompleteListenerImplementor ()
 	{
 		super ();
-		if (getClass () == WebDialog_OnCompleteListenerImplementor.class)
+		if (getClass () == WebDialog_OnCompleteListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook.Common.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

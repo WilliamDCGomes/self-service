@@ -8,10 +8,14 @@
           "System.ServiceModel"
         ],
         "compile": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -29,10 +33,14 @@
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.FacebookClient/2.2.1": {
@@ -41,10 +49,14 @@
           "Xamarin.Facebook.iOS": "5.12.0"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.Fingerprint/2.1.3": {
@@ -53,19 +65,27 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -74,12 +94,20 @@
           "Xamarin.Forms": "2.5.0.121934"
         },
         "compile": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         }
       },
       "sqlite-net-pcl/1.5.231": {
@@ -88,10 +116,14 @@
           "SQLitePCLRaw.bundle_green": "1.1.11"
         },
         "compile": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -154,10 +186,14 @@
           "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.Auth/1.7.0": {
@@ -166,10 +202,14 @@
           "System.Json"
         ],
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Xamarin.Essentials/1.6.0-rc1": {
@@ -182,10 +222,14 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
@@ -277,14 +321,22 @@
       "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -401,11 +453,15 @@
           "Xamarin.Essentials": "1.5.1"
         },
         "compile": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         }
       },
@@ -417,10 +473,14 @@
           "ZXing.Net.Mobile": "3.0.0-beta5"
         },
         "compile": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "SelfService/1.0.0": {
@@ -456,10 +516,14 @@
           "System.ServiceModel"
         ],
         "compile": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -477,10 +541,14 @@
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.FacebookClient/2.2.1": {
@@ -489,10 +557,14 @@
           "Xamarin.Facebook.iOS": "5.12.0"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.Fingerprint/2.1.3": {
@@ -501,19 +573,27 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -522,12 +602,20 @@
           "Xamarin.Forms": "2.5.0.121934"
         },
         "compile": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         }
       },
       "sqlite-net-pcl/1.5.231": {
@@ -536,10 +624,14 @@
           "SQLitePCLRaw.bundle_green": "1.1.11"
         },
         "compile": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -602,10 +694,14 @@
           "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.Auth/1.7.0": {
@@ -614,10 +710,14 @@
           "System.Json"
         ],
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Xamarin.Essentials/1.6.0-rc1": {
@@ -630,10 +730,14 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
@@ -725,14 +829,22 @@
       "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -849,11 +961,15 @@
           "Xamarin.Essentials": "1.5.1"
         },
         "compile": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         }
       },
@@ -865,10 +981,14 @@
           "ZXing.Net.Mobile": "3.0.0-beta5"
         },
         "compile": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "SelfService/1.0.0": {
@@ -904,10 +1024,14 @@
           "System.ServiceModel"
         ],
         "compile": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -925,10 +1049,14 @@
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.FacebookClient/2.2.1": {
@@ -937,10 +1065,14 @@
           "Xamarin.Facebook.iOS": "5.12.0"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.Fingerprint/2.1.3": {
@@ -949,19 +1081,27 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -970,12 +1110,20 @@
           "Xamarin.Forms": "2.5.0.121934"
         },
         "compile": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         }
       },
       "sqlite-net-pcl/1.5.231": {
@@ -984,10 +1132,14 @@
           "SQLitePCLRaw.bundle_green": "1.1.11"
         },
         "compile": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -1050,10 +1202,14 @@
           "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.Auth/1.7.0": {
@@ -1062,10 +1218,14 @@
           "System.Json"
         ],
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Xamarin.Essentials/1.6.0-rc1": {
@@ -1078,10 +1238,14 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
@@ -1173,14 +1337,22 @@
       "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -1297,11 +1469,15 @@
           "Xamarin.Essentials": "1.5.1"
         },
         "compile": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         }
       },
@@ -1313,10 +1489,14 @@
           "ZXing.Net.Mobile": "3.0.0-beta5"
         },
         "compile": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "SelfService/1.0.0": {
@@ -1352,10 +1532,14 @@
           "System.ServiceModel"
         ],
         "compile": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/portable-net45+win/Correios.dll": {}
+          "lib/portable-net45+win/Correios.dll": {
+            "related": ".dll.mdb;.pdb"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -1373,10 +1557,14 @@
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.FacebookClient/2.2.1": {
@@ -1385,10 +1573,14 @@
           "Xamarin.Facebook.iOS": "5.12.0"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
+          "lib/xamarinios10/Plugin.FacebookClient.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Plugin.Fingerprint/2.1.3": {
@@ -1397,19 +1589,27 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Fingerprint.dll": {}
+          "lib/xamarinios10/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Permissions.dll": {}
+          "lib/xamarinios10/Plugin.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -1418,12 +1618,20 @@
           "Xamarin.Forms": "2.5.0.121934"
         },
         "compile": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
-          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {
+            "related": ".IOS.pdb;.pdb"
+          }
         }
       },
       "sqlite-net-pcl/1.5.231": {
@@ -1432,10 +1640,14 @@
           "SQLitePCLRaw.bundle_green": "1.1.11"
         },
         "compile": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.1/SQLite-net.dll": {}
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "related": ".deps.json;.xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -1498,10 +1710,14 @@
           "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Plugin.Media.dll": {}
+          "lib/xamarinios10/Plugin.Media.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.Auth/1.7.0": {
@@ -1510,10 +1726,14 @@
           "System.Json"
         ],
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Xamarin.Essentials/1.6.0-rc1": {
@@ -1526,10 +1746,14 @@
           "System.Drawing.Common.dll"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
@@ -1621,14 +1845,22 @@
       "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -1745,11 +1977,15 @@
           "Xamarin.Essentials": "1.5.1"
         },
         "compile": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/ZXingNetMobile.dll": {},
+          "lib/xamarinios10/ZXingNetMobile.dll": {
+            "related": ".pdb"
+          },
           "lib/xamarinios10/zxing.dll": {}
         }
       },
@@ -1761,10 +1997,14 @@
           "ZXing.Net.Mobile": "3.0.0-beta5"
         },
         "compile": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {}
+          "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "SelfService/1.0.0": {
@@ -1805,6 +2045,7 @@
         "correios-api.1.1.1.nupkg.sha512",
         "correios-api.nuspec",
         "lib/portable-net45+win/Correios.dll",
+        "lib/portable-net45+win/Correios.dll.mdb",
         "lib/portable-net45+win/Correios.pdb",
         "src/CorreiosService.cs",
         "src/ICorreiosApi.cs",
@@ -2267,7 +2508,6 @@
         "lib/MonoAndroid10/Xamarin.Auth.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Auth.pdb",
         "lib/Xamarin.iOS10/Xamarin.Auth.dll",
-        "lib/Xamarin.iOS10/Xamarin.Auth.dll.mdb",
         "lib/Xamarin.iOS10/Xamarin.Auth.pdb",
         "lib/netstandard1.0/Xamarin.Auth.dll",
         "lib/netstandard1.6/Xamarin.Auth.dll",
@@ -2814,25 +3054,25 @@
   },
   "packageFolders": {
     "C:\\Users\\willi\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
+      "projectUniqueName": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
       "projectName": "SelfService.iOS",
-      "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
+      "projectPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.iOS\\SelfService.iOS.csproj",
       "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.iOS\\obj\\",
+      "outputPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2844,8 +3084,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
-              "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
+            "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+              "projectPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
             }
           }
         }

@@ -19,8 +19,9 @@ public class RgGestureDetectorListener
 	public RgGestureDetectorListener ()
 	{
 		super ();
-		if (getClass () == RgGestureDetectorListener.class)
+		if (getClass () == RgGestureDetectorListener.class) {
 			mono.android.TypeManager.Activate ("Rg.Plugins.Popup.Droid.Gestures.RgGestureDetectorListener, Rg.Plugins.Popup.Droid", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

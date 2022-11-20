@@ -2,7 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
-    <SelectedDevice>pixel_2_q_10_0_-_api_29</SelectedDevice>
-    <DefaultDevice>pixel_2_q_10_0_-_api_29</DefaultDevice>
+    <SelectedDevice>Motorola moto e%286%29 plus</SelectedDevice>
+    <DefaultDevice>pixel_5_-_api_32</DefaultDevice>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <ActiveDebugProfile>Motorola moto e%286%29 plus %28Android 9.0 – API 28%29</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

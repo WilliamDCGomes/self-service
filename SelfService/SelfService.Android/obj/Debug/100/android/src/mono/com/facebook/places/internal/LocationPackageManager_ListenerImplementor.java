@@ -20,8 +20,9 @@ public class LocationPackageManager_ListenerImplementor
 	public LocationPackageManager_ListenerImplementor ()
 	{
 		super ();
-		if (getClass () == LocationPackageManager_ListenerImplementor.class)
+		if (getClass () == LocationPackageManager_ListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Places.Internal.LocationPackageManager+IListenerImplementor, Xamarin.Facebook.Places.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

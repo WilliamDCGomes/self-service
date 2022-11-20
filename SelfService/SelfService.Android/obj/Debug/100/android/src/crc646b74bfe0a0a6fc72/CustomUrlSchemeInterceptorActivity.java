@@ -19,8 +19,9 @@ public class CustomUrlSchemeInterceptorActivity
 	public CustomUrlSchemeInterceptorActivity ()
 	{
 		super ();
-		if (getClass () == CustomUrlSchemeInterceptorActivity.class)
+		if (getClass () == CustomUrlSchemeInterceptorActivity.class) {
 			mono.android.TypeManager.Activate ("SelfService.Droid.CustomUrlSchemeInterceptorActivity, SelfService.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

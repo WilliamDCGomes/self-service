@@ -19,8 +19,9 @@ public class GraphRequestAsyncTask
 	public GraphRequestAsyncTask ()
 	{
 		super ();
-		if (getClass () == GraphRequestAsyncTask.class)
+		if (getClass () == GraphRequestAsyncTask.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.GraphRequestAsyncTask, Xamarin.Facebook.Login.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

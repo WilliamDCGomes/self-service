@@ -22,8 +22,9 @@ public class FacebookClientManager
 	public FacebookClientManager ()
 	{
 		super ();
-		if (getClass () == FacebookClientManager.class)
+		if (getClass () == FacebookClientManager.class) {
 			mono.android.TypeManager.Activate ("Plugin.FacebookClient.FacebookClientManager, Plugin.FacebookClient", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

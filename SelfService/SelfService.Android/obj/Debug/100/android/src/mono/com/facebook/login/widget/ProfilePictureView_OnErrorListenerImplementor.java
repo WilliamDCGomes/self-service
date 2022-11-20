@@ -20,8 +20,9 @@ public class ProfilePictureView_OnErrorListenerImplementor
 	public ProfilePictureView_OnErrorListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ProfilePictureView_OnErrorListenerImplementor.class)
+		if (getClass () == ProfilePictureView_OnErrorListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Login.Widget.ProfilePictureView+IOnErrorListenerImplementor, Xamarin.Facebook.Login.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

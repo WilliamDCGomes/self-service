@@ -20,8 +20,9 @@ public class LikeView_OnErrorListenerImplementor
 	public LikeView_OnErrorListenerImplementor ()
 	{
 		super ();
-		if (getClass () == LikeView_OnErrorListenerImplementor.class)
+		if (getClass () == LikeView_OnErrorListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook.Common.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

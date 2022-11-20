@@ -22,8 +22,9 @@ public class FacebookClientManager_FacebookCallback_1
 	public FacebookClientManager_FacebookCallback_1 ()
 	{
 		super ();
-		if (getClass () == FacebookClientManager_FacebookCallback_1.class)
+		if (getClass () == FacebookClientManager_FacebookCallback_1.class) {
 			mono.android.TypeManager.Activate ("Plugin.FacebookClient.FacebookClientManager+FacebookCallback`1, Plugin.FacebookClient", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

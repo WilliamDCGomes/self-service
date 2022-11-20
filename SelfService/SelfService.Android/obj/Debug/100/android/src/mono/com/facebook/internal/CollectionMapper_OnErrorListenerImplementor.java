@@ -20,8 +20,9 @@ public class CollectionMapper_OnErrorListenerImplementor
 	public CollectionMapper_OnErrorListenerImplementor ()
 	{
 		super ();
-		if (getClass () == CollectionMapper_OnErrorListenerImplementor.class)
+		if (getClass () == CollectionMapper_OnErrorListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Internal.CollectionMapper+IOnErrorListenerImplementor, Xamarin.Facebook.Share.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

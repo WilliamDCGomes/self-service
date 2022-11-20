@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {}
+    "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {
+    "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
+        "projectUniqueName": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
         "projectName": "SelfService.Android",
-        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
+        "projectPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.Android\\SelfService.Android.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService.Android\\obj\\",
+        "outputPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid10.0"
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid10.0": {
             "projectReferences": {
-              "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
-                "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
+              "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+                "projectPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj"
               }
             }
           }
@@ -122,28 +122,29 @@
         }
       }
     },
-    "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
+    "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectUniqueName": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "projectName": "SelfService",
-        "projectPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
+        "projectPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\SelfService.csproj",
         "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willi\\Desktop\\SelfService\\SelfService\\SelfService\\obj\\",
+        "outputPath": "E:\\Projetos\\Xamarin\\SelfService\\SelfService\\SelfService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -227,11 +228,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

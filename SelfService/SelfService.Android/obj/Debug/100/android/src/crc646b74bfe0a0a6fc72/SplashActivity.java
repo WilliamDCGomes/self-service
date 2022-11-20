@@ -19,8 +19,9 @@ public class SplashActivity
 	public SplashActivity ()
 	{
 		super ();
-		if (getClass () == SplashActivity.class)
+		if (getClass () == SplashActivity.class) {
 			mono.android.TypeManager.Activate ("SelfService.Droid.SplashActivity, SelfService.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -20,8 +20,9 @@ public class PlatformServiceClient_CompletedListenerImplementor
 	public PlatformServiceClient_CompletedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == PlatformServiceClient_CompletedListenerImplementor.class)
+		if (getClass () == PlatformServiceClient_CompletedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Facebook.Internal.PlatformServiceClient+ICompletedListenerImplementor, Xamarin.Facebook.Common.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

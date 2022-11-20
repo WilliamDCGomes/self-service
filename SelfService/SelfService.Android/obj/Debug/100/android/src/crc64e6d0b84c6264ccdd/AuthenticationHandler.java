@@ -23,8 +23,9 @@ public class AuthenticationHandler
 	public AuthenticationHandler ()
 	{
 		super ();
-		if (getClass () == AuthenticationHandler.class)
+		if (getClass () == AuthenticationHandler.class) {
 			mono.android.TypeManager.Activate ("Plugin.Fingerprint.AuthenticationHandler, Plugin.Fingerprint", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 
